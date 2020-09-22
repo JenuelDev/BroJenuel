@@ -22,10 +22,12 @@ export default {
     ThemeChanger,
     profileBoxToggleShow
   },
-  beforeCreate(){
+  mounted(){
     let themeSelected = localStorage.getItem('theme-select');
     if(themeSelected){
       this.$vuetify.theme.dark = themeSelected == 'true' ? true : false;
+    }else{
+      this.$vuetify.theme.dark = true;
     }
   },
   data: () => ({
