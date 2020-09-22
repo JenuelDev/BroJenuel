@@ -1,0 +1,81 @@
+.blog-container{
+
+     .blog-content{
+          margin: auto;
+          z-index: 5;
+          padding: 20px;
+          padding-top: 60px;
+          max-width: 1000px;
+          .view-content{
+               padding: 30px;
+               max-width: 760px;
+               margin: auto;
+               h1 {
+                    font-size: 48px;
+               }
+               .view-title{
+                    span {
+                         font-size: 15px;
+                    }
+               }
+               .jenuel-article {
+                    p {
+                         font-size: 1.2rem;
+                         font-weight: 100 !important;
+                         margin-bottom: 20px;
+                    }
+                    ul {
+                         font-size: 18px;
+                    }
+                    h2 {
+                         font-size: 30px;
+                    }
+                    h3 {
+                         font-size: 1.5rem;
+                    }
+               }
+          }
+     }
+}
+
+
+@media only screen and (max-width: 560px){
+     .alert-blog{
+          font-size: 12px !important;
+     }
+     .blog-container{
+          .blog-content{
+               .view-content {
+                    padding: 10px !important;
+                    h1 {
+                         font-size: 25px !important;
+                    }
+                    .view-title{
+                         span {
+                              font-size: 15px !important;
+                         }
+                    }
+                    .jenuel-article {
+                         p {
+                              font-size: 1rem !important;
+                              font-weight: 100 !important;
+                              margin-bottom: 20px;
+                         }
+                         ul {
+                              font-size: 18px !important;
+                         }
+                         h2 {
+                              font-size: 20px !important;
+                         }
+                         h3 {
+                              font-size: 1.2rem !important;
+                         }
+                    }
+               }
+          }
+     }
+}
+
+@media only screen and (max-width: 320px){
+
+}
