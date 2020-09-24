@@ -12,7 +12,7 @@
                </center>
                
                <v-card v-else class="view-content">
-                    <h1>{{title}}</h1>
+                    <h1 style="margin: 0px 0px 20px 0px !important;">{{title}}</h1>
                     <div class="view-title">
                          <v-chip v-for="label in labels" :key="label" style="margin: 3px;">
                               <v-icon small>{{sharpIcon}}</v-icon>
