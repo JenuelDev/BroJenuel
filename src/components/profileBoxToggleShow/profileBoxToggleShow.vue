@@ -3,11 +3,11 @@
     <v-btn
       icon
       @click="overlay = !overlay"
-      :x-large="windowWidth <= 425 ? false: true"
+      :x-large="windowWidth <= 650 ? false: true"
       class="button-show-overlay"
       :class="$vuetify.theme.dark ? 'night' : 'day'"
     >
-      <v-icon :x-large="windowWidth <= 425 ? false: true">{{showIcon}}</v-icon>
+      <v-icon :x-large="windowWidth <= 650 ? false: true">{{showIcon}}</v-icon>
     </v-btn>
     <div :class="overlay ? 'show-overlay' : ''" @click="overlay = !overlay"></div>
     <div class="profile-box-show" :style="overlay ? 'margin-left: 0px;': 'margin-left: -500px;'">

@@ -9,65 +9,24 @@
                     <v-chip x-small v-for="label in labels" :key="label" style="margin: 3px;">
                          <v-icon small>{{sharpIcon}}</v-icon>
                          {{label}}
-                    </v-chip>
+                    </v-chip><br>
+                    <span class="comments" style="font-size: 12px;">
+                         <v-icon small>{{commentIcon}}</v-icon>
+                         {{ date }}
+                    </span>
                     <p class="description">{{ strimedContent }}...</p>
                     
                     <div class="post-meta" style="margin-top: -7px;">
-                              <v-btn
-                                   color="indigo"
-                                   dark
-                                   small
-                                   rounded
-                                   elevation="0"
-                                   @click="$router.push({ name: 'viewpost', params: { id: id } })"
-                              >
-                                   Read More
-                              </v-btn>
-                              <span class="comments" style="float: right; font-size: 12px;">
-                                   <v-icon small>{{commentIcon}}</v-icon>
-                                   {{ date }}
-                              </span>
-                         <!-- <v-dialog
-                              v-model="dialog"
-                              width="800px"
+                         <v-btn
+                              color="indigo"
+                              dark
+                              tile
+                              elevation="0"
+                              width="100%"
+                              @click="$router.push({ name: 'viewpost', params: { id: id } })"
                          >
-                              <template v-slot:activator="{ on, attrs }">
-                              <v-btn
-                                   color="indigo"
-                                   dark
-                                   small
-                                   v-bind="attrs"
-                                   v-on="on"
-                                   rounded
-                                   elevation="0"
-                              >
-                                   Read More
-                              </v-btn>
-                              </template>
-                              <v-card>
-                              <v-card-title>
-                                   <span class="headline">{{ title }}</span>
-                              </v-card-title>
-                              <div  class="modal-contents">
-                                   
-                                   <div >
-                                         <v-chip v-for="label in labels" :key="label" style="margin: 3px;">
-                                             <v-icon>{{sharpIcon}}</v-icon>
-                                             {{label}}
-                                        </v-chip>
-                                        <span class="comments" style="float:right;">
-                                             <v-icon small>{{commentIcon}}</v-icon>
-                                             {{ date }}
-                                        </span>
-                                   </div>
-                                   <div v-html="content" class="this-is-content-modal"></div>
-                              </div>
-                              <v-card-actions style="position: absolute; top: 0; right: 0;">
-                                   <v-spacer></v-spacer>
-                              </v-card-actions>
-                              </v-card>
-                         </v-dialog> -->
-                         
+                              Read More
+                         </v-btn>
                     </div>
                </v-card>
           </v-card>

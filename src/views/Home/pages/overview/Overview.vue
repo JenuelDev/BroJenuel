@@ -29,9 +29,14 @@
           padding: 20px;
           margin-bottom: 10px;
 
+          h2 {
+               font-size: 30px;
+          }
+
           .overview-cards-sub{
                padding-left: 30px;
                margin: 10px;
+               margin-bottom: 20px;
 
                .span-current {
                     font-size: 12px;

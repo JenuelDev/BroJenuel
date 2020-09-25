@@ -17,8 +17,8 @@
         <div class="con-content">
           <!-- ang slot na ito ahy pwedi element text or anything -->
           <slot name="content"></slot>
-          <div>
-            <v-btn small rounded v-for="action in actions" :key="action.link" :color="action.color" style="margin: 5px; color: white;" @click="goToLink(action.link)">
+          <div style="text-align: right; margin-top: 10px;">
+            <v-btn tile small v-for="action in actions" :key="action.link" :color="action.color" style="margin: 5px; color: white;" @click="goToLink(action.link)">
               <v-icon small style="margin-top: -3px; margin-right: 5px;">{{action.icon}}</v-icon>
               {{action.text}}
             </v-btn>
@@ -96,11 +96,12 @@ export default {
 
     img.blur {
       position: absolute;
-      filter: blur(15px);
+      filter: blur(7px);
       z-index: -1;
       opacity: 0;
-      transform: scale(0.85);
+      transform: scale(0.20);
       transition: 0.1s;
+      transition: 0.4s;
     }
     &:hover {
       box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.438);
@@ -115,11 +116,11 @@ export default {
       }
     }
     &:hover .con-img {
-      transform: translate(0, -15px);
+      transform: translate(0, -15px) !important;
     }
     &:hover .con-img img.blur {
-      opacity: 0.55;
-      transform: translate(-10px, 26px) scale(0.85);
+      opacity: 0.55 !important;
+      transform: translate(-10px, 26px) scale(0.85) !important;
     }
   }
 }
@@ -177,11 +178,11 @@ export default {
         }
       }
       &:hover .con-img {
-        transform: translate(0, 0px);
+        transform: translate(0, 0px) !important;
       }
       &:hover .con-img img.blur {
-        opacity: 0;
-        transform: translate(0px, 0px) scale(0);
+        opacity: 0 !important;
+        transform: translate(0px, 0px) scale(0) !important;
       }
     }
   }

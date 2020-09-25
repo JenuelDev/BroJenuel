@@ -37,11 +37,9 @@
                               </div>
                          </div>
                     </div>
-                    
                </div>
           </div>
      </div>
-     
 </template>
 <script src="./introduction.js"></script>
 <style lang="scss" src="./introduction.scss"></style>

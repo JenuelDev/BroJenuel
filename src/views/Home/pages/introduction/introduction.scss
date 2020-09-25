@@ -47,13 +47,23 @@
                          height: 300px;
                          overflow: hidden;
                          border-radius: 100%;
+                         border: 0px solid #1867c0;
+                         transition: 0.3s;
+
+                         &:hover {
+                              border: 6px solid #1867c0;
+                         }
+
                          img{
                               margin: 0px 0px 0px 0px;
                               width: 300px;
+                              
                               transition: 0.3s;
+
                               &:hover{
                                    width: 320px;
                                    margin: -10px 0px 0px -10px;
+                                   transform: translate(-6px,-6px);
                               }
                          }
                     }
