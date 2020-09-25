@@ -1,4 +1,4 @@
-import { mdiTextToSpeech, mdiSpeaker, mdiCalculator, mdiGoogleEarth, mdiDownload, mdiEye } from '@mdi/js'
+import { mdiTextToSpeech, mdiSpeaker, mdiCalculator, mdiGoogleEarth, mdiDownload, mdiEye, mdiGithub } from '@mdi/js'
 import SpeechOnText from './../images/portfolio/speechtotext.png';
 import texttospeech from './../images/portfolio/texttospeech.png';
 import Calculator from './../../assets/images/portfolio/calculator.png';
@@ -29,6 +29,12 @@ export const smallApps = [
                     icon: mdiEye,
                     link: "http://worldtimeapi.org/",
                     color: ActionColor.view
+               },
+               {
+                    text: "Github",
+                    icon: mdiGithub,
+                    link: "https://github.com/MisterJ936/MyPortFolio/tree/master/appDev/world_time",
+                    color: ""
                }
           ],
           image: WorldTime,
@@ -55,6 +61,12 @@ export const smallApps = [
                     icon: mdiEye,
                     link: "https://jenuelganawed-calculator-vue.netlify.app/",
                     color: ActionColor.view
+               },
+               {
+                    text: "Github",
+                    icon: mdiGithub,
+                    link: "https://github.com/MisterJ936/MyPortFolio/tree/master/calculator-vue",
+                    color: ""
                }
           ],
           image: Calculator,
@@ -78,6 +90,12 @@ export const smallApps = [
                     icon: mdiEye,
                     link: 'https://jenuelganawed-speechtotext.netlify.app/',
                     color: ActionColor.view
+               },
+               {
+                    text: "Github",
+                    icon: mdiGithub,
+                    link: "https://github.com/MisterJ936/MyPortFolio/tree/master/speach-to-text",
+                    color: ""
                }
           ],
           langUsed: [
@@ -108,6 +126,12 @@ export const smallApps = [
                     icon: mdiEye,
                     link: 'https://jenuelganawed-texttospeach.netlify.app/',
                     color: ActionColor.view
+               },
+               {
+                    text: "Github",
+                    icon: mdiGithub,
+                    link: "https://github.com/MisterJ936/MyPortFolio/tree/master/text-to-speach",
+                    color: ""
                }
           ],
           langUsed: [

@@ -18,7 +18,7 @@
           <!-- ang slot na ito ahy pwedi element text or anything -->
           <slot name="content"></slot>
           <div style="text-align: right; margin-top: 10px;">
-            <v-btn tile small v-for="action in actions" :key="action.link" :color="action.color" style="margin: 5px; color: white;" @click="goToLink(action.link)">
+            <v-btn dark tile small v-for="action in actions" :key="action.link" :color="action.color" style="margin: 5px;" @click="goToLink(action.link)">
               <v-icon small style="margin-top: -3px; margin-right: 5px;">{{action.icon}}</v-icon>
               {{action.text}}
             </v-btn>
