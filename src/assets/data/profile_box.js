@@ -48,7 +48,7 @@ export const links = [
      {
           icon: mdiFileDownload,
           text: "Download My Resume",
-          link: "https://github.com/MisterJ936/MyPortFolio/raw/master/jenuelganawed_home/src/assets/pdf/Jenuel-Ganawed.pdf",
+          link: "https://github.com/MisterJ936/jenuelganawedProfileSite/raw/master/src/assets/pdf/Jenuel-Ganawed.pdf",
           icon_color: "#01579B",
           tooltip: "Resume"
      },
