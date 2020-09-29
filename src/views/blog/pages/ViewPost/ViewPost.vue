@@ -1,6 +1,6 @@
 <template>
      <div class="blog-container">
-          <BackButton :fab="true" :icon="backIcon" />
+          <BackButton class="backbutton-btn" :fab="true" :icon="backIcon" />
           <div class="blog-content">
                <center v-if="!content">
                     <v-progress-circular

@@ -23,12 +23,16 @@ export default {
     profileBoxToggleShow
   },
   mounted(){
+    // this will set the theme
     let themeSelected = localStorage.getItem('theme-select');
     if(themeSelected){
       this.$vuetify.theme.dark = themeSelected == 'true' ? true : false;
     }else{
       this.$vuetify.theme.dark = true;
     }
+
+    //  this will set the bloglist state
+    this.$store.dispatch("setBlogList");
   },
   data: () => ({
 

@@ -1,21 +1,16 @@
 <template>
   <div class="long-card-container">
-    <v-card class="card" elevation="0">
+    <v-card class="card" elevation="0" >
       <div class="con-img">
         <slot name="image"></slot>
-        <!-- 
-          the slots should have something like this
-          <img src="./../../../../assets/logo.png" alt />
-        <img class="blur" src="./../../../../assets/logo.png" alt />-->
       </div>
       <div class="con-text">
         <h2>
-          <v-icon>{{icon}}</v-icon>
+          <v-icon :color="skill ? cardColor : ''">{{icon}}</v-icon>
           {{title}}
         </h2>
         <Lang :usedLang="lang" />
         <div class="con-content">
-          <!-- ang slot na ito ahy pwedi element text or anything -->
           <slot name="content"></slot>
           <div style="text-align: right; margin-top: 10px;">
             <v-btn dark tile small v-for="action in actions" :key="action.link" :color="action.color" style="margin: 5px;" @click="goToLink(action.link)">
@@ -39,7 +34,9 @@ export default {
     icon: { type: String, default: "" },
     link: { type: String, default: "#" },
     lang: { type: Array },
-    actions: { type: Array, default: null }
+    actions: { type: Array, default: null },
+    skill: {type: Boolean, default: false},
+    cardColor: {type: String, dedault: ''}
   },
   data() {
     return {};

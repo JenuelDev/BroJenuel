@@ -6,10 +6,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    blogItems: []
   },
   mutations: {
+    setBlogItems(state, payload) {
+      state.blogItems = payload;
+    }
   },
   actions: actions,
-  modules: {
+  modules: {},
+  getters: {
+    getBlogItems: state => state.blogItems
   }
 })

@@ -1,19 +1,19 @@
-import { mdiMonitorDashboard, mdiBlogger, mdiNotebookCheckOutline, mdiBagPersonal } from '@mdi/js'
+import { mdiBlogger, mdiBrain, mdiFileDocumentMultiple, mdiCardAccountDetailsOutline } from '@mdi/js'
 export const tabs = [
      {
           path: '/introduction',
-          icon: mdiBagPersonal,
-          text: "Introduction"
+          icon: mdiCardAccountDetailsOutline,
+          text: "About Me"
      },
      {
-          path: "/overview",
-          icon: mdiNotebookCheckOutline,
-          text: "Overview"
+          path: "/projects",
+          icon: mdiFileDocumentMultiple,
+          text: "Projects"
      },
      {
-          path: "portfolio",
-          icon: mdiMonitorDashboard,
-          text: "Portfolio"
+          path: "/challenge",
+          icon: mdiBrain,
+          text: "Code Challenge"
      },
      {
           path: "/blog",

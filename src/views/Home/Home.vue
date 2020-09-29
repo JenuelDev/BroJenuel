@@ -7,13 +7,13 @@
         <div
           class="profile-box-here"
           style="margin-top: 10px;"
-          :style="$route.name == 'Introduction' ? 'width: 0%; opacity: 0;' : 'width: 25%; opacity: 1 !important;'"
+          :style="$route.name == 'Introduction' || $route.name == 'Blog' || $route.name == 'viewpost' ? 'width: 0%; opacity: 0;' : 'width: 25%; opacity: 1 !important;'"
         >
           <ProfileBox class="float-right" />
         </div>
         <div
           class="info-box"
-          :style="$route.name == 'Introduction' ? 'width: 100%;' : 'width: 75%;'"
+          :style="$route.name == 'Introduction' || $route.name == 'Blog' || $route.name == 'viewpost' ? 'width: 100%;' : 'width: 75%;'"
         >
           <!-- tab for tablet and window -->
           <v-tabs class="tab-wide">
@@ -24,11 +24,9 @@
           </v-tabs>
 
           <div class="info-box-page-view">
-            <!-- <v-card class="page" :loading="false" :disabled="false"> -->
               <vue-page-transition name="fade-in-up">
                 <router-view></router-view>
               </vue-page-transition>
-            <!-- </v-card> -->
           </div>
         </div>
       </div>

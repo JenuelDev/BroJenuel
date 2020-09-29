@@ -69,7 +69,7 @@ export default {
      
      @media only screen and  (max-width: 425px) {
           .blog-list-card{
-               display: block;
+               // display: block;
           }
      }
 </style>

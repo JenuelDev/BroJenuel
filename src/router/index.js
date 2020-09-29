@@ -21,39 +21,40 @@ Vue.use(VueRouter)
         component: () => import(/* webpackChunkName: "introduction" */ './../views/Home/pages/introduction/introduction.vue')
       },
       {
-        path: 'overview',
-        name: 'overview',
-        component: () => import(/* webpackChunkName: "overview" */ './../views/Home/pages/overview/Overview.vue')
+        path: 'projects',
+        name: 'projects',
+        component: () => import(/* webpackChunkName: "overview" */ './../views/Home/pages/projects/projects.vue')
       },
       {
-        path: 'portfolio',
-        name: 'Portfolio',
+        path: 'challenge',
+        name: 'challenge',
         component: () => import(/* webpackChunkName: "portfolio" */ './../views/Home/pages/Portfolio/Portfolio.vue')
-      }
-    ]
-  },
-  {
-    path: '/blog',
-    component: () => import(/* webpackChunkName: "bloghome" */ './../views/blog/BlogHome.vue'),
-    children: [
-      {
-        path: '',
-        redirect: {
-          name: 'Blog'
-        }
       },
       {
-        path: 'home',
-        name: 'Blog',
-        component: () => import(/* webpackChunkName: "blogitems" */ './../views/blog/pages/BlogHome/Blog.vue')
+        path: '/blog',
+        component: () => import(/* webpackChunkName: "bloghome" */ './../views/blog/BlogHome.vue'),
+        children: [
+          {
+            path: '',
+            redirect: {
+              name: 'Blog'
+            }
+          },
+          {
+            path: 'home',
+            name: 'Blog',
+            component: () => import(/* webpackChunkName: "blogitems" */ './../views/blog/pages/BlogHome/Blog.vue')
+          },
+          {
+            path: 'view/:id',
+            name: 'viewpost',
+            component: () => import(/* webpackChunkName: "viewpost" */ './../views/blog/pages/ViewPost/ViewPost.vue')
+          }
+        ]
       },
-      {
-        path: 'view/:id',
-        name: 'viewpost',
-        component: () => import(/* webpackChunkName: "viewpost" */ './../views/blog/pages/ViewPost/ViewPost.vue')
-      }
     ]
   },
+  
   {
     path: '*',
     component: () => import(/* webpackChunkName: "notfound" */ './../components/PageNotFound/PageNotFound.vue')

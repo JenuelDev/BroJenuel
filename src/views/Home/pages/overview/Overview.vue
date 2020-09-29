@@ -3,7 +3,7 @@
           <v-card class="overview-cards">
                <h2><v-icon :large="windowWidth <= 425 ? false :true" color="primary" class="icon" style="margin-top: -5px;">{{mdiGold}}</v-icon> Objective</h2>
                <div class="overview-cards-sub">
-                    <p class="over-qoute" v-html="overviewdata.onjective"></p>
+                    <p class="over-qoute" v-html="overviewdata.objective"></p>
                </div>
           </v-card>
           <v-card v-for="(overview, index) in overviewdata.overviews" :key="index" class="overview-cards">

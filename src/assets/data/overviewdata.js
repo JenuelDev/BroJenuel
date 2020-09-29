@@ -3,6 +3,10 @@ import { mdiSchoolOutline } from '@mdi/js';
 import { mdiHeadLightbulbOutline } from '@mdi/js';
 import { vue, angular, ruby, laravel, php } from './colorCodes.js';
 
+// export const objective = "I'm a Web Developer offering enthusiasm and understanding of various web tools. Looking to join an industry where the opportunity for growth and professional development is embraced which will inspire me to enhance my skills in Software Development and work with the team in a positive atmosphere, I welcome challenging projects and enjoying working with all sorts of personalities.";
+
+export const objective = "Join or work in an industry where the opportunity for growth and professional development is embraced. I welcome challenging projects and enjoy working with all sorts of personalities.";
+
 export const skills = [
      {
           text: "HTML|CSS|JAVASCRIPT",
@@ -43,7 +47,7 @@ export const skills = [
 ];
 
 export default {
-     onjective: "I'm a Web Developer offering enthusiasm and understanding of various web tools. Looking to join an industry where the opportunity for growth and professional development is embraced which will inspire me to enhance my skills in Software Development and work with the team in a positive atmosphere, I welcome challenging projects and enjoying working with all sorts of personalities.",
+     objective: objective,
      overviews: [
           
           {

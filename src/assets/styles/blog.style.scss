@@ -3,12 +3,10 @@
      .blog-content{
           margin: auto;
           z-index: 5;
-          padding: 20px;
-          padding-top: 60px;
-          max-width: 1000px;
+          padding-top: 10px;
           .view-content{
                padding: 30px;
-               max-width: 760px;
+               max-width: 860px;
                margin: auto;
                h1 {
                     font-size: 48px;
@@ -43,15 +41,28 @@
           }
      }
 }
-
+@media only screen and (max-width: 954px) {
+     .blog-container{
+          .backbutton-btn {
+               margin-top: -10px;
+          }
+     }
+}
 
 @media only screen and (max-width: 560px){
      .alert-blog{
           font-size: 12px !important;
      }
      .blog-container{
+          .backbutton-btn {
+               margin-top: -55px;
+          }
           .blog-content{
+               margin: 60px 5px 0px 10px !important;
+               z-index: 5;
+               padding-top: 10px;
                .view-content {
+                    
                     padding: 10px !important;
                     h1 {
                          font-size: 25px !important;

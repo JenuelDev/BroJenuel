@@ -1,6 +1,6 @@
 <template>
-     <div>
-          <div class="introduction-page">
+     <div style="scroll-snap-type: y mandatory;">
+          <div class="introduction-page" id="startingline">
                <div class="intropage-container">
                     <div class="intropage-img">
                          <div class="intropage-img-container">
@@ -38,6 +38,59 @@
                          </div>
                     </div>
                </div>
+               <div class="scroll-down-div">
+                    <center>
+                         <ScrollDown /><br><br>
+                         <span style="margin-bottom: 20px;">Scroll Down</span>
+                    </center>
+               </div>
+          </div>
+          <v-card elevation="0" style="padding: 50px 20px 50px 20px; text-align:center; margin: 10px; margin-bottom: 100px;">
+               <h1 style="margin-bottom: 40px;">
+                    <v-icon color="primary" large>{{objective_icon}}</v-icon>
+                    Objective
+               </h1>
+               <q style="font-size: 20px;">
+                    {{ objective }}
+               </q>
+          </v-card>
+          <div style="margin: 10px; padding: 20px; margin-bottom: 100px;">
+               <h1 style="margin-bottom: 40px; text-align: center;">
+                    <v-icon color="primary" large>{{workExperienceIcon}}</v-icon>
+                    Journey
+               </h1>
+               <div class="workplace-experience-timeline">
+                    <TimeLine />
+               </div>
+          </div>
+          <div style="margin: 10px;">
+               <h1 style="margin-bottom: 40px; text-align: center;">
+                    <v-icon color="primary" large>{{skillIcon}}</v-icon>
+                    Skills
+               </h1>
+               <div>
+                    <LongCard
+                         v-for="skill in skills"
+                         :key="skill.text"
+                         :title="skill.text"
+                         :icon="skill.icon"
+                         :skill="true"
+                         :cardColor="skill.color"
+                    >
+                         <template v-slot:content>
+                              <div v-html="skill.des"></div>
+                         </template>
+                    </LongCard>
+               </div>
+          </div>
+          <div style="text-align:center;margin: 50px;">
+               <a href="#startingline" style="text-decoration: none;"><v-btn large color="primary">
+                    <v-icon>
+                         {{arrowTop}}
+                    </v-icon>
+                    Scroll to TOP
+               </v-btn>
+               </a>
           </div>
      </div>
 </template>

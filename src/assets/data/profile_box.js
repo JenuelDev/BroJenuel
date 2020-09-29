@@ -7,7 +7,7 @@ export const address = "La Trinidad 2601";
 export const phone = "0950-3255-547";
 export const email = "Jenuel Oras Ganawed";
 export const about = "Hi! I live in La Trinidad, Benguet, Luzon, Philippines. I am a Web Developer. I eat rice and pay bills 👌😁👍😎";
-export const intro = "...offering enthusiasm and understanding of various web tools. Looking to join an industry where the opportunity for growth and professional development is embraced.";
+export const intro = "...I am a passionate developer and I like to Code.";
 export const profile_image = ProfileImage;
 export const links = [
      {
