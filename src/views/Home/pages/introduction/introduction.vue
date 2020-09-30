@@ -73,10 +73,15 @@
                          v-for="skill in skills"
                          :key="skill.text"
                          :title="skill.text"
-                         :icon="skill.icon"
                          :skill="true"
                          :cardColor="skill.color"
+                         elevation="3"
                     >
+                         <template v-slot:image>
+                              <div>
+                                   <v-icon :color="skill.color" size="80px">{{skill.icon}}</v-icon>
+                              </div>
+                         </template>
                          <template v-slot:content>
                               <div v-html="skill.des"></div>
                          </template>

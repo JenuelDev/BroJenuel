@@ -11,7 +11,7 @@
                     <img
                          class="blur"
                          :src="data.image"
-                         alt
+                         alt=""
                     />
                </template>
                <template v-slot:content>

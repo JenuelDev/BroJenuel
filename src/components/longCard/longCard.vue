@@ -1,12 +1,12 @@
 <template>
   <div class="long-card-container">
-    <v-card class="card" elevation="0" >
+    <v-card class="card" :elevation="elevation">
       <div class="con-img">
         <slot name="image"></slot>
       </div>
       <div class="con-text">
         <h2>
-          <v-icon :color="skill ? cardColor : ''">{{icon}}</v-icon>
+          <v-icon v-if="icon" :color="skill ? cardColor : ''">{{icon}}</v-icon>
           {{title}}
         </h2>
         <Lang :usedLang="lang" />
@@ -36,7 +36,8 @@ export default {
     lang: { type: Array },
     actions: { type: Array, default: null },
     skill: {type: Boolean, default: false},
-    cardColor: {type: String, dedault: ''}
+    cardColor: {type: String, dedault: ''},
+    elevation: {type: String, default: ''}
   },
   data() {
     return {};
