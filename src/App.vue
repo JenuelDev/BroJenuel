@@ -28,6 +28,7 @@ export default {
     if(themeSelected){
       this.$vuetify.theme.dark = themeSelected == 'true' ? true : false;
     }else{
+      localStorage.setItem('theme-select','true');
       this.$vuetify.theme.dark = true;
     }
 

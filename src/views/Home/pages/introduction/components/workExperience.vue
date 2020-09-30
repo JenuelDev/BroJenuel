@@ -4,12 +4,11 @@
           <v-timeline-item
                v-for="data in datas"
                :key="data.h3"
-               :icon="workIcon"
-               large
+               small
           >
                <!-- <template v-slot:icon>
                     <v-avatar>
-                         <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/female-avatar-12-774634.png">
+                         <img :src="data.logo">
                     </v-avatar>
                </template> -->
                <template v-slot:opposite>
@@ -24,8 +23,11 @@
                               <v-icon style="margin-right: 8px;">{{pointIcon}}</v-icon>
                               Current Work
                          </v-chip> </h2>
-                         
+                         <v-avatar size="150" style="float: right;">
+                              <img :src="data.logo">
+                         </v-avatar>
                          <div class="content" v-html="data.content + data.others"></div>
+                         
                     </div>
                </v-card>
           </v-timeline-item>
