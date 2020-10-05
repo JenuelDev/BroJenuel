@@ -2,12 +2,12 @@
 
 I am a passionate developer and I love to Code. I am a simple friendly human being. 😎👍👌👊✊
 
-[![alt text][1.1]][1]
-[![alt text][2.1]][2]
-[![alt text][3.1]][3]
-[![alt text][4.1]][4]
-[![alt text][5.1]][5]
-[![alt text][6.1]][6]
+[![alt text][1.1]][1]&nbsp;&nbsp;&nbsp;
+[![alt text][2.1]][2]&nbsp;&nbsp;&nbsp;
+[![alt text][3.1]][3]&nbsp;&nbsp;&nbsp;
+[![alt text][4.1]][4]&nbsp;&nbsp;&nbsp;
+[![alt text][5.1]][5]&nbsp;&nbsp;&nbsp;
+[![alt text][6.1]][6]&nbsp;&nbsp;&nbsp;
 
 [1.1]: ./icons/png/001-facebook.png (Facebook)
 [2.1]: ./icons/png/002-youtube.png (Youtube)
