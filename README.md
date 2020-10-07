@@ -8,6 +8,10 @@ I am a passionate developer and I love to Code. I am a simple friendly human bei
 [![alt text][4.1]][4]&nbsp;&nbsp;&nbsp;
 [![alt text][5.1]][5]&nbsp;&nbsp;&nbsp;
 [![alt text][6.1]][6]&nbsp;&nbsp;&nbsp;
+<a href="https://dev.to/brojenuel">
+  <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Jenuel Oras Ganawed's DEV Profile" height="34" width="34">
+</a>
+        
 
 [1.1]: ./icons/png/001-facebook.png (Facebook)
 [2.1]: ./icons/png/002-youtube.png (Youtube)
