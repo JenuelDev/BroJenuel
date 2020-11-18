@@ -1,6 +1,6 @@
 ## ✋ Hi! My Name Jenuel Ganawed
 
-I am a passionate developer and I love to Code. I am a simple friendly human being. 😎👍👌👊✊
+I am a passionate developer and I like to Code. I am a simple friendly human being. 😎👍👌👊✊
 
 [![alt text][1.1]][1]&nbsp;&nbsp;&nbsp;
 [![alt text][2.1]][2]&nbsp;&nbsp;&nbsp;
