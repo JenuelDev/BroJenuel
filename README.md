@@ -1,6 +1,7 @@
 # ✋ Hi! My Name Jenuel Ganawed
 
-I am a passionate developer and I like to Code. I am a simple friendly human being.  👉[ My Website](https://jenuelganawed.ml/#/) 😎👍👌👊✊   
+Hi! I live in Baguio Luzon, Philippines. I am a Web/Software Programmer.   
+I eat rice and pay BILLS HiHi! 👌😁👍😎.  👉[ My Website](https://jenuelganawed.ml/#/) 😎👍👌👊✊   
 [![alt text][1.1]][1]&nbsp;&nbsp;&nbsp;
 [![alt text][2.1]][2]&nbsp;&nbsp;&nbsp;
 [![alt text][3.1]][3]&nbsp;&nbsp;&nbsp;
