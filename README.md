@@ -1,7 +1,6 @@
-## ✋ Hi! My Name Jenuel Ganawed
+# ✋ Hi! My Name Jenuel Ganawed
 
-I am a passionate developer and I like to Code. I am a simple friendly human being. 😎👍👌👊✊
-
+I am a passionate developer and I like to Code. I am a simple friendly human being.  👉[ My Website](https://jenuelganawed.ml/#/) 😎👍👌👊✊   
 [![alt text][1.1]][1]&nbsp;&nbsp;&nbsp;
 [![alt text][2.1]][2]&nbsp;&nbsp;&nbsp;
 [![alt text][3.1]][3]&nbsp;&nbsp;&nbsp;
@@ -23,7 +22,3 @@ I am a passionate developer and I like to Code. I am a simple friendly human bei
 [3]: https://twitter.com/broJenuel
 [5]: https://github.com/MisterJ936
 [6]: https://www.linkedin.com/in/jenuelganawed/
-
-### 👉[ My Website](https://jenuelganawed.ml/#/)
-This is my Profile Website, where I show my projects and stuffs.  
-[https://jenuelganawed.ml](https://jenuelganawed.ml/#/)
