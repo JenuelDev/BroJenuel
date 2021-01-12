@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.aa36a8605221b75c4fb2b1193831166f.js"
+  "/precache-manifest.774f60f7ef946081e1a999a5b0708910.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "misterj936v2"});
