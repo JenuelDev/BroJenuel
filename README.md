@@ -7,6 +7,21 @@
 Hi! I live in La Trinidad, Luzon, Philippines near Baguio, Luzon, Philippines. I am a Web/Software Programmer.   
 I eat rice and pay BILLS HiHi! [ My Website](https://jenuelganawed.ml/#/) 😎👍👌✊  
 
+I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to Join or Work in any opportunity that will help me grow in this Industry. I welcome challenging projects and enjoy working with all sorts of personalities..
+
+Shortly after graduating from Kings College of The Philippines, I joined the team of software developers at a company where I work on a wide variety of fascinating technologies and helpful projects..
+
+Here are a few technologies I've been working with recently:
+
+ - JavaScript (ES6+)
+ - HTML & (S)CSS
+ - Vue(js)(cli) - nuxtjs, vuepress, nuxtconent
+ - laravel/Lumen
+ - Angular(JS)
+ - Ruby on Rails
+ - CodeIgniter
+ - Database: MySQL, MongoDB, FireBase
+
 <table cellspacing="0" cellpadding="0" style="border:none;">
     <tr>
         <td><a href="https://www.facebook.com/ganawed/"><i class='bx bxl-facebook'></i> Facebook</a></td>
