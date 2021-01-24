@@ -1,7 +1,7 @@
 <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
 #### ✋ Hi! My Name is
-# Jenuel Ganawed ([Check Me 🌏](https://jenuelganawed.ml/#/))
+# Jenuel Ganawed ([Click Me 🌏](https://jenuelganawed.ml/#/))
 [![Netlify Status](https://api.netlify.com/api/v1/badges/66774d91-73d9-47cf-933f-e4c2c4ca0158/deploy-status)](https://app.netlify.com/sites/jenuelganawed/deploys)
 
 Hi! I live in La Trinidad, Luzon, Philippines near Baguio, Luzon, Philippines. I am a Web/Software Programmer.   
