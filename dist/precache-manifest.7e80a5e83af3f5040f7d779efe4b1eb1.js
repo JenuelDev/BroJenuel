@@ -114,9 +114,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a3b6bee43f4004cef379034b2b588375",
     "url": "/manifest.json"
-  },
-  {
-    "revision": "4befc55fcfa5330d062b927959873569",
-    "url": "/netlify.toml"
   }
 ]);
