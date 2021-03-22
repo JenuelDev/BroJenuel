@@ -4,20 +4,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "200eb0159ece93f1614f",
-    "url": "/css/app.1f5b7bb2.css"
+    "revision": "1e14c4721ff5fba70fbc",
+    "url": "/css/app.a0c150ee.css"
   },
   {
     "revision": "cfcf1410797c1db6f7d3",
     "url": "/css/chunk-820603d8.62afef1d.css"
   },
   {
-    "revision": "685acce870f3ef602d45b941c7ef0953",
+    "revision": "ad39c611a4430a40f05126da6e3a4b59",
     "url": "/index.html"
   },
   {
-    "revision": "200eb0159ece93f1614f",
-    "url": "/js/app.7b714880.js"
+    "revision": "1e14c4721ff5fba70fbc",
+    "url": "/js/app.59c110b8.js"
   },
   {
     "revision": "cfcf1410797c1db6f7d3",
