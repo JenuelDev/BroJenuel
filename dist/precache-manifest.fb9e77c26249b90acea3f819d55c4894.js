@@ -4,28 +4,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "e9bfc707cda446a6f69f",
-    "url": "/css/app.0b9a4f2e.css"
+    "revision": "7bb61844e8d0cb3403f5",
+    "url": "/css/app.0418e7bc.css"
   },
   {
     "revision": "cfcf1410797c1db6f7d3",
     "url": "/css/chunk-820603d8.62afef1d.css"
   },
   {
-    "revision": "cd185353cbdd6ed1162494e551830fbb",
+    "revision": "b47f75c37f536421bc2021dc94c6ebf8",
     "url": "/index.html"
   },
   {
-    "revision": "e9bfc707cda446a6f69f",
-    "url": "/js/app.c8298ce2.js"
+    "revision": "7bb61844e8d0cb3403f5",
+    "url": "/js/app.d0b1874a.js"
   },
   {
     "revision": "cfcf1410797c1db6f7d3",
     "url": "/js/chunk-820603d8.2abe077e.js"
   },
   {
-    "revision": "56a6dc9da4d0bb16762f",
-    "url": "/js/chunk-vendors.9989a8e2.js"
+    "revision": "4577793835ee73852791",
+    "url": "/js/chunk-vendors.152f947b.js"
   },
   {
     "revision": "a3b6bee43f4004cef379034b2b588375",
