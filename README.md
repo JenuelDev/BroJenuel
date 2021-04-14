@@ -23,5 +23,8 @@ If you have any question you can reach me here:
 [![Telegram](https://github.com/BroJenuel/badges/raw/master/src/telegram.svg)](https://t.me/BroJenuelChannel)
 [![Messenger](https://github.com/BroJenuel/badges/raw/master/src/messenger.svg)](https://www.facebook.com/ganawed/)
 
-If you like to support me on my Journey you can buy me a Coffee  :pray: :   
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)
+If you like to support me on my Journey :blush::yellow_heart::blush::yellow_heart:  
+  
+You can buy me a ***`Coffee`***  :pray: : [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)  
+You can send me ***`DODGE COIN`*** in my wallet Address : `D7mhg5a3upPcVw3VgLi9jciA7Ac2P1QQzE`  
+You can send me through ***`GCash`***: `09503255547`
