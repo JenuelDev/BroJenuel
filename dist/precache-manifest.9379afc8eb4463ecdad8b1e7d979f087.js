@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/brojenuellogo.ba001777.svg"
   },
   {
-    "revision": "18fc54c1f84dad6b680b97aa727ee52c",
+    "revision": "35212e5fd2b783d9c45d01aec93d0e1f",
     "url": "/index.html"
   },
   {
