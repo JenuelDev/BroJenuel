@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "f45efd315c88633e75d5",
+    "revision": "c4b4c526413e43adfd5c",
     "url": "/css/app.e493ff25.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/brojenuellogo.ba001777.svg"
   },
   {
-    "revision": "35212e5fd2b783d9c45d01aec93d0e1f",
+    "revision": "97dafe84e82e3db967e689aa09e0896e",
     "url": "/index.html"
   },
   {
-    "revision": "f45efd315c88633e75d5",
-    "url": "/js/app.1a0728a9.js"
+    "revision": "c4b4c526413e43adfd5c",
+    "url": "/js/app.91eb7457.js"
   },
   {
     "revision": "30e3f1a48cce7e47ee39",
