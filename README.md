@@ -25,8 +25,11 @@ If you have any question you can reach me here:
 
 If you like to support me on my Journey :blush::yellow_heart::blush::yellow_heart:  
   
-You can buy me a ***`Coffee`***  :pray: : [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)  
-You can send me ***`DODGE COIN`*** in my wallet Address : `D7mhg5a3upPcVw3VgLi9jciA7Ac2P1QQzE`  
-You can send me through ***`GCash`***: **`09503255547`**  
-You can send me Coffee using Paymaya App (Scan the Bar using Paymaya App):  
+- You can buy me a ***`Coffee`***  :pray: :  
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)  
+- You can send me ***`DODGE COIN`*** in my wallet Address :  
+ `DNukbV1gCsUfr6snXs2ACtfHsrzQsEXNN6`  
+- You can send me through ***`GCash`***:  
+**`09503255547`**   
+- You can send me Coffee using ***`Paymaya`*** App (Scan the Bar using Paymaya App):  
 [![Paymaya Code](./images/paymayacode.jpg)]()
