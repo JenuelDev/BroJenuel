@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "7c9eba5345e5717f4e6d",
-    "url": "/css/app.39e06c05.css"
+    "revision": "579f9796582b5d3e64d6",
+    "url": "/css/app.e08e1521.css"
   },
   {
     "revision": "d151d87df2cc450f4c60",
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/brojenuellogo.ba001777.svg"
   },
   {
-    "revision": "d9d8008e98996e313713b61128e544d6",
+    "revision": "5d42c42dcc8d22781b1c6d72e61ddcfd",
     "url": "/index.html"
   },
   {
-    "revision": "7c9eba5345e5717f4e6d",
-    "url": "/js/app.470c2648.js"
+    "revision": "579f9796582b5d3e64d6",
+    "url": "/js/app.38203732.js"
   },
   {
     "revision": "8286be21938b83200402",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-820603d8.4502ffec.js"
   },
   {
-    "revision": "84362c07895d128059f9",
-    "url": "/js/chunk-vendors.56ca8a3b.js"
+    "revision": "84f561a29679aec5a543",
+    "url": "/js/chunk-vendors.b292c963.js"
   },
   {
     "revision": "a3b6bee43f4004cef379034b2b588375",
