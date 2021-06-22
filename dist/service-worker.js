@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f7ceaec0c04129a7f44eca7d4d1d1e24.js"
+  "/precache-manifest.c3a4d2b56671c9ce10dca5a636b94a1b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "jenuelganawed"});
