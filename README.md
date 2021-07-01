@@ -28,8 +28,4 @@ If you like to support me on my Journey :blush::yellow_heart::blush::yellow_hear
 - You can buy me a ***`Coffee`***  :pray: :  
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)  
 - You can send me ***`DODGE COIN`*** in my wallet Address :  
- `DCmy3Cm5gsdKCrQwsoJGdKhHF34KkYErwB`  
-- You can send me through ***`GCash`***:  
-**`09503255547`**   
-- You can send me Coffee using ***`Paymaya`*** App (Scan the Bar using Paymaya App):  
-[![Paymaya Code](./images/paymayacode.jpg)]()
+ `DCmy3Cm5gsdKCrQwsoJGdKhHF34KkYErwB`
