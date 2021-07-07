@@ -4,12 +4,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "b424afb8b11bf13439e7",
-    "url": "/css/app.c7a86f79.css"
+    "revision": "adda1e829c33f1238650",
+    "url": "/css/app.cc90c33b.css"
   },
   {
-    "revision": "b424afb8b11bf13439e7",
-    "url": "/css/app.c7a86f79.css.map"
+    "revision": "adda1e829c33f1238650",
+    "url": "/css/app.cc90c33b.css.map"
   },
   {
     "revision": "4349755ec20e54883475",
@@ -96,16 +96,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "cfe358491463063984a8a2870867006b",
+    "revision": "951e2a6440057b706e55e17892542805",
     "url": "/index.html"
   },
   {
-    "revision": "b424afb8b11bf13439e7",
-    "url": "/js/app.7ddb5591.js"
+    "revision": "adda1e829c33f1238650",
+    "url": "/js/app.226e6053.js"
   },
   {
-    "revision": "b424afb8b11bf13439e7",
-    "url": "/js/app.7ddb5591.js.map"
+    "revision": "adda1e829c33f1238650",
+    "url": "/js/app.226e6053.js.map"
   },
   {
     "revision": "c816be0c0fdaa8226d8b",
