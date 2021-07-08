@@ -25,7 +25,6 @@ If you have any question you can reach me here:
 
 If you like to support me on my Journey :blush::yellow_heart::blush::yellow_heart:  
   
-- You can buy me a ***`Coffee`***  :pray: :  
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)  
-- You can send me ***`DODGE COIN`*** in my wallet Address :  
- `DCmy3Cm5gsdKCrQwsoJGdKhHF34KkYErwB`
+- You can buy me a ***`Coffee`***  :pray: :  [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)  
+- You can send me ***`DODGE COIN`*** in my wallet Address : `DCmy3Cm5gsdKCrQwsoJGdKhHF34KkYErwB`
+- You can me me ***`BIT COIN`***:  `3FypcDpjxKVdNumcCbmvuXyXf8BQfa7VRc`
