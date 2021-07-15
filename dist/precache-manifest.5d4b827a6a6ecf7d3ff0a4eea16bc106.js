@@ -4,12 +4,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "631d8ad32dfbe4f5d688",
-    "url": "/css/app.b6ee4106.css"
+    "revision": "b0fd7e0849ac15e68bc2",
+    "url": "/css/app.580e2071.css"
   },
   {
-    "revision": "631d8ad32dfbe4f5d688",
-    "url": "/css/app.b6ee4106.css.map"
+    "revision": "b0fd7e0849ac15e68bc2",
+    "url": "/css/app.580e2071.css.map"
   },
   {
     "revision": "4349755ec20e54883475",
@@ -96,16 +96,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "f5ff60429f85965a987d1f547d0f8065",
+    "revision": "86d204fa10a8beebb17c88ca47ac49a1",
     "url": "/index.html"
   },
   {
-    "revision": "631d8ad32dfbe4f5d688",
-    "url": "/js/app.60a0c7d4.js"
+    "revision": "b0fd7e0849ac15e68bc2",
+    "url": "/js/app.2b0e4890.js"
   },
   {
-    "revision": "631d8ad32dfbe4f5d688",
-    "url": "/js/app.60a0c7d4.js.map"
+    "revision": "b0fd7e0849ac15e68bc2",
+    "url": "/js/app.2b0e4890.js.map"
   },
   {
     "revision": "60ce11ff06f07a7a5e85",
@@ -116,12 +116,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-2d0c5220.2408aff6.js.map"
   },
   {
-    "revision": "8295ac803dd55797ce67",
-    "url": "/js/chunk-2d0d72e5.756f11c5.js"
+    "revision": "ca315912d4b5e4ba3f56",
+    "url": "/js/chunk-2d0d72e5.33cce6e2.js"
   },
   {
-    "revision": "8295ac803dd55797ce67",
-    "url": "/js/chunk-2d0d72e5.756f11c5.js.map"
+    "revision": "ca315912d4b5e4ba3f56",
+    "url": "/js/chunk-2d0d72e5.33cce6e2.js.map"
   },
   {
     "revision": "4349755ec20e54883475",
