@@ -4,11 +4,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "765e61c6406738bf149b",
+    "revision": "a226446b74561b9969f6",
     "url": "/css/app.7cf418cb.css"
   },
   {
-    "revision": "765e61c6406738bf149b",
+    "revision": "a226446b74561b9969f6",
     "url": "/css/app.7cf418cb.css.map"
   },
   {
@@ -96,16 +96,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "9cb1742766aab75ac23e75645d134763",
+    "revision": "5308f8dbd90240645b5f01fc322a973b",
     "url": "/index.html"
   },
   {
-    "revision": "765e61c6406738bf149b",
-    "url": "/js/app.fc440603.js"
+    "revision": "a226446b74561b9969f6",
+    "url": "/js/app.9da165a1.js"
   },
   {
-    "revision": "765e61c6406738bf149b",
-    "url": "/js/app.fc440603.js.map"
+    "revision": "a226446b74561b9969f6",
+    "url": "/js/app.9da165a1.js.map"
   },
   {
     "revision": "60ce11ff06f07a7a5e85",

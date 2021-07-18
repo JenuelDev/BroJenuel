@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.4dded27d47d5c80953882b413587f498.js"
+  "/precache-manifest.ca221680bcb7f8340d5d208d0cfa877c.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "jenuelganawed"});
+workbox.core.setCacheNameDetails({prefix: "jenuelganawed-portfolio"});
 
 workbox.core.skipWaiting();
 
