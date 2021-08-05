@@ -23,8 +23,5 @@ If you have any question you can reach me here:
 [![Telegram](https://github.com/aleen42/badges/raw/master/src/telegram.svg)](https://t.me/BroJenuelChannel)
 [![Messenger](https://github.com/aleen42/badges/raw/master/src/messenger.svg)](https://www.facebook.com/ganawed/)
 
-If you like to support me on my Journey :blush::yellow_heart::blush::yellow_heart:  
-  
-- You can buy me a ***`Coffee`***  :pray: :  [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)  
-- You can send me ***`DODGE COIN`*** in my wallet Address : `DCmy3Cm5gsdKCrQwsoJGdKhHF34KkYErwB`
-- You can me me ***`BIT COIN`***:  `3FypcDpjxKVdNumcCbmvuXyXf8BQfa7VRc`
+### If you like to support me on my Journey :blush::yellow_heart::blush::yellow_heart:  Clicke this Image 👇👇👇
+![image](https://user-images.githubusercontent.com/31676163/128347347-f9c79a07-d116-4233-b62c-0595f1c62c84.png)
