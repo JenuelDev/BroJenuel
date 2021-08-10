@@ -1,2 +1,9 @@
 # Netlify settings for single-page application
+/    /index.html   200
+/home    /index.html   200
+/experience    /index.html   200
+/Project    /index.html   200
+/contact    /index.html   200
+/blog /dist/index.html
+/contact /dist/index.html
 /*    /index.html   200
