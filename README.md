@@ -25,3 +25,7 @@ If you have any question you can reach me here:
 
 ### If you like to support me on my Journey :blush::yellow_heart::blush::yellow_heart:  Clicke this Image 👇👇👇
 [![image](https://user-images.githubusercontent.com/31676163/128347347-f9c79a07-d116-4233-b62c-0595f1c62c84.png)](https://www.buymeacoffee.com/BroJenuel)
+
+### To Know more about me Scan This:
+![qrcode_jenuelganawed ml](https://user-images.githubusercontent.com/31676163/129478071-7ef3ee46-8e07-451c-b338-8a491f607a2a.png)
+
