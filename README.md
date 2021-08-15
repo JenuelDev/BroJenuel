@@ -3,7 +3,7 @@
 #### ✋ Hi! My Name is
 ## [Jenuel Ganawed :point_left:](https://jenuelganawed.ml/#/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/66774d91-73d9-47cf-933f-e4c2c4ca0158/deploy-status)](https://app.netlify.com/sites/jenuelganawed/deploys)
+
 [![Github](https://github.com/aleen42/badges/raw/master/src/github.svg)](https://github.com/BroJenuel)  
 [![VS Code](https://badges.aleen42.com/src/visual_studio_code.svg)](https://marketplace.visualstudio.com/publishers/MisterJ)
 [![Facebook](https://github.com/aleen42/badges/raw/master/src/facebook.svg)](https://facebook.com/ganawed)
@@ -26,6 +26,6 @@ If you have any question you can reach me here:
 ### If you like to support me on my Journey :blush::yellow_heart::blush::yellow_heart:  Clicke this Image 👇👇👇
 [![image](https://user-images.githubusercontent.com/31676163/128347347-f9c79a07-d116-4233-b62c-0595f1c62c84.png)](https://www.buymeacoffee.com/BroJenuel)
 
-### To Know more about me Scan This:
+### To Know more about me Scan This or click here 👉👉 [JenuelGanawed.com](https://jenuelganawed.com) 👈👈 [![Netlify Status](https://api.netlify.com/api/v1/badges/66774d91-73d9-47cf-933f-e4c2c4ca0158/deploy-status)](https://app.netlify.com/sites/jenuelganawed/deploys)
 ![qrcode_jenuelganawed ml](https://user-images.githubusercontent.com/31676163/129478071-7ef3ee46-8e07-451c-b338-8a491f607a2a.png)
 
