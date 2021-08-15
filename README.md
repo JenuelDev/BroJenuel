@@ -4,7 +4,7 @@
 ## [Jenuel Ganawed :point_left:](https://jenuelganawed.ml/#/)
 
 
-[![Github](https://github.com/aleen42/badges/raw/master/src/github.svg)](https://github.com/BroJenuel)  
+[![Github](https://github.com/aleen42/badges/raw/master/src/github.svg)](https://github.com/BroJenuel) 
 [![VS Code](https://badges.aleen42.com/src/visual_studio_code.svg)](https://marketplace.visualstudio.com/publishers/MisterJ)
 [![Facebook](https://github.com/aleen42/badges/raw/master/src/facebook.svg)](https://facebook.com/ganawed)
 [![Twitter](https://github.com/aleen42/badges/raw/master/src/twitter.svg)](https://twitter.com/broJenuel)
