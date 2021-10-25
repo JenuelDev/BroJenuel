@@ -29,5 +29,5 @@ I created this projects during my free time, and I want to share it. If your a p
 - Check [Project Repository](https://github.com/Bible-Projects/believers-sword-app)
 
  If you like to support me on my Journey 😊💛😊💛, buy me coffee 👉
-<img src="./images/buymecoffee.svg" alt="drawing" width="150"/>
+[<img src="./images/buymecoffee.svg" alt="drawing" width="150"/>](https://www.buymeacoffee.com/BroJenuel)
 
