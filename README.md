@@ -10,7 +10,7 @@
 [![Twitter](https://github.com/aleen42/badges/raw/master/src/twitter.svg)](https://twitter.com/broJenuel)
 [![Youtube](https://github.com/aleen42/badges/raw/master/src/youtube.svg)](https://www.youtube.com/channel/UCNANDtTF63UTRcYioVsSCdA)
 
-Hi! I live in La Trinidad, Luzon, Philippines near Baguio, Luzon, Philippines. I am a Web/Software Programmer. I eat rice and pay BILLS HiHi! 😎👍👌✊. Shortly after graduating from Kings College of The Philippines, I joined the team of software developers at a company where I work on a wide variety of fascinating technologies and helpful projects.
+Hi! I live in La Trinidad, Luzon, Philippines near Baguio, Luzon, Philippines. I am a Web/Software Developer. I eat rice and pay BILLS HiHi! 😎👍👌✊. Shortly after graduating from Kings College of The Philippines, I joined the team of software developers at a company where I work on a wide variety of fascinating technologies and helpful projects.
  - :briefcase: I'm currently working at [Webinarinc](http://webinarinc.com/) or check more about me by [clicking HERE](https://jenuelganawed.com)
  - :sunglasses: Prog language & framework Experience: ***`JavaScript (ES6+)`***, ***`HTML & (S)CSS`***, ***`Vue(js)(cli)`***, ***`nuxtjs`***, ***`vuepress`***, ***`nuxtconent`***, ***`laravel/Lumen`***, ***`Angular(JS)`***, ***`Ruby on Rails`***, ***`CodeIgniter`*** etc.
  - :floppy_disk: Database: ***`MySQL`***, ***`MongoDB`***, ***`FireBase`***
