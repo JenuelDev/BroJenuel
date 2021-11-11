@@ -11,7 +11,7 @@
 [![Youtube](https://github.com/aleen42/badges/raw/master/src/youtube.svg)](https://www.youtube.com/channel/UCNANDtTF63UTRcYioVsSCdA)
 
 Hi! I live in La Trinidad, Luzon, Philippines near Baguio, Luzon, Philippines. I am a Web/Software Developer. I eat rice and pay BILLS HiHi! 😎👍👌✊. Shortly after graduating from Kings College of The Philippines, I joined the team of software developers at a company where I work on a wide variety of fascinating technologies and helpful projects.
- - 💼 I'm currently working at [Webinarinc](http://webinarinc.com/) or check more about me by [clicking HERE](https://jenuelganawed.com)
+ - 💼 Check more about me by [clicking HERE](https://jenuelganawed.com)
  - :sunglasses: Prog language & framework Experience: ***`JavaScript`***, ***`HTML & (S)CSS`***, ***`VueJs (NuxtJs, CLI, ViteJs, VuePress, NuxtContent)`***, ***`laravel/Lumen`***, ***`Ruby on Rails`***, and ***`CodeIgniter`***
  - 💾 Database: ***`MySQL`***, ***`MongoDB`***, ***`FireBase`***
  sw I know how to 🏊‍♀️🏊‍♂️ `swim`, 🎸 play `guitar` (a little bit), i also play 💻 `game`.
