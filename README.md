@@ -20,7 +20,7 @@
  - I know how to 🏊‍♀️🏊‍♂️ `swim`, 🎸 play `guitar` (a little bit), i also play 💻 `games`.
  - 🙏 👆 I am also a Godly person 🏆
 
-### Connect With Me
+### 🔗 Connect With Me
 [![Twitter](https://github.com/aleen42/badges/raw/master/src/twitter.svg)](https://twitter.com/broJenuel)
 [![Facebook](https://github.com/aleen42/badges/raw/master/src/facebook.svg)](https://facebook.com/ganawed)
 [![Telegram](https://github.com/aleen42/badges/raw/master/src/telegram.svg)](https://t.me/BroJenuelChannel)
@@ -36,8 +36,6 @@
 <!-- BLOG-POST-LIST:END -->
 
 -------------------------------------------
-
-
 ## Latest Personal Project
 I created this projects during my free time, and I want to share it. If your a person who like to study the bible, I would like to present to you "Believers Sword" its a peace of software that will help you study the bible, create prayer list, watch sermons, read sermons, and able to chat with friends.
 
