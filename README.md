@@ -9,16 +9,29 @@
 
 - 🗺 Hi! I live in La Trinidad, Luzon, Philippines.
  - 🌎 Check more about me here [www.JenuelGanawed.com](https://jenuelganawed.com)
- - 😎 Programming languages & framework:
-   -  `JavaScript`
-   -  `HTML & (S)CSS`
-   -  `VueJs2,3 (NuxtJs(2.x,3.x), CLI, VuePress, NuxtContent, Vite)`
-   -  `laravel/Lumen`
-   -  `Ruby on Rails`
-   -  `CodeIgniter`
  - 💾 Database `MySQL`,`MongoDB`,`FireBase`
  - I know how to 🏊‍♀️🏊‍♂️ `swim`, 🎸 play `guitar` (a little bit), i also play 💻 `games`.
  - 🙏 👆 I am also a Godly person 🏆
+
+
+<details>
+<summary> 👔 About Me</summary>
+
+My name is Jenuel Ganawed. I’m a developer with a full-stack background and a keen eye for good design. I love to make complex things simple and joy to use. Currently, I focus on building web apps with VueJs(v2)(v3) and Laravel.
+
+Over the past 5 years, I’ve gained experience across some aspects of the application lifecycle, including frontend, backend, and dev-ops. It allows me to take full ownership of a project from design to implementation and deployment.
+</details>
+<details>
+<summary>😎 Programming languages & framework</summary>
+
+  -  `JavaScript`
+  -  `HTML & (S)CSS`
+  -  `PHP`
+  -  `VueJs2,3 (NuxtJs(2.x,3.x), CLI, VuePress, NuxtContent, Vite)`
+  -  `laravel/Lumen`
+  -  `Ruby on Rails`
+  -  `CodeIgniter`
+</details>
 
 ### 🔗 Connect With Me
 [![Twitter](https://github.com/aleen42/badges/raw/master/src/twitter.svg)](https://twitter.com/broJenuel)
