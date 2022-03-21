@@ -22,15 +22,52 @@ My name is Jenuel Ganawed. I’m a developer with a full-stack background and a 
 Over the past 5 years, I’ve gained experience across some aspects of the application lifecycle, including frontend, backend, and dev-ops. It allows me to take full ownership of a project from design to implementation and deployment.
 </details>
 <details>
-<summary>😎 Programming languages & framework</summary>
+<summary>🛠 Languages And Tools</summary>
 
-  -  `JavaScript`
-  -  `HTML & (S)CSS`
-  -  `PHP`
-  -  `VueJs2,3 (NuxtJs(2.x,3.x), CLI, VuePress, NuxtContent, Vite)`
-  -  `laravel/Lumen`
-  -  `Ruby on Rails`
-  -  `CodeIgniter`
+<p align="left">
+    <a href="https://getbootstrap.com" target="_blank">
+        <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://www.javascript.com/" target="_blank">
+        <img src="https://img.icons8.com/color/344/javascript--v1.png" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/" target="_blank">
+        <img src="https://www.svgrepo.com/show/349402/html5.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+        <img src="https://www.svgrepo.com/show/353623/css-3.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://www.php.net/" target="_blank">
+        <img src="https://www.svgrepo.com/show/349474/php.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+        <img src="https://www.svgrepo.com/show/354528/vue.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://nuxtjs.org/" target="_blank">
+        <img src="https://www.svgrepo.com/show/354131/nuxt-icon.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://vuepress.vuejs.org/" target="_blank">
+        <img src="https://v2.vuepress.vuejs.org/images/hero.png" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://vitejs.dev" target="_blank">
+        <img src="https://www.svgrepo.com/show/374167/vite.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://laravel.com/" target="_blank">
+        <img src="https://www.svgrepo.com/show/353985/laravel.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://lumen.laravel.com/" target="_blank">
+        <img src="https://www.svgrepo.com/show/354019/lumen.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://rubyonrails.org/" target="_blank">
+        <img src="https://www.svgrepo.com/show/374027/rails.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://codeigniter.com/" target="_blank">
+        <img src="https://www.svgrepo.com/show/353579/codeigniter.svg" alt="bootstrap" height="40"/>
+    </a>
+    <a href="https://nodejs.org/" target="_blank">
+        <img src="https://www.svgrepo.com/show/355140/node.svg" alt="bootstrap" height="40"/>
+    </a>
+</p>
 </details>
 
 ### 🔗 Connect With Me
@@ -47,6 +84,9 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 - [Short-Circuit Evaluation](https://dev.to/brojenuel/short-circuit-evaluation-22c1)
 - [Check String If its a number](https://dev.to/brojenuel/check-string-if-its-a-number-4e5n)
 <!-- BLOG-POST-LIST:END -->
+
+### ☕ If you like what I do, Buy me a coffee
+[![Buy Me Coffee BroJenuel](./images/jnnBYBem.jpg)](https://www.buymeacoffee.com/BroJenuel)
 
 -------------------------------------------
 ## Latest Personal Project
