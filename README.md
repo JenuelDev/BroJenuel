@@ -26,7 +26,7 @@
 [![Telegram](https://github.com/aleen42/badges/raw/master/src/telegram.svg)](https://t.me/BroJenuelChannel)
 [![Messenger](https://github.com/aleen42/badges/raw/master/src/messenger.svg)](https://www.facebook.com/ganawed/)
 
-### Blog posts
+### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
