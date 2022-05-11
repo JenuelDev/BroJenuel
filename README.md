@@ -86,8 +86,8 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like what I do, Buy me a coffee
-[![Buy Me Coffee BroJenuel](./images/jnnBYBem.jpg)](https://www.buymeacoffee.com/BroJenuel)
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)    
+[![Buy Me Coffee BroJenuel](./images/jnnBYBem.jpg)](https://www.buymeacoffee.com/BroJenuel)  
 
 -------------------------------------------
 ## Latest Personal Project
