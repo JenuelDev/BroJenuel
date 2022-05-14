@@ -78,11 +78,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [JS: &quot;CTR + Wheel&quot; Event](https://dev.to/brojenuel/js-ctr-wheel-event-49i5)
 - [100% FREE Computer Sciences Courses](https://dev.to/brojenuel/100-free-computer-sciences-courses-252)
 - [Useful Chrome Extensions for Web Developer](https://dev.to/brojenuel/useful-chrome-extensions-for-web-developer-4692)
 - [JavaScript Libraries For Creating Awesome Carousels](https://dev.to/brojenuel/javascript-libraries-for-creating-awesome-carousels-2a9j)
 - [Short-Circuit Evaluation](https://dev.to/brojenuel/short-circuit-evaluation-22c1)
-- [Check String If its a number](https://dev.to/brojenuel/check-string-if-its-a-number-4e5n)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like what I do, Buy me a coffee
