@@ -78,11 +78,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [3 Developer Tool That You Should Try](https://dev.to/brojenuel/3-developer-tool-that-you-should-try-4cli)
 - [You should know about xicons.org](https://dev.to/brojenuel/you-should-know-about-xiconsorg-keh)
 - [JS: &quot;CTR + Wheel&quot; Event](https://dev.to/brojenuel/js-ctr-wheel-event-49i5)
 - [100% FREE Computer Sciences Courses](https://dev.to/brojenuel/100-free-computer-sciences-courses-252)
 - [Useful Chrome Extensions for Web Developer](https://dev.to/brojenuel/useful-chrome-extensions-for-web-developer-4692)
-- [JavaScript Libraries For Creating Awesome Carousels](https://dev.to/brojenuel/javascript-libraries-for-creating-awesome-carousels-2a9j)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like what I do, Buy me a coffee
