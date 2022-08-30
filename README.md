@@ -85,7 +85,7 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 - [100% FREE Computer Sciences Courses](https://dev.to/brojenuel/100-free-computer-sciences-courses-252)
 <!-- BLOG-POST-LIST:END -->
 
-### ☕ If you like what I do, Buy me a coffee
+### ☕ If you like give me Cofee, click image bellow 😁
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)    
 [![Buy Me Coffee BroJenuel](./images/jnnBYBem.jpg)](https://www.buymeacoffee.com/BroJenuel)  
 
