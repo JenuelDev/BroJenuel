@@ -8,7 +8,7 @@
 
 
 - 🗺 Hi! I live in La Trinidad, Luzon, Philippines.
- - 🌎 Check more about me here [www.JenuelGanawed.com](https://jenuelganawed.com)
+ - 🌎 Check more about me here [www.BroJenuel.com](https://www.BroJenuel.com)
  - 💾 Database `MySQL`,`MongoDB`,`FireBase`
  - I know how to 🏊‍♀️🏊‍♂️ `swim`, 🎸 play `guitar` (a little bit), i also play 💻 `games`.
  - 🙏 👆 I am also a Godly person 🏆
