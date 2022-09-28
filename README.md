@@ -95,3 +95,10 @@ I created this projects during my free time, and I want to share it. If your a p
 
 - Download the application here [Get The Application Here](https://believers-sword-app.herokuapp.com)
 - Check [Project Repository](https://github.com/Bible-Projects/believers-sword-app)
+
+-------------------------------------------
+## My Personal Organization
+- [BroJenuel Box](https://github.com/BroJenuel-Box) is where I keep most of my forks, and some personal projects.
+- [BroJenuel Templates](https://github.com/BroJenuel-Templates) is where I keep templates.
+- [BroJenuel Visual Studio](https://github.com/BroJenuel-Visual-Studio) is where I keep Visual Studio Extensions and useful tools.
+- [Bible Projects](https://github.com/Bible-Projects) is where we create bible/gospel/bible projects that is related to the bible.
