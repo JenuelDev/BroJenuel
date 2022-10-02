@@ -72,7 +72,7 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🔗 Connect With Me
 [![Twitter](https://github.com/aleen42/badges/raw/master/src/twitter.svg)](https://twitter.com/broJenuel)
-[![Facebook](https://github.com/aleen42/badges/raw/master/src/facebook.svg)](https://facebook.com/ganawed)
+[![Facebook](https://github.com/aleen42/badges/raw/master/src/facebook.svg)](https://facebook.com/brojenuel)
 [![Telegram](https://github.com/aleen42/badges/raw/master/src/telegram.svg)](https://t.me/BroJenuelChannel)
 [![Messenger](https://github.com/aleen42/badges/raw/master/src/messenger.svg)](https://www.facebook.com/ganawed/)
 
