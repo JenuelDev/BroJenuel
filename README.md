@@ -78,11 +78,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Vue 3 Component Library 2022](https://dev.to/brojenuel/vue-3-component-library-2022-3pkk)
 - [Regular Expressions&lpar;RegEx&rpar; Basics](https://dev.to/brojenuel/regular-expressionsregex-basics-5gcj)
 - [3 Developer Tool That You Should Try](https://dev.to/brojenuel/3-developer-tool-that-you-should-try-4cli)
 - [You should know about xicons.org](https://dev.to/brojenuel/you-should-know-about-xiconsorg-keh)
 - [JS: &quot;CTR + Wheel&quot; Event](https://dev.to/brojenuel/js-ctr-wheel-event-49i5)
-- [100% FREE Computer Sciences Courses](https://dev.to/brojenuel/100-free-computer-sciences-courses-252)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like give me Coffee, click image bellow 😁
