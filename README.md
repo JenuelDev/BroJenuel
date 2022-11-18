@@ -85,7 +85,7 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 - [You should know about xicons.org](https://dev.to/brojenuel/you-should-know-about-xiconsorg-keh)
 <!-- BLOG-POST-LIST:END -->
 
-### ☕ If you like give me Coffee, click image bellow 😁
+### ☕ If you like my work, you can support me 😁
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)    
 [![Buy Me Coffee BroJenuel](./images/jnnBYBem.jpg)](https://www.buymeacoffee.com/BroJenuel)  
 
