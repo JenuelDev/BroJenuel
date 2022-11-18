@@ -93,9 +93,9 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 ## Latest Personal Project
 I created this projects during my free time, and I want to share it. If your a person who like to study the bible, I would like to present to you "Believers Sword" its a peace of software that will help you study the bible, create prayer list, watch sermons, read sermons, and able to chat with friends.
 
-- Download the application here [Get The Application Here](https://believers-sword-app.herokuapp.com)
+- Download the application here [Get The Application Here](https://believers-sword.brojenuel.com)
 - Check [Project Repository](https://github.com/Bible-Projects/believers-sword-app)
-
+- Believers Sword Next [Repo](https://github.com/Bible-Projects/believers-sword-next) This is a new re-write of the app. The old project was made for learning the technology and for educational purposes only. Going to re-write the believers sword app to use best practice I accumated while doing the old verion.
 -------------------------------------------
 ## Personal Organization
 - [BroJenuel Box](https://github.com/BroJenuel-Box) is where I keep most of my forks, and some personal projects.
