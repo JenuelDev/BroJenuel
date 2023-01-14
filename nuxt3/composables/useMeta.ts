@@ -1,6 +1,17 @@
-const setMeta = (data: { title: string; description: string; keywords?: Array<string>; type?: string | undefined; image?: string | undefined; path: string }) => {
+const setMeta = (data: {
+    title: string;
+    description: string;
+    keywords?: Array<string>;
+    type?: string | undefined;
+    image?: string | undefined;
+    path: string;
+    lang: "en" | "cn";
+}) => {
     let metaData = {
         title: data.title,
+        htmlAttrs: {
+            lang: data.lang,
+        },
         meta: [
             {
                 name: "description",
