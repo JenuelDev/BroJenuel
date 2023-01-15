@@ -4053,6 +4053,11 @@ std-env@^3.3.1:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.3.1.tgz#93a81835815e618c8aa75e7c8a4dc04f7c314e29"
   integrity sha512-3H20QlwQsSm2OvAxWIYhs+j01MzzqwMwGiiO1NQaJYZgJZFPuAbf95/DiKRBSTYIJ2FeGUc+B/6mPGcWP9dO3Q==
 
+storage-container-js@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/storage-container-js/-/storage-container-js-0.1.5.tgz#f9784d884739f45ad8a1f0f909127de3b9df92f9"
+  integrity sha512-WxszNTQ1ggBLTEkmEZdXwVeasl1PY7fbhfYrCseFz+rDqNrmLegw21ZhitDj+i2FrMbE4z/q/vR9/xhTGanNNQ==
+
 streamsearch@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"
