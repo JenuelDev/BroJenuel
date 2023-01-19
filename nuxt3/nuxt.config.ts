@@ -7,6 +7,13 @@ export default defineNuxtConfig({
             bodyAttrs: {
                 class: "dark",
             },
+            link: [
+                {
+                    rel: "icon",
+                    type: "image/png",
+                    href: "/img/icons/favicon-32x32.png",
+                },
+            ],
         },
     },
 });
