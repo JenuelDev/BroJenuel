@@ -2,4 +2,11 @@
 export default defineNuxtConfig({
     modules: ["nuxt-windicss"],
     css: ["@/assets/style/main.scss"],
+    app: {
+        head: {
+            bodyAttrs: {
+                class: "dark",
+            },
+        },
+    },
 });
