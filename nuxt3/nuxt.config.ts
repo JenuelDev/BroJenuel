@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ["nuxt-windicss"],
+    ssr: true,
+    modules: ["nuxt-windicss", "@pinia/nuxt"],
     css: ["@/assets/style/main.scss"],
     app: {
         head: {
