@@ -11,6 +11,8 @@ onBeforeMount(() => {
 });
 </script>
 <template>
-    <HeadNavigation />
-    <slot />
+    <div>
+        <HeadNavigation />
+        <slot />
+    </div>
 </template>
