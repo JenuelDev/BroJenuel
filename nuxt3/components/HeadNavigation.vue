@@ -18,7 +18,7 @@ onBeforeMount(() => {
         <div>Jenuel</div>
     </div>
     <ul
-        class="fixed top-0 right-0 flex justify-between px-20px items-center transition-all bg-[var(--opacity-background)] z-50 duration-300"
+        class="fixed top-0 right-0 flex gap-5 px-20px items-center transition-all bg-[var(--opacity-background)] z-50 duration-300"
         :class="{ 'mt-[-300px]': !showNav && route.path == '/' }"
     >
         <li><NuxtLink to="/">Home</NuxtLink></li>
