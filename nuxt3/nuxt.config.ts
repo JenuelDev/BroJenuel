@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     modules: ["nuxt-windicss", "@pinia/nuxt", "nuxt-icon"],
     css: ["@/assets/style/main.scss"],
     app: {
+        layoutTransition: { name: "layout", mode: "out-in" },
         head: {
             bodyAttrs: {
                 class: "dark",
