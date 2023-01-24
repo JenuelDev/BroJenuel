@@ -24,5 +24,4 @@ onBeforeMount(() => {
         <li><NuxtLink to="/blog">Blog</NuxtLink></li>
         <li><NuxtLink to="/contact">Contact</NuxtLink></li>
     </ul>
-    <!-- </nav> -->
 </template>

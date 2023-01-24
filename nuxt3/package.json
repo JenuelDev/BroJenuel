@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "nuxt": "^3.0.0",
+    "nuxt-icon": "^0.2.7",
     "nuxt-windicss": "^2.6.0",
     "sass": "^1.57.1",
     "vite-plugin-windicss": "^1.8.10",
