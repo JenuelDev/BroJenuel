@@ -1,13 +1,14 @@
 <script setup lang="ts">
+import { useMainStore } from "~/store/mainStore";
+const mainStore = useMainStore();
 const isShowContent = ref(false);
 
 onMounted(() => {
-    // setTimeout(() => (isShowContent.value = true), 200);
     isShowContent.value = true;
 });
 </script>
 <template>
-    <section class="min-h-100vh flex items-center justify-center p-20px relative">
+    <section class="flex items-center justify-center p-20px relative mt-100px">
         <Transition>
             <div v-show="isShowContent" class="relative flex flex-col items-center gap-20px">
                 <div class="flex gap-5 sm:flex-row flex-col items-center">
@@ -21,49 +22,44 @@ onMounted(() => {
                     </div>
                     <div class="sm:text-right text-center sm:order-1 order-2">
                         <div class="lg:text-size-34px md:text-size-36px text-size-26px font-300 tracking-tight">
-                            hi! <span class="animate-wave lg:text-size-54px md:text-size-46px text-size-36px">👋</span>
+                            hi! <span class="animate-wave lg:text-size-54px md:text-size-46px text-size-30px">👋</span>
                         </div>
                         <div class="lg:text-size-36px md:text-size-29px text-size-25px font-600 tracking-tight mt-10px text-[var(--primary)]">I'm <span> Jenuel</span></div>
-                        <div class="lg:text-size-30px md:text-size-25px text-size-20px font-300 tracking-tight md:w-230px w-170px">i create apps and websites</div>
+                        <div class="lg:text-size-25px md:text-size-25px text-size-20px font-300 tracking-tight md:w-200px w-150px">i create apps and websites</div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="flex justify-center gap-2 flex-wrap px-20px">
-                        <NuxtLink class="intro-buttons -bottom-60px -left-50px">
+                <div class="bg-gray-50 bg-opacity-5 sm:w-500px w-250px px-20px pt-10px pb-20px rounded-lg">
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <a href="#my-work" class="button left-up -bottom-60px -left-50px sm:w-auto w-full">
                             <Icon name="icon-park-twotone:workbench" />
                             My Work
-                        </NuxtLink>
-                        <NuxtLink class="intro-buttons -bottom-100px left-[calc(50%-60px)]">
+                        </a>
+                        <NuxtLink class="button left-up -bottom-100px left-[calc(50%-60px)] sm:w-auto w-full">
                             <Icon name="icon-park-twotone:boy-two" />
                             About Me
                         </NuxtLink>
-                        <NuxtLink class="intro-buttons -bottom-60px -right-50px">
+                        <NuxtLink class="button left-up -bottom-60px -right-50px sm:w-auto w-full">
                             <Icon name="icon-park-twotone:time" />
                             My History
                         </NuxtLink>
+                    </div>
+                    <div class="mt-20px">
+                        <div class="flex gap-10px justify-center flex-wrap">
+                            <a
+                                v-for="social in mainStore.mySocial"
+                                :key="social.title"
+                                target="_blank"
+                                :href="social.url"
+                                class="whitespace-nowrap hover:text-[var(--primary)] flex items-center"
+                            >
+                                <Icon class="text-size-28px" :name="social.icon" />
+                                <span class="ml-7px">{{ social.title }}</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </Transition>
     </section>
 </template>
-<style lang="scss">
-.intro-buttons {
-    @apply flex items-center justify-center gap-1 rounded-md px-10px py-5px whitespace-nowrap cursor-pointer transform translate-y-1 transition-transform duration-150 border border-[var(--gray-lighter)] md:text-size-16px text-size-14px;
-
-    &:hover {
-        @apply translate-y-0 bg-[var(--primary)] text-[var(--background)] border-[var(--primary)];
-    }
-}
-
-.v-enter-active,
-.v-leave-active {
-    transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-    opacity: 0;
-}
-</style>

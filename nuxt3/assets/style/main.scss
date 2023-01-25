@@ -10,8 +10,14 @@
     --gray-lightest: #e6f1ff;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    color: var(--background);
+    transition: 0.3s;
 }
 
 body.dark {
