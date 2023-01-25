@@ -16,5 +16,6 @@ useHead({
 </script>
 <template>
     <HomeIntro />
+    <HomeAboutMe />
     <HomeMyWork />
 </template>

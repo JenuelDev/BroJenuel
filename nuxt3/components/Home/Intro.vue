@@ -35,10 +35,10 @@ onMounted(() => {
                             <Icon name="icon-park-twotone:workbench" />
                             My Work
                         </a>
-                        <NuxtLink class="button left-up -bottom-100px left-[calc(50%-60px)] sm:w-auto w-full">
+                        <a href="#about-me" class="button left-up -bottom-100px left-[calc(50%-60px)] sm:w-auto w-full">
                             <Icon name="icon-park-twotone:boy-two" />
                             About Me
-                        </NuxtLink>
+                        </a>
                         <NuxtLink class="button left-up -bottom-60px -right-50px sm:w-auto w-full">
                             <Icon name="icon-park-twotone:time" />
                             My History

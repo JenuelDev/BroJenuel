@@ -1,12 +1,24 @@
 <script lang="ts" setup>
-import { useThemeStore } from "~~/store/themeStore";
-const themeStore = useThemeStore();
+const colorMode = useColorMode();
+const theme = ref("");
+
+onMounted(() => {
+    theme.value = colorMode.preference;
+    console.log(theme.value);
+});
+
+watch(
+    () => colorMode.value,
+    (val) => {
+        theme.value = val;
+    }
+);
 </script>
 <template>
     <div
-        class="fixed top-0 left-0 flex justify-between px-20px items-center transition-all dark:bg-[var(--opacity-background)] z-50 duration-300 w-full h-50px dark:shadow-md shadow-lg backdrop-filter backdrop-blur-sm bg-light-50 bg-opacity-50"
+        class="fixed top-0 left-0 flex justify-between px-20px items-center transition-all dark:bg-[var(--opacity-background)] z-50 duration-300 w-full h-50px dark:shadow-md shadow-lg backdrop-filter backdrop-blur-sm bg-[var(--background)]"
     >
-        <div class="w-full max-w-500px mx-auto flex justify-between">
+        <div class="w-full max-w-700px mx-auto flex justify-between">
             <NuxtLink href="/">
                 <Icon class="text-size-25px mr-7px" name="gg:boy" />
                 <span>Bro</span>
@@ -19,21 +31,14 @@ const themeStore = useThemeStore();
                 <li class="relative">
                     <Transition name="theme-button">
                         <button
+                            v-if="theme === 'dark'"
                             type="button"
-                            v-show="themeStore.isDark"
-                            @click="themeStore.isDark = false"
+                            @click="$colorMode.preference = 'sepia'"
                             class="absolute bg-yellow-50 w-25px h-25px rounded-md text-[var(--background)]"
                         >
                             <Icon name="mdi:white-balance-sunny" />
                         </button>
-                    </Transition>
-                    <Transition name="theme-button">
-                        <button
-                            type="button"
-                            v-show="!themeStore.isDark"
-                            @click="themeStore.isDark = true"
-                            class="absolute bg-[var(--background)] w-25px h-25px rounded-md text-light-50"
-                        >
+                        <button v-else type="button" @click="$colorMode.preference = 'dark'" class="absolute bg-[var(--opacity-background)] w-25px h-25px rounded-md text-light-50">
                             <Icon name="mdi:moon-waning-crescent" />
                         </button>
                     </Transition>
