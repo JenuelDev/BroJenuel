@@ -1,14 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     ssr: true,
-    modules: ["nuxt-windicss", "@pinia/nuxt", "nuxt-icon"],
+    modules: ["nuxt-windicss", "@pinia/nuxt", "nuxt-icon", "@nuxtjs/color-mode"],
+    colorMode: {
+        preference: "dark",
+        classSuffix: "",
+        fallback: "dark",
+        storageKey: "brojenuel-color-mode",
+    },
     css: ["@/assets/style/main.scss"],
     app: {
         layoutTransition: { name: "layout", mode: "out-in" },
         head: {
-            bodyAttrs: {
-                class: "dark",
-            },
             link: [
                 {
                     rel: "icon",
