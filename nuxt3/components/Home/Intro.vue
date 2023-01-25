@@ -12,7 +12,7 @@ onMounted(() => {
             <div v-show="isShowContent" class="relative flex flex-col items-center gap-20px">
                 <div class="flex gap-5 sm:flex-row flex-col items-center">
                     <div
-                        class="rounded-3xl hover:rounded-2xl overflow-hidden opacity-70 relative hover:opacity-100 transition-all duration-300 border-5 border-opacity-0 border-light-50 hover:border-[var(--gray)] md:h-170px md:w-165px h-140px w-130px sm:order-2 order-1"
+                        class="rounded-3xl hover:rounded-2xl overflow-hidden opacity-70 relative hover:opacity-100 transition-all duration-300 border-5 border-opacity-0 border-light-50 hover:border-[var(--primary)] md:h-170px md:w-165px h-140px w-130px sm:order-2 order-1"
                     >
                         <img
                             src="https://i.imgur.com/3iN1kQym.jpg"
@@ -28,19 +28,21 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="flex justify-center gap-2 flex-wrap px-20px">
-                    <NuxtLink class="intro-buttons -bottom-60px -left-50px">
-                        <Icon name="icon-park-twotone:workbench" />
-                        My Work
-                    </NuxtLink>
-                    <NuxtLink class="intro-buttons -bottom-100px left-[calc(50%-60px)]">
-                        <Icon name="icon-park-twotone:boy-two" />
-                        About Me
-                    </NuxtLink>
-                    <NuxtLink class="intro-buttons -bottom-60px -right-50px">
-                        <Icon name="icon-park-twotone:time" />
-                        My History
-                    </NuxtLink>
+                <div>
+                    <div class="flex justify-center gap-2 flex-wrap px-20px">
+                        <NuxtLink class="intro-buttons -bottom-60px -left-50px">
+                            <Icon name="icon-park-twotone:workbench" />
+                            My Work
+                        </NuxtLink>
+                        <NuxtLink class="intro-buttons -bottom-100px left-[calc(50%-60px)]">
+                            <Icon name="icon-park-twotone:boy-two" />
+                            About Me
+                        </NuxtLink>
+                        <NuxtLink class="intro-buttons -bottom-60px -right-50px">
+                            <Icon name="icon-park-twotone:time" />
+                            My History
+                        </NuxtLink>
+                    </div>
                 </div>
             </div>
         </Transition>
