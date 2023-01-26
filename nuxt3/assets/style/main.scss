@@ -6,6 +6,7 @@ body {
     --primary: #64ffdb;
     --primary-darker: #349780;
     --background: #0a192f;
+    --background-secondary: #0f2546;
     --opacity-background: rgba(10, 25, 47, 0.85);
     --light-background: #172a45;
     --gray: #8892b0;
@@ -24,7 +25,17 @@ body {
 .sepia body {
     --primary: #319795;
     --background: rgb(240, 231, 219);
+    --background-secondary: rgb(229, 212, 190);
     --light-background: rgb(240, 231, 219);
+    background-color: var(--background);
+    color: #0a192f;
+}
+
+.light body {
+    --primary: #319795;
+    --background: rgb(255, 255, 255);
+    --background-secondary: rgb(212, 212, 212);
+    --light-background: rgb(219, 219, 219);
     background-color: var(--background);
     color: #0a192f;
 }
