@@ -18,6 +18,4 @@ useHead({
     <HomeIntro />
     <HomeAboutMe />
     <HomeMyWork />
-    <div class="min-h-[100vh]">
-    </div>
 </template>

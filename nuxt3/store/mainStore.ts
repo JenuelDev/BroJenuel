@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 
 export const useMainStore = defineStore("mainStore", () => {
+    const isIntroSocialLinkShowing = ref(false);
     const mySocial = ref([
         {
             title: "Facebook",
@@ -11,6 +12,11 @@ export const useMainStore = defineStore("mainStore", () => {
             title: "Youtube",
             icon: "mdi:youtube",
             url: "https://www.youtube.com/@brojenuel",
+        },
+        {
+            title: "LinkedIn",
+            icon: "pajamas:linkedin",
+            url: "https://www.linkedin.com/in/jenuelganawed/",
         },
         {
             title: "Dev.to",
@@ -26,5 +32,6 @@ export const useMainStore = defineStore("mainStore", () => {
 
     return {
         mySocial,
+        isIntroSocialLinkShowing,
     };
 });
