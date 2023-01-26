@@ -36,7 +36,7 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="bg-[var(--background-secondary)] bg-gray-50 sm:w-500px w-250px px-20px pt-10px pb-20px rounded-lg">
+                <div class="bg-[var(--background-secondary)] sm:w-500px w-250px px-20px pt-10px pb-20px rounded-lg">
                     <div class="flex justify-center gap-2 flex-wrap">
                         <a href="#my-work" class="btn left-up -bottom-60px -left-50px sm:w-auto w-full">
                             <Icon name="icon-park-twotone:workbench" />
