@@ -9,9 +9,7 @@ onMounted(() => {
 
 watch(
     () => colorMode.value,
-    (val) => {
-        theme.value = val;
-    }
+    (val) => (theme.value = val)
 );
 </script>
 <template>
@@ -24,7 +22,7 @@ watch(
                 <span>Bro</span>
                 <span class="text-[var(--primary)] font-800">Jenuel</span>
             </NuxtLink>
-            <ul class="flex gap-3">
+            <ul class="flex gap-3 pr-20px">
                 <li><NuxtLink to="/">Home</NuxtLink></li>
                 <li><NuxtLink to="/blog">Blog</NuxtLink></li>
                 <li><NuxtLink to="/contact">Contact</NuxtLink></li>
@@ -36,9 +34,17 @@ watch(
                             @click="$colorMode.preference = 'sepia'"
                             class="absolute bg-yellow-50 w-25px h-25px rounded-md text-[var(--background)]"
                         >
+                            <Icon name="bx:coffee" />
+                        </button>
+                        <button
+                            v-else-if="theme == 'sepia'"
+                            type="button"
+                            @click="$colorMode.preference = 'light'"
+                            class="absolute bg-white w-25px h-25px rounded-md text-dark-900"
+                        >
                             <Icon name="mdi:white-balance-sunny" />
                         </button>
-                        <button v-else type="button" @click="$colorMode.preference = 'dark'" class="absolute bg-[var(--opacity-background)] w-25px h-25px rounded-md text-light-50">
+                        <button v-else type="button" @click="$colorMode.preference = 'dark'" class="absolute bg-[#0a192f] w-25px h-25px rounded-md text-light-50">
                             <Icon name="mdi:moon-waning-crescent" />
                         </button>
                     </Transition>

@@ -2,13 +2,20 @@
 import { useMainStore } from "~/store/mainStore";
 const mainStore = useMainStore();
 const isShowContent = ref(false);
+const socialRef = ref(null);
+const isTargetVisible = useElementVisibility(socialRef);
+
+watch(
+    () => isTargetVisible.value,
+    (val) => (mainStore.isIntroSocialLinkShowing = val)
+);
 
 onMounted(() => {
     isShowContent.value = true;
 });
 </script>
 <template>
-    <section class="flex items-center justify-center p-20px relative mt-100px">
+    <section class="flex items-center justify-center px-20px pt-20px relative mt-100px">
         <Transition>
             <div v-show="isShowContent" class="relative flex flex-col items-center gap-20px">
                 <div class="flex gap-5 sm:flex-row flex-col items-center">
@@ -29,23 +36,23 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="bg-gray-50 bg-opacity-5 sm:w-500px w-250px px-20px pt-10px pb-20px rounded-lg">
+                <div class="bg-[var(--background-secondary)] bg-gray-50 sm:w-500px w-250px px-20px pt-10px pb-20px rounded-lg">
                     <div class="flex justify-center gap-2 flex-wrap">
-                        <a href="#my-work" class="button left-up -bottom-60px -left-50px sm:w-auto w-full">
+                        <a href="#my-work" class="btn left-up -bottom-60px -left-50px sm:w-auto w-full">
                             <Icon name="icon-park-twotone:workbench" />
                             My Work
                         </a>
-                        <a href="#about-me" class="button left-up -bottom-100px left-[calc(50%-60px)] sm:w-auto w-full">
+                        <a href="#about-me" class="btn left-up -bottom-100px left-[calc(50%-60px)] sm:w-auto w-full">
                             <Icon name="icon-park-twotone:boy-two" />
                             About Me
                         </a>
-                        <NuxtLink class="button left-up -bottom-60px -right-50px sm:w-auto w-full">
+                        <NuxtLink class="btn left-up -bottom-60px -right-50px sm:w-auto w-full">
                             <Icon name="icon-park-twotone:time" />
                             My History
                         </NuxtLink>
                     </div>
                     <div class="mt-20px">
-                        <div class="flex gap-10px justify-center flex-wrap">
+                        <div ref="socialRef" class="flex gap-10px justify-center flex-wrap">
                             <a
                                 v-for="social in mainStore.mySocial"
                                 :key="social.title"

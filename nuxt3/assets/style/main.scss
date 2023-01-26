@@ -3,10 +3,12 @@
 }
 
 body {
+    --color: #0a192f;
     --primary: #64ffdb;
     --primary-darker: #349780;
     --background: #0a192f;
-    --opacity-background: rgba(10, 25, 47, 0.85);
+    --background-secondary: rgba(249, 250, 251, 0.05);
+    --opacity-background: rgba(19, 33, 54, 0.85);
     --light-background: #172a45;
     --gray: #8892b0;
     --gray-light: #a8b2d1;
@@ -22,11 +24,27 @@ body {
     color: var(--gray-lighter);
 }
 .sepia body {
+    --color: #0a192f;
     --primary: #319795;
+    --primary-darker: #246b6a;
     --background: rgb(240, 231, 219);
+    --opacity-background: rgba(240, 231, 219, 0.8);
+    --background-secondary: rgba(229, 212, 190, 0.5);
     --light-background: rgb(240, 231, 219);
     background-color: var(--background);
-    color: #0a192f;
+    color: var(--color);
+}
+
+.light body {
+    --color: #0a192f;
+    --primary: #319795;
+    --primary-darker: #246b6a;
+    --background: rgb(255, 255, 255);
+    --opacity-background: rgba(255, 255, 255, 0.8);
+    --background-secondary: rgba(212, 212, 212, 0.3);
+    --light-background: rgb(219, 219, 219);
+    background-color: var(--background);
+    color: var(--color);
 }
 @import "./common/animate.scss";
 @import "./common/scrollbar.scss";
