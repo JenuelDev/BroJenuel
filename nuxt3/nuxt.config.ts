@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     },
     css: ["@/assets/style/main.scss"],
     app: {
-        layoutTransition: { name: "layout", mode: "out-in" },
         head: {
             link: [
                 {

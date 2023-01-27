@@ -1,0 +1,59 @@
+.content-render {
+    p,
+    ul {
+        a {
+            position: relative;
+            color: var(--color);
+
+            &:before {
+                content: "";
+                height: 2px;
+                position: absolute;
+                bottom: -5px;
+                width: 0;
+                background-color: var(--primary);
+                transition: all 0.2s;
+            }
+
+            &:hover {
+                color: var(--primary);
+
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    ul {
+        padding-left: 10px;
+
+        li {
+            &::before {
+                content: "↪";
+                margin-right: 5px;
+            }
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-bottom: 2px;
+        position: relative;
+
+        &:before {
+            content: "";
+            height: 3px;
+            position: absolute;
+            bottom: 0px;
+            width: 15px;
+            background-color: var(--color);
+            transition: all 0.2s;
+            opacity: 0.8;
+            left: -5px;
+        }
+    }
+}

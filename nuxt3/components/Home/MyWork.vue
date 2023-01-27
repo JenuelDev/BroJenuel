@@ -29,7 +29,7 @@ onMounted(() => {
                             </div>
                             <div class="text-center">
                                 <div class="font-700 group-hover:text-[var(--primary)]">{{ work.title }} <Icon name="" /></div>
-                                <div>{{ work.des }}</div>
+                                <div>{{ work.description }}</div>
                             </div>
                         </NuxtLink>
                     </div>
