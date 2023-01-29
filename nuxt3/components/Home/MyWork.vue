@@ -16,7 +16,7 @@ onMounted(() => {
                         <div class="indent-md">Showing are personal projects that I made during my spare/free time. I don't add projects from my Work/Jobs, only if allowed.</div>
                     </div>
                 </div>
-                <div class="max-w-550px mx-auto px-10px">
+                <div class="max-w-600px mx-auto px-10px">
                     <div class="grid sm:grid-cols-2 grid-cols-1 gap-3">
                         <NuxtLink
                             v-for="(work, i) in myWork.slice(0, 4)"

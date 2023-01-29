@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const isShowContent = ref(false);
-const myWork = await queryContent("/my-work").sort({ $numeric: -1 }).find();
+const myWork = await queryContent("/my-work").sort({ _id: -1 }).find();
 const codeChallenges = useCodeChallenges();
 
 onMounted(() => (isShowContent.value = true));
