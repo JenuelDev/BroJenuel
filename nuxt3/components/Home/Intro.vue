@@ -17,8 +17,8 @@ onMounted(() => {
 <template>
     <section class="flex items-center justify-center px-20px pt-20px relative mt-100px">
         <Transition>
-            <div v-show="isShowContent" class="relative flex flex-col items-center gap-20px">
-                <div class="flex gap-5 sm:flex-row flex-col items-center">
+            <div v-show="isShowContent" class="relative flex flex-col items-center gap-20px relative">
+                <div class="flex gap-5 sm:flex-row flex-col items-center z-99">
                     <div
                         class="rounded-3xl hover:rounded-2xl overflow-hidden opacity-70 relative hover:opacity-100 transition-all duration-300 border-5 border-opacity-0 border-light-50 hover:border-[var(--primary)] md:h-170px md:w-165px h-140px w-130px sm:order-2 order-1"
                     >
@@ -36,22 +36,22 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="bg-[var(--background-secondary)] sm:w-500px w-250px p-10px rounded-lg">
-                    <div class="mt-20px">
-                        <div ref="socialRef" class="flex gap-10px justify-center flex-wrap">
-                            <a
-                                v-for="social in mainStore.mySocial"
-                                :key="social.title"
-                                target="_blank"
-                                :href="social.url"
-                                class="whitespace-nowrap hover:text-[var(--primary)] flex items-center"
-                            >
-                                <Icon class="text-size-28px" :name="social.icon" />
-                                <span class="ml-7px">{{ social.title }}</span>
-                            </a>
-                        </div>
+                <div class="bg-[var(--background-secondary)] sm:w-500px w-250px p-10px rounded-lg z-99">
+                    <div ref="socialRef" class="flex gap-10px justify-center flex-wrap">
+                        <a
+                            v-for="social in mainStore.mySocial"
+                            :key="social.title"
+                            target="_blank"
+                            :href="social.url"
+                            class="whitespace-nowrap hover:text-[var(--primary)] flex items-center"
+                        >
+                            <Icon class="text-size-28px" :name="social.icon" />
+                            <span class="ml-7px">{{ social.title }}</span>
+                        </a>
                     </div>
                 </div>
+                <SvgDotSquare class="absolute md:right-0 md:visible invisible z-20 fill-[var(--primary)] opacity-50 w-70px" />
+                <SvgArrow class="absolute md:visible invisible left-[-50px] bottom-[80px] transform rotate-[-180deg] fill-[var(--primary)] opacity-50 w-70px" />
             </div>
         </Transition>
     </section>

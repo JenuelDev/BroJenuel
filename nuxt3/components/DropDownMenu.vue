@@ -29,7 +29,7 @@ const menus = [
     },
     {
         path: "/contact",
-        icon: "pixelarticons:contact",
+        icon: "mdi:gmail",
         label: "Contact Me",
     },
 ];
