@@ -8,6 +8,16 @@ const menus = [
         label: "Home",
     },
     {
+        path: "/#skills-container",
+        icon: "fluent:brain-circuit-20-filled",
+        label: "Skills",
+    },
+    {
+        path: "/#what-i-offer",
+        icon: "mdi:offer",
+        label: "What I Can Offer",
+    },
+    {
         path: "/blog",
         icon: "fluent-mdl2:blog",
         label: "Blog",
@@ -45,7 +55,7 @@ onClickOutside(dropdownRef, () => (show.value = show.value == true ? false : fal
                         :href="menu.path"
                         class="block px-4 py-2 text-sm hover:bg-[var(--background-secondary)] flex items-center gap-6px"
                     >
-                        <Icon :name="menu.icon" />
+                        <Icon class="text-size-20px" :name="menu.icon" />
                         {{ menu.label }}
                     </NuxtLink>
                 </div>

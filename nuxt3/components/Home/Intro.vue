@@ -36,21 +36,7 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="bg-[var(--background-secondary)] sm:w-500px w-250px px-20px pt-10px pb-20px rounded-lg">
-                    <div class="flex justify-center gap-2 flex-wrap">
-                        <a href="#my-work" class="btn left-up -bottom-60px -left-50px sm:w-auto w-full">
-                            <Icon name="icon-park-twotone:workbench" />
-                            My Work
-                        </a>
-                        <a href="#about-me" class="btn left-up -bottom-100px left-[calc(50%-60px)] sm:w-auto w-full">
-                            <Icon name="icon-park-twotone:boy-two" />
-                            About Me
-                        </a>
-                        <NuxtLink class="btn left-up -bottom-60px -right-50px sm:w-auto w-full">
-                            <Icon name="icon-park-twotone:time" />
-                            My History
-                        </NuxtLink>
-                    </div>
+                <div class="bg-[var(--background-secondary)] sm:w-500px w-250px p-10px rounded-lg">
                     <div class="mt-20px">
                         <div ref="socialRef" class="flex gap-10px justify-center flex-wrap">
                             <a

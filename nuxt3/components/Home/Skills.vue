@@ -7,7 +7,7 @@ onMounted(() => {
 });
 </script>
 <template>
-    <div id="my-work" class="my-work pt-30px">
+    <div id="skills-container" class="my-work pt-30px">
         <Transition>
             <div v-show="isShowContent">
                 <div class="w-full max-w-500px mx-auto mt-50px px-20px">
