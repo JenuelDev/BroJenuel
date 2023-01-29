@@ -1,10 +1,9 @@
 <script setup lang="ts">
 const isShowContent = ref(false);
-const myWork = await queryContent("/my-work").sort({ _path: 1 }).find();
+const myWork = await queryContent("/my-work").sort({ _id: -1 }).find();
+const codeChallenges = useCodeChallenges();
 
-onMounted(() => {
-    isShowContent.value = true;
-});
+onMounted(() => (isShowContent.value = true));
 </script>
 <template>
     <Transition>
@@ -32,6 +31,31 @@ onMounted(() => {
                             <div>{{ work.description }}</div>
                         </div>
                     </NuxtLink>
+                </div>
+                <div>
+                    <div class="font-800 text-size-20px text-[var(--primary)] flex items-center gap-7px pb-5 pt-10">
+                        <Icon name="material-symbols:other-admission-sharp" />
+                        Other Projects
+                    </div>
+                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-3">
+                        <div
+                            v-for="codeChallenge in codeChallenges"
+                            :key="codeChallenge.title"
+                            class="group bg-[var(--background-secondary)] p-3 rounded-md flex flex-col justify-between transform translate-y-0 hover:translate-y-[-5px] transition-all"
+                        >
+                            <div>
+                                <div class="font-800 group-hover:text-[var(--primary)]">{{ codeChallenge.title }}</div>
+                                <div v-html="codeChallenge.des"></div>
+                            </div>
+                            <div class="flex gap-2 text-size-20px pt-2">
+                                <template v-for="link in codeChallenge.links">
+                                    <a :href="link.link" target="_blank" :title="link.tooltip" class="hover:text-[var(--primary)]">
+                                        <Icon :name="link.icon" />
+                                    </a>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

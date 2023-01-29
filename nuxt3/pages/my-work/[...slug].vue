@@ -6,7 +6,7 @@
         </button>
         <div class="pt-40px">
             <ContentDoc v-slot="{ doc }">
-                <h1 class="text-size-25px font-700">{{ doc.title }}</h1>
+                <h1 class="text-size-25px font-700 pb-3">{{ doc.title }}</h1>
                 <div class="content-render">
                     <ContentRenderer :value="doc" />
                 </div>

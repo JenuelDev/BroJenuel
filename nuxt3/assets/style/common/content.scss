@@ -56,4 +56,10 @@
             left: -5px;
         }
     }
+
+    pre {
+        padding: 10px;
+        background-color: var(--background-secondary);
+        border-radius: 7px;
+    }
 }
