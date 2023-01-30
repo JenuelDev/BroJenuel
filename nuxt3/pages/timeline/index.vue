@@ -18,14 +18,16 @@ onMounted(() => (isShowContent.value = true));
                 </div>
                 <div class="timeline-div p-10px">
                     <div>
-                        <p v-for="experience in experiences" :key="experience.url">
+                        <p v-for="(experience, i) in experiences" :key="experience.url">
                             <div class="font-800 text-size-18px pb-2">
                                 <span>{{ experience.position }}</span>
                                 <a :href="experience.url" class="hover:text-[var(--primary)]"> @ {{ experience.company }}</a>
                             </div>
                             <div>{{ experience.workStart }} - <span v-html="experience.workUntil"></span></div>
                             <div>
-                                <button class="btn !text-size-13px"><Icon name="octicon:link-external-16" /> {{ experience.url.slice(0, 30) }}...</button>
+                                <button class="btn !text-size-13px" role="button"
+                            title="Open Link"
+                            :id="`open-link-button${i}`" > <Icon name="octicon:link-external-16" /> {{ experience.url.slice(0, 30) }}... </button>
                             </div>
                             <div v-html="experience.des"></div>
                         </p>
