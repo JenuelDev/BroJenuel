@@ -13,6 +13,11 @@ const menus = [
         label: "Skills",
     },
     {
+        path: "/timeline",
+        icon: "mdi:chart-timeline",
+        label: "Time Line",
+    },
+    {
         path: "/#what-i-offer",
         icon: "mdi:offer",
         label: "What I Can Offer",

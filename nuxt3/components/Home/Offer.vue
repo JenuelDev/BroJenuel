@@ -11,9 +11,7 @@ onMounted(() => {
         <Transition>
             <div v-show="isShowContent">
                 <div class="w-full max-w-500px mx-auto mt-50px px-20px">
-                    <div class="font-800 text-size-20px underline underline-offset-4 decoration-4 underline-opacity-50 decoration-gray-500 text-[var(--primary)]">
-                        What I Can Offer
-                    </div>
+                    <div class="font-800 text-size-20px text-[var(--primary)]">What I Can Offer</div>
                     <div class="pt-5">
                         <div class="indent-md">
                             If you hire me, here are the things that I can do to help solve some of your company's problems, and help to reduce issues. I will also create and

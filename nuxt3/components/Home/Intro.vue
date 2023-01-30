@@ -28,11 +28,11 @@ onMounted(() => {
                         />
                     </div>
                     <div class="sm:text-right text-center sm:order-1 order-2">
-                        <div class="lg:text-size-34px md:text-size-36px text-size-26px font-300 tracking-tight">
+                        <div class="lg:text-size-33px md:text-size-36px text-size-26px font-300 tracking-tight">
                             hi! <span class="animate-wave lg:text-size-54px md:text-size-46px text-size-30px">👋</span>
                         </div>
-                        <div class="lg:text-size-36px md:text-size-29px text-size-25px font-600 tracking-tight mt-10px text-[var(--primary)]">I'm <span> Jenuel</span></div>
-                        <div class="lg:text-size-25px md:text-size-25px text-size-20px font-300 tracking-tight md:w-200px w-150px">i create apps and websites</div>
+                        <div class="lg:text-size-40px md:text-size-29px text-size-25px font-600 tracking-tight mt-10px text-[var(--primary)]">I'm <span> Jenuel</span></div>
+                        <div class="lg:text-size-33px md:text-size-25px text-size-20px font-300 tracking-tight md:w-250px w-150px">i create apps and websites</div>
                     </div>
                 </div>
 

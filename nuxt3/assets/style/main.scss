@@ -47,6 +47,31 @@ body {
     background-color: var(--background);
     color: var(--color);
 }
+
+p {
+    a {
+        position: relative;
+        color: var(--color);
+
+        &:before {
+            content: "";
+            height: 2px;
+            position: absolute;
+            bottom: -5px;
+            width: 0;
+            background-color: var(--primary);
+            transition: all 0.2s;
+        }
+
+        &:hover {
+            color: var(--primary);
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}
 @import "./common/animate.scss";
 @import "./common/scrollbar.scss";
 @import "./common/content.scss";
