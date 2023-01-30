@@ -17,8 +17,8 @@ onMounted(() => {
 <template>
     <section class="flex items-center justify-center px-20px pt-20px relative mt-100px">
         <Transition>
-            <div v-show="isShowContent" class="relative flex flex-col items-center gap-20px">
-                <div class="flex gap-5 sm:flex-row flex-col items-center">
+            <div v-show="isShowContent" class="relative flex flex-col items-center gap-20px relative">
+                <div class="flex gap-5 sm:flex-row flex-col items-center z-99">
                     <div
                         class="rounded-3xl hover:rounded-2xl overflow-hidden opacity-70 relative hover:opacity-100 transition-all duration-300 border-5 border-opacity-0 border-light-50 hover:border-[var(--primary)] md:h-170px md:w-165px h-140px w-130px sm:order-2 order-1"
                     >
@@ -28,44 +28,30 @@ onMounted(() => {
                         />
                     </div>
                     <div class="sm:text-right text-center sm:order-1 order-2">
-                        <div class="lg:text-size-34px md:text-size-36px text-size-26px font-300 tracking-tight">
+                        <div class="lg:text-size-33px md:text-size-36px text-size-26px font-300 tracking-tight">
                             hi! <span class="animate-wave lg:text-size-54px md:text-size-46px text-size-30px">👋</span>
                         </div>
-                        <div class="lg:text-size-36px md:text-size-29px text-size-25px font-600 tracking-tight mt-10px text-[var(--primary)]">I'm <span> Jenuel</span></div>
-                        <div class="lg:text-size-25px md:text-size-25px text-size-20px font-300 tracking-tight md:w-200px w-150px">i create apps and websites</div>
+                        <div class="lg:text-size-40px md:text-size-29px text-size-25px font-600 tracking-tight mt-10px text-[var(--primary)]">I'm <span> Jenuel</span></div>
+                        <div class="lg:text-size-33px md:text-size-25px text-size-20px font-300 tracking-tight md:w-250px w-150px">i create apps and websites</div>
                     </div>
                 </div>
 
-                <div class="bg-[var(--background-secondary)] sm:w-500px w-250px px-20px pt-10px pb-20px rounded-lg">
-                    <div class="flex justify-center gap-2 flex-wrap">
-                        <a href="#my-work" class="btn left-up -bottom-60px -left-50px sm:w-auto w-full">
-                            <Icon name="icon-park-twotone:workbench" />
-                            My Work
+                <div class="bg-[var(--background-secondary)] sm:w-500px w-250px p-10px rounded-lg z-99">
+                    <div ref="socialRef" class="flex gap-10px justify-center flex-wrap">
+                        <a
+                            v-for="social in mainStore.mySocial"
+                            :key="social.title"
+                            target="_blank"
+                            :href="social.url"
+                            class="whitespace-nowrap hover:text-[var(--primary)] flex items-center"
+                        >
+                            <Icon class="text-size-28px" :name="social.icon" />
+                            <span class="ml-7px">{{ social.title }}</span>
                         </a>
-                        <a href="#about-me" class="btn left-up -bottom-100px left-[calc(50%-60px)] sm:w-auto w-full">
-                            <Icon name="icon-park-twotone:boy-two" />
-                            About Me
-                        </a>
-                        <NuxtLink class="btn left-up -bottom-60px -right-50px sm:w-auto w-full">
-                            <Icon name="icon-park-twotone:time" />
-                            My History
-                        </NuxtLink>
-                    </div>
-                    <div class="mt-20px">
-                        <div ref="socialRef" class="flex gap-10px justify-center flex-wrap">
-                            <a
-                                v-for="social in mainStore.mySocial"
-                                :key="social.title"
-                                target="_blank"
-                                :href="social.url"
-                                class="whitespace-nowrap hover:text-[var(--primary)] flex items-center"
-                            >
-                                <Icon class="text-size-28px" :name="social.icon" />
-                                <span class="ml-7px">{{ social.title }}</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
+                <SvgDotSquare class="absolute md:right-0 md:visible invisible z-20 fill-[var(--primary)] opacity-50 w-70px" />
+                <SvgArrow class="absolute md:visible invisible left-[-50px] bottom-[80px] transform rotate-[-180deg] fill-[var(--primary)] opacity-50 w-70px" />
             </div>
         </Transition>
     </section>

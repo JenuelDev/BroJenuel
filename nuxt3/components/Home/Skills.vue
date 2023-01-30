@@ -7,18 +7,16 @@ onMounted(() => {
 });
 </script>
 <template>
-    <div id="my-work" class="my-work pt-30px">
+    <div id="skills-container" class="my-work pt-30px">
         <Transition>
             <div v-show="isShowContent">
                 <div class="w-full max-w-500px mx-auto mt-50px px-20px">
-                    <div class="font-800 text-size-20px underline underline-offset-4 decoration-4 underline-opacity-50 decoration-gray-500 text-[var(--primary)]">
-                        Technical Skills
-                    </div>
+                    <div class="font-800 text-size-20px text-[var(--primary)]">Technical Skills</div>
                     <div class="pt-5">
                         <div class="indent-md">I am continuously learning to keep up with the latest technologies and be able to pick the best tech for the job.</div>
                     </div>
                 </div>
-                <div class="max-w-550px mx-auto px-10px pt-30px">
+                <div class="max-w-530px mx-auto px-10px pt-30px">
                     <div class="grid sm:grid-cols-2 grid-cols-1 gap-3">
                         <div v-for="skill in skills" :key="skill.tech" class="flex flex-col justify-between pb-5">
                             <div>

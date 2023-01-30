@@ -16,12 +16,14 @@ onMounted(() => (showContent.value = true));
                         v-for="social in mainStore.mySocial"
                         class="text-size-40px sm:transform sm:translate-y-2 sm:hover:translate-y-0 sm:transition-all sm:cursor-pointer sm:hover:text-[var(--primary)]"
                     >
-                        <Icon :name="social.icon" />
+                        <a :href="social.url" target="_blank">
+                            <Icon :name="social.icon" />
+                        </a>
                     </li>
                     <li class="text-size-40px sm:hidden block">
-                        <Icon name="mdi:gmail" />
+                        <NuxtLink href="/contact"> <Icon name="mdi:gmail" /> </NuxtLink>
                     </li>
-                    <div class="absolute sm:block hidden h-80px w-2px dark:bg-light-50 bg-[var(--color)] bottom-[-100px] left-[calc(50%-2px)]"></div>
+                    <div class="absolute sm:block hidden h-70px w-2px dark:bg-light-50 bg-[var(--color)] bottom-[-100px] left-[calc(50%-2px)]"></div>
                 </ul>
             </div>
             <div
@@ -34,7 +36,7 @@ onMounted(() => (showContent.value = true));
                     >
                         jenuelganawed936@gmail.com
                     </div>
-                    <div class="absolute sm:block hidden h-80px w-2px dark:bg-light-50 bg-[var(--color)] bottom-[-100px] left-[calc(50%-2px)]"></div>
+                    <div class="absolute sm:block hidden h-70px w-2px dark:bg-light-50 bg-[var(--color)] bottom-[-100px] left-[calc(50%-2px)]"></div>
                 </NuxtLink>
             </div>
         </div>
