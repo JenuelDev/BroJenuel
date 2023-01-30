@@ -76,7 +76,14 @@ onMounted(() => (isShowContent.value = true));
                         placeholder="Write Your message"
                         required
                     ></textarea>
-                    <button type="submit" :disabled="isLoading" class="btn btn-lg disabled:cursor-not-allowed btn-filled">
+                    <button
+                        type="submit"
+                        :disabled="isLoading"
+                        class="btn btn-lg disabled:cursor-not-allowed btn-filled"
+                        role="button"
+                        title="Submit Message"
+                        id="submit-message-button"
+                    >
                         <Icon v-show="isLoading" name="eos-icons:bubble-loading" />
                         {{ isLoading ? "Sending" : "Send Message" }}
                     </button>

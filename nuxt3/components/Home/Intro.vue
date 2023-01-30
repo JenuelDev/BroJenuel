@@ -24,7 +24,9 @@ onMounted(() => {
                     >
                         <img
                             src="https://i.imgur.com/3iN1kQym.jpg"
+                            loading="lazy"
                             class="absolute left-0 top-0 transform rotate-0 hover:rotate-25 transition-all duration-300 scale-100 hover:scale-150 hover:top-20px hover:left-[-20px]"
+                            alt="Bro Jenuel Profile"
                         />
                     </div>
                     <div class="sm:text-right text-center sm:order-1 order-2">
@@ -44,6 +46,7 @@ onMounted(() => {
                             target="_blank"
                             :href="social.url"
                             class="whitespace-nowrap hover:text-[var(--primary)] flex items-center"
+                            :aria-label="social.ariaLabel"
                         >
                             <Icon class="text-size-28px" :name="social.icon" />
                             <span class="ml-7px">{{ social.title }}</span>
