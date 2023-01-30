@@ -21,7 +21,7 @@ onMounted(() => (showContent.value = true));
                         </a>
                     </li>
                     <li class="text-size-40px sm:hidden block">
-                        <NuxtLink href="/contact"> <Icon name="mdi:gmail" /> </NuxtLink>
+                        <NuxtLink href="/contact" aria-label="Go to Contact Page"> <Icon name="mdi:gmail" /> </NuxtLink>
                     </li>
                     <li class="absolute sm:block hidden h-70px w-2px dark:bg-light-50 bg-[var(--color)] bottom-[-100px] left-[calc(50%-2px)]"></li>
                 </ul>
