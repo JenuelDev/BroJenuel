@@ -24,7 +24,7 @@ onMounted(() => (isShowContent.value = true));
                         class="p-10px rounded-md transform translate-y-1 hover:translate-y-0 transition-transform cursor-pointer group"
                     >
                         <div class="p-10px">
-                            <img :src="work.img" class="rounded-md" :alt="work.description" srcset="" width="500" height="500" />
+                            <img :src="`/img/work/${work.img}`" class="rounded-md" :alt="work.description" srcset="" width="500" height="500" />
                         </div>
                         <div class="text-center">
                             <div class="font-700 group-hover:text-[var(--primary)]">{{ work.title }} <Icon name="" /></div>
