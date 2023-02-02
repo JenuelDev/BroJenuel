@@ -17,7 +17,6 @@ useHead({
 <template>
     <HomeIntro />
     <HomeAboutMe />
-    <HomeMyWork />
     <HomeSkills />
     <HomeOffer />
 </template>
