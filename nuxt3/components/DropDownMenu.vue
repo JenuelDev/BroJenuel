@@ -50,7 +50,7 @@ onClickOutside(dropdownRef, () => (show.value = show.value == true ? false : fal
         <Transition name="dropdown">
             <div
                 v-show="show"
-                class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-[var(--background)] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-99"
+                class="dropdown-menu absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-[var(--background)] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-99"
             >
                 <div class="py-1" role="none">
                     <NuxtLink
@@ -81,5 +81,30 @@ onClickOutside(dropdownRef, () => (show.value = show.value == true ? false : fal
 .dropdown-leave-to {
     transform: translateY(-10px);
     opacity: 0;
+}
+
+.dropdown-menu {
+    a {
+        position: relative;
+        color: var(--color);
+
+        &:before {
+            content: "";
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            background-color: var(--primary);
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            color: var(--primary);
+
+            &::before {
+                width: 80%;
+            }
+        }
+    }
 }
 </style>

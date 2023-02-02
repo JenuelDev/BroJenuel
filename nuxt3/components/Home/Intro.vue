@@ -24,7 +24,6 @@ onMounted(() => {
                     >
                         <img
                             src="https://i.imgur.com/3iN1kQym.jpg"
-                            loading="lazy"
                             class="absolute left-0 top-0 transform rotate-0 hover:rotate-25 transition-all duration-300 scale-100 hover:scale-150 hover:top-20px hover:left-[-20px]"
                             alt="Bro Jenuel Profile"
                         />
@@ -40,17 +39,22 @@ onMounted(() => {
 
                 <div class="bg-[var(--background-secondary)] sm:w-500px w-250px p-10px rounded-lg z-99">
                     <div ref="socialRef" class="flex gap-10px justify-center flex-wrap">
-                        <a
-                            v-for="social in mainStore.mySocial"
-                            :key="social.title"
-                            target="_blank"
-                            :href="social.url"
-                            class="whitespace-nowrap hover:text-[var(--primary)] flex items-center"
-                            :aria-label="social.ariaLabel"
-                        >
-                            <Icon class="text-size-28px" :name="social.icon" />
-                            <span class="ml-7px">{{ social.title }}</span>
-                        </a>
+                        <template v-for="social in mainStore.mySocial" :key="social.title">
+                            <a
+                                v-if="!social.isNuxtLink"
+                                target="_blank"
+                                :href="social.url"
+                                class="whitespace-nowrap hover:text-[var(--primary)] flex items-center"
+                                :aria-label="social.ariaLabel"
+                            >
+                                <Icon class="text-size-28px" :name="social.icon" />
+                                <span class="ml-7px">{{ social.title }}</span>
+                            </a>
+                            <NuxtLink v-else :href="social.url" class="whitespace-nowrap hover:text-[var(--primary)] flex items-center">
+                                <Icon class="text-size-28px" :name="social.icon" />
+                                <span class="ml-7px">{{ social.title }}</span>
+                            </NuxtLink>
+                        </template>
                     </div>
                 </div>
                 <SvgDotSquare class="absolute md:right-0 md:visible invisible z-20 fill-[var(--primary)] opacity-50 w-70px" />

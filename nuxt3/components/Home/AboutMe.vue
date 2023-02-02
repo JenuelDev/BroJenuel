@@ -20,10 +20,14 @@ onMounted(() => {
                         Over the past {{ currentDate.getFullYear() - 2017 }} years, I’ve gained experience across some aspects of the application lifecycle, including frontend,
                         backend, and dev-ops.
                     </div>
-                    <div class="flex justify-center pt-5">
-                        <NuxtLink href="/my-work" class="btn btn-lg btn-filled sm:w-auto w-full group">
+                    <div class="flex justify-center pt-5 gap-3">
+                        <NuxtLink href="/TimeLine" class="btn btn-lg btn-filled sm:w-auto w-full group">
                             <Icon name="mdi:chart-timeline" class="group-hover:animate-head-shake" />
-                            Timeline
+                            Time line
+                        </NuxtLink>
+                        <NuxtLink href="/my-work" class="btn btn-lg btn-filled sm:w-auto w-full group">
+                            <Icon name="pajamas:project" class="group-hover:animate-head-shake" />
+                            My Work
                         </NuxtLink>
                     </div>
                 </div>
