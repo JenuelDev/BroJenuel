@@ -2,10 +2,7 @@
 const colorMode = useColorMode();
 const theme = ref("");
 
-onMounted(() => {
-    theme.value = colorMode.preference;
-    console.log(theme.value);
-});
+onMounted(() => (theme.value = colorMode.preference));
 
 watch(
     () => colorMode.value,

@@ -4,7 +4,7 @@ export const useSkills = () => [
     {
         icon: javaScriptIcon,
         tech: "JavaScript",
-        description: "It's used to create interactive front-end web experiences. It's also be used on the server-side through technologies such as Node.js.",
+        description: "It's used to create interactive front-end web experiences. It's also used on the server-side through technologies such as Node.js.",
         yearStarted: 2017,
         tools: [
             {
