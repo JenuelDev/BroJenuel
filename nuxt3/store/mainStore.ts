@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 
 export const useMainStore = defineStore("mainStore", () => {
-    const isIntroSocialLinkShowing = ref(false);
+    const isIntroSocialLinkShowing = ref(true);
     const mySocial = ref([
         {
             title: "Facebook",

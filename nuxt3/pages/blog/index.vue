@@ -44,11 +44,8 @@ onMounted(() => (isShowContent.value = true));
                     Blog
                 </div>
                 <div class="pt-5">
-                    <div class="indent-md">
-                        I am currently looking for Job. However, if you have other request or questions, don't hesitate to contact me using the form bellow.
-                    </div>
+                    <div class="indent-md">Blog is under construction</div>
                 </div>
-                <div>Blog is under construction</div>
             </div>
         </div>
     </Transition>
