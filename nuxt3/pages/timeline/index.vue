@@ -9,7 +9,7 @@ onMounted(() => (isShowContent.value = true));
             <div class="max-w-550px mx-auto px-10px">
                 <div class="font-800 text-size-20px text-[var(--primary)] flex items-center gap-7px">
                     <Icon name="mdi:chart-timeline" />
-                    Timeline
+                    Timeline/Experience
                 </div>
                 <div class="pt-5">
                     <div class="indent-md">
@@ -19,17 +19,13 @@ onMounted(() => (isShowContent.value = true));
                 <div class="timeline-div p-10px">
                     <div>
                         <p v-for="(experience, i) in experiences" :key="experience.url">
-                            <div class="font-800 text-size-18px pb-2">
+                            <div class="font-800 text-size-20px pb-2">
                                 <span class="text-[var(--primary)]">{{ experience.position }}</span>
-                                <a :href="experience.url" class="hover:text-[var(--primary)]"> @ {{ experience.company }}</a>
+                                <a :href="experience.url" target="_blank" class="hover:text-[var(--primary)]"> @ {{ experience.company }}</a>
                             </div>
-                            <div>{{ experience.workStart }} - <span v-html="experience.workUntil"></span></div>
-                            <div>
-                                <button class="btn !text-size-13px" role="button"
-                            title="Open Link"
-                            :id="`open-link-button${i}`" > <Icon name="octicon:link-external-16" /> {{ experience.url.slice(0, 30) }}... </button>
+                            <div>{{ experience.workStart }} - <span v-html="experience.workUntil"></span>
                             </div>
-                            <div v-html="experience.des"></div>
+                            <div class="text-size-15px leading-5" v-html="experience.des"></div>
                         </p>
                     </div>
                 </div>
