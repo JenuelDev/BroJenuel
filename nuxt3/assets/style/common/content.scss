@@ -41,7 +41,7 @@
     h3,
     h4,
     h5 {
-        margin-bottom: 2px;
+        margin-bottom: 15px;
         position: relative;
 
         &:before {
@@ -61,5 +61,10 @@
         padding: 10px;
         background-color: var(--background-secondary);
         border-radius: 7px;
+    }
+
+    p {
+        padding-bottom: 20px;
+        padding-top: 10px;
     }
 }

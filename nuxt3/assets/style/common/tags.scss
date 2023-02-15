@@ -1,0 +1,56 @@
+.tag {
+    padding: 1px 10px;
+    background-color: var(--background-secondary);
+    border-radius: 7px;
+
+    &.tag-sm {
+        font-size: 13px;
+    }
+
+    &.tag-electron,
+    &.tag-electron.builder {
+        background-color: #47848f;
+        color: #ffffff;
+    }
+
+    &.tag-Vue3,
+    &.tag-vue,
+    &.tag-vuepress {
+        background-color: #4fc08d;
+        color: rgb(46, 46, 46);
+    }
+
+    &.tag-javascript {
+        background-color: #f7df1e;
+        color: rgb(26, 26, 26);
+    }
+
+    &.tag-windiCss {
+        background-color: #48b0f1;
+        color: white;
+    }
+
+    &.tag-electron.builder {
+        background-color: rgb(61, 61, 233);
+        color: white;
+    }
+
+    &.tag-website {
+        background-color: rgb(3, 46, 161);
+        color: white;
+    }
+
+    &.tag-application {
+        background-color: rgb(197, 2, 155);
+        color: white;
+    }
+    &.tag-documentation {
+        background-color: rgb(197, 152, 2);
+        color: white;
+    }
+
+    &.tag-portfolio {
+        background-color: white;
+        color: black;
+    }
+}

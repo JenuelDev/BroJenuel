@@ -52,6 +52,8 @@ p {
     a {
         position: relative;
         color: var(--color);
+        font-style: italic;
+        font-weight: 700;
 
         &:before {
             content: "";
@@ -76,3 +78,4 @@ p {
 @import "./common/scrollbar.scss";
 @import "./common/content.scss";
 @import "./common/transitions.scss";
+@import "./common/tags.scss";

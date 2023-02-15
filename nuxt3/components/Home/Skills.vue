@@ -83,8 +83,7 @@ const skills = [
     {
         icon: "skill-icons:rails",
         tech: "Rails",
-        description:
-            "Written in the Ruby and follows the Model-View-Controller (MVC) architectural pattern and emphasizes the use of convention over configuration, which allows developers to create web applications quickly and efficiently.",
+        description: "Written in the Ruby and follows the Model-View-Controller (MVC) architectural pattern and emphasizes the use of convention over configuration.",
         yearStarted: 2019,
         tools: [
             {
@@ -122,7 +121,7 @@ const skills = [
             </div>
             <div class="max-w-530px mx-auto px-10px pt-30px">
                 <div class="grid sm:grid-cols-2 grid-cols-1 gap-3">
-                    <div v-for="skill in skills" :key="skill.tech" class="flex flex-col justify-between pb-5">
+                    <div v-for="skill in skills" :key="skill.tech" class="flex flex-col justify-between pb-5 transform scale-98 hover:scale-100 transition-all">
                         <div>
                             <div class="flex items-center gap-3 pb-3">
                                 <Icon class="text-size-25px" :name="skill.icon" />
@@ -132,7 +131,10 @@ const skills = [
                         </div>
                         <div class="flex gap-2 pt-10px">
                             <div v-for="tool in skill.tools" :key="tool.text">
-                                <Icon class="text-size-20px" :name="tool.icon" />
+                                <div class="whitespace-nowrap w-full max-w-35px overflow-hidden hover:max-w-200px transition-all bg-[var(--background-secondary)] p-2 rounded-md">
+                                    <Icon class="text-size-20px" :name="tool.icon" />
+                                    <span class="ml-2">{{ tool.text }}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
