@@ -43,18 +43,6 @@
     h5 {
         margin-bottom: 15px;
         position: relative;
-
-        &:before {
-            content: "";
-            height: 3px;
-            position: absolute;
-            bottom: 0px;
-            width: 15px;
-            background-color: var(--color);
-            transition: all 0.2s;
-            opacity: 0.8;
-            left: -5px;
-        }
     }
 
     pre {
@@ -66,5 +54,13 @@
     p {
         padding-bottom: 20px;
         padding-top: 10px;
+    }
+
+    *::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    pre {
+        overflow-x: auto;
     }
 }
