@@ -1,0 +1,24 @@
+<template>
+    <main class="pt-40px min-h-80vh">
+        <div class="pt-40px">
+            <ContentDoc v-slot="{ doc }">
+                <div class="max-w-500px mx-auto px-10px relative">
+                    <h1 class="text-size-25px font-700">{{ doc.title }}</h1>
+                    <div class="flex flex-wrap gap-2">
+                        <div v-for="tag in doc.tags" :key="tag" class="tag" :class="`tag-${tag}`">#{{ tag }}</div>
+                    </div>
+                    <div>
+                        <small>Technology Used:</small>
+                        <div class="flex flex-wrap gap-2">
+                            <div v-for="keywords in doc.keywords" :key="keywords" class="tag tag-sm" :class="`tag-${keywords}`">{{ keywords }}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-render max-w-600px mx-auto px-10px relative pt-5">
+                    <ContentRenderer :value="doc" />
+                </div>
+            </ContentDoc>
+        </div>
+    </main>
+</template>
