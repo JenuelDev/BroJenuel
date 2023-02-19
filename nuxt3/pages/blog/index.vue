@@ -31,7 +31,15 @@ onMounted(() => (isShowContent.value = true));
                                 class="absolute h-1px w-1px group-hover:h-50px bg-[var(--primary)] transition-all duration-500 -left-5 top-[50%] opacity-0 group-hover:opacity-100 delay-100 transform translate-y-[-50%] translate-x-[-50%]"
                             ></div>
                             <div class="absolute top-40%"></div>
-                            <div class="font-700 group-hover:text-[var(--primary)]">{{ work.title }} <Icon name="" /></div>
+                            <div class="font-700 group-hover:text-[var(--primary)]">{{ work.title }}</div>
+                            <div class="italic flex gap-2">
+                                <div>{{ work.date }}</div>
+                                <ul class="flex gap-1">
+                                    <li v-for="keyword in work.keywords" class="tag" :class="`tag-${keyword}`" :key="keyword">
+                                        {{ keyword }}
+                                    </li>
+                                </ul>
+                            </div>
                             <div>{{ work.description }}</div>
                         </div>
                     </NuxtLink>

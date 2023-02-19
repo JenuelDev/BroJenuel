@@ -15,12 +15,14 @@
 
     &.tag-Vue3,
     &.tag-vue,
+    &.tag-VueJs,
     &.tag-vuepress {
         background-color: #4fc08d;
         color: rgb(46, 46, 46);
     }
 
-    &.tag-javascript {
+    &.tag-javascript,
+    &.tag-JavaScript {
         background-color: #f7df1e;
         color: rgb(26, 26, 26);
     }

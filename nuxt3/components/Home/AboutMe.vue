@@ -23,6 +23,10 @@ const currentDate = new Date();
                         <Icon name="pajamas:project" class="group-hover:animate-head-shake" />
                         My Work
                     </NuxtLink>
+                    <NuxtLink href="/blog" class="btn btn-lg btn-filled sm:w-auto w-full group">
+                        <Icon name="fluent-mdl2:blog" class="group-hover:animate-head-shake" />
+                        Blog
+                    </NuxtLink>
                 </div>
             </div>
         </div>
