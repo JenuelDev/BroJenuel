@@ -12,21 +12,34 @@ onMounted(() => (isShowContent.value = true));
                     Timeline/Experience
                 </div>
                 <div class="pt-5">
-                    <div class="indent-md">
-                        This are companies/organization that I have worked for. I have learned and enjoyed working on this companies.
-                    </div>
+                    <div class="indent-md">This are companies/organization that I have worked for. I have learned and enjoyed working on this companies.</div>
                 </div>
                 <div class="timeline-div p-10px">
-                    <div>
-                        <p v-for="(experience, i) in experiences" :key="experience.url">
+                    <div class="w-full m-auto">
+                        <div class="timeline-box" v-for="(experience, i) in experiences" :key="experience.url">
+                            <div
+                                class="absolute top-[50%] transform translate-y-[-50%] bg-[var(--primary)] rounded-md text-[var(--background)] p-1 flex flex-col items-center text-size-12px"
+                                :class="i % 2 == 0 ? 'sm:right-[-20px] right-[-15px]' : 'sm:left-[-25px] left-[-15px]'"
+                            >
+                                {{ experience.year }}
+                                <span>to</span>
+                                {{ experience.to }}
+                            </div>
                             <div class="font-800 text-size-20px pb-2">
                                 <span class="text-[var(--primary)]">{{ experience.position }}</span>
                                 <a :href="experience.url" target="_blank" class="hover:text-[var(--primary)]"> @ {{ experience.company }}</a>
                             </div>
-                            <div>{{ experience.workStart }} - <span v-html="experience.workUntil"></span>
-                            </div>
+                            <div>{{ experience.workStart }} - <span v-html="experience.workUntil"></span></div>
                             <div class="text-size-15px leading-5" v-html="experience.des"></div>
-                        </p>
+                            <div v-if="experience.timeline && experience.timeline.length" class="pl-30px pt-20px">
+                                <div v-for="(timeline, t_i) in experience.timeline" :key="t_i" class="relative">
+                                    <div class="bg-[var(--primary)] text-[var(--background)] inline-block text-size-12px p-1 rounded-md">{{ timeline.date }}</div>
+                                    <div class="text-size-15px pb-10px">{{ timeline.details }}</div>
+                                    <div class="absolute h-10px w-10px bg-[var(--primary)] rounded-full top-7px left-[-15px]"></div>
+                                    <div v-show="experience.timeline.length != t_i + 1" class="absolute h-full w-2px left-[-11px] bg-[var(--primary)] top-8px "></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,85 +48,40 @@ onMounted(() => (isShowContent.value = true));
 </template>
 <style lang="scss">
 .timeline-div {
-    body {
-        font-family: Helvetica;
-    }
-
-    div {
-        width: 100%;
-        margin: auto;
-    }
-
-    p {
+    .timeline-box {
         border-top: 2px dashed;
         border-color: var(--primary) !important;
         margin: 0;
         padding: 30px;
         counter-increment: section;
         position: relative;
-    }
 
-    p:nth-child(even):before {
-        content: counter(section);
-        right: 100%;
-        margin-right: -15px;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        border-radius: 50%;
-        padding: 10px;
-        height: 30px;
-        width: 30px;
-        background-color: var(--primary);
-        text-align: center;
-        color: var(--background);
-        font-size: 110%;
-        top: 40%;
-    }
+        &:nth-child(even) {
+            border-left: 2px dashed;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            margin-right: 30px;
+            padding-right: 0;
+        }
 
-    p:nth-child(odd):before {
-        content: counter(section);
-        left: 100%;
-        margin-left: -15px;
-        position: absolute;
-        border-radius: 50%;
-        padding: 10px;
-        height: 30px;
-        width: 30px;
-        background-color: var(--primary);
-        color: var(--background);
-        text-align: center;
-        font-size: 110%;
-        display: flex;
-        align-items: center;
-        top: 40%;
-    }
+        &:nth-child(odd) {
+            border-right: 2px dashed;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin-left: 30px;
+            padding-left: 0;
+        }
 
-    p:nth-child(even) {
-        border-left: 2px dashed;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-        margin-right: 30px;
-        padding-right: 0;
-    }
+        &:first-child {
+            border-top: 0;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
 
-    p:nth-child(odd) {
-        border-right: 2px dashed;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-        margin-left: 30px;
-        padding-left: 0;
-    }
-
-    p:first-child {
-        border-top: 0;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-    }
-
-    p:last-child {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
+        &:last-child {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
     }
 
     .present-work {
