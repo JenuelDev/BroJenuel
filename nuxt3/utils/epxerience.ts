@@ -7,6 +7,18 @@ export const useExperiences = () => [
         workUntil: '<span class="present-work">Present</span>',
         des: "Full Time <b>Senior Software Developer</b> at <a href='https://www.vocphone.com/' target='_blank'>Vocphone</a>. Responsibilities are to design and implement complex business software problems and lease with management and the end customer.",
         url: "https://www.vocphone.com/",
+        year: "2021",
+        to: "present",
+        timeline: [
+            {
+                date: "Feb. 2023",
+                details: "I became a Project Manager (PM)",
+            },
+            {
+                date: "Nov. 2021",
+                details: "Started to work as a Senior Software dev.",
+            },
+        ],
     },
     {
         position: "Web Developer",
@@ -16,6 +28,8 @@ export const useExperiences = () => [
         workUntil: "Nov. 2021",
         des: "Full Time <b>Web Developer</b> at Webinarinc. We focus on developing/debugging/fixing websites, using different technologies to satisfy customers.",
         url: "https://webinarinc.com/",
+        year: "2021",
+        to: 2021,
     },
     {
         present: true,
@@ -30,6 +44,8 @@ export const useExperiences = () => [
             link: "https://drive.google.com/file/d/1_CBroR0xY8bq9Z6kcS40opEQf_SC5AZ6/view?usp=sharing",
             label: "Show Employment Certificate",
         },
+        year: "2019",
+        to: 2021,
     },
     {
         position: "Web Developer",
@@ -43,6 +59,8 @@ export const useExperiences = () => [
             link: "https://drive.google.com/file/d/1TYyF6q4L2NdaXbibUry22UWC7YQpmzPN/view?usp=sharing",
             label: "Show Certificate of Participation",
         },
+        year: "2018",
+        to: 2019,
     },
     {
         position: "Designer and Web Programmer",
@@ -56,6 +74,8 @@ export const useExperiences = () => [
             link: "https://drive.google.com/file/d/1NMz6G-fDcArzRm9odSfL_ntx5Hj0qLu_/view?usp=sharing",
             label: "Show Certificate of Completion",
         },
+        year: 2018,
+        to: 2018,
     },
     {
         position: "Web Developer Student",
@@ -69,5 +89,7 @@ export const useExperiences = () => [
             link: "https://drive.google.com/file/d/1p7I8t2maRU5vXJYjdE2-Cw1SiJJOVyYd/view?usp=sharing",
             label: "Show Certificate of Fulfillment",
         },
+        year: 2016,
+        to: 2019,
     },
 ];

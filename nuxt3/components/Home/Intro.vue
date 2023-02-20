@@ -14,7 +14,7 @@ watch(
         <div class="relative flex flex-col items-center gap-20px relative">
             <div class="flex gap-5 sm:flex-row flex-col items-center z-99">
                 <div
-                    class="rounded-3xl hover:rounded-2xl overflow-hidden opacity-70 relative hover:opacity-100 transition-all duration-300 border-5 border-opacity-0 border-light-50 hover:border-[var(--primary)] md:h-170px md:w-165px h-140px w-130px sm:order-2 order-1"
+                    class="rounded-3xl hover:rounded-2xl overflow-hidden opacity-70 relative hover:opacity-100 transition-all duration-300 border-5 border-opacity-0 border-light-50 hover:border-[var(--primary)] h-170px w-165px sm:order-2 order-1"
                 >
                     <img
                         src="https://i.imgur.com/3iN1kQym.jpg"
@@ -31,7 +31,7 @@ watch(
                 </div>
             </div>
 
-            <div class="bg-[var(--background-secondary)] sm:w-500px w-250px p-10px rounded-lg z-99">
+            <div class="bg-[var(--background-secondary)] w-full p-10px rounded-lg z-99">
                 <div ref="socialRef" class="flex gap-10px justify-center flex-wrap">
                     <template v-for="social in mainStore.mySocial" :key="social.title">
                         <a
@@ -50,6 +50,20 @@ watch(
                         </NuxtLink>
                     </template>
                 </div>
+            </div>
+            <div class="flex justify-center gap-3 sm:flex-row flex-col sm:w-auto w-full">
+                <NuxtLink href="/TimeLine" class="btn btn-lg btn-filled sm:w-auto w-full group">
+                    <Icon name="mdi:chart-timeline" class="group-hover:animate-head-shake" />
+                    My Time line
+                </NuxtLink>
+                <NuxtLink href="/my-work" class="btn btn-lg btn-filled sm:w-auto w-full group">
+                    <Icon name="pajamas:project" class="group-hover:animate-head-shake" />
+                    My Work
+                </NuxtLink>
+                <NuxtLink href="/blog" class="btn btn-lg btn-filled sm:w-auto w-full group">
+                    <Icon name="fluent-mdl2:blog" class="group-hover:animate-head-shake" />
+                    Blog
+                </NuxtLink>
             </div>
             <SvgDotSquare class="absolute md:right-0 md:visible invisible z-20 fill-[var(--primary)] opacity-50 w-70px" />
             <SvgArrow class="absolute md:visible invisible left-[-50px] bottom-[80px] transform rotate-[-180deg] fill-[var(--primary)] opacity-50 w-70px" />
