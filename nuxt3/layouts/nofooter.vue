@@ -3,6 +3,5 @@
         <HeadNavigation />
         <SocialLinks />
         <slot />
-        <Footer />
     </div>
 </template>
