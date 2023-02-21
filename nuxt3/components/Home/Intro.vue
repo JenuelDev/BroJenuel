@@ -52,18 +52,22 @@ watch(
                 </div>
             </div>
             <div class="flex justify-center gap-3 sm:flex-row flex-col sm:w-auto w-full">
-                <NuxtLink href="/TimeLine" class="btn btn-lg btn-filled sm:w-auto w-full group">
+                <NuxtLink href="/TimeLine" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Time Line">
                     <Icon name="mdi:chart-timeline" class="group-hover:animate-head-shake" />
                     My Time line
                 </NuxtLink>
-                <NuxtLink href="/my-work" class="btn btn-lg btn-filled sm:w-auto w-full group">
+                <NuxtLink href="/my-work" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Work">
                     <Icon name="pajamas:project" class="group-hover:animate-head-shake" />
                     My Work
                 </NuxtLink>
-                <NuxtLink href="/blog" class="btn btn-lg btn-filled sm:w-auto w-full group">
+                <NuxtLink href="/blog" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Blog">
                     <Icon name="fluent-mdl2:blog" class="group-hover:animate-head-shake" />
                     Blog
                 </NuxtLink>
+                <a href="/jenuel oras ganawed.pdf" target="_blank" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Resume">
+                    <Icon name="teenyicons:pdf-outline" class="group-hover:animate-head-shake" />
+                    My Resume
+                </a>
             </div>
             <SvgDotSquare class="absolute md:right-0 md:visible invisible z-20 fill-[var(--primary)] opacity-50 w-70px" />
             <SvgArrow class="absolute md:visible invisible left-[-50px] bottom-[80px] transform rotate-[-180deg] fill-[var(--primary)] opacity-50 w-70px" />
