@@ -64,10 +64,10 @@ watch(
                     <Icon name="fluent-mdl2:blog" class="group-hover:animate-head-shake" />
                     Blog
                 </NuxtLink>
-                <a href="/resume" target="_blank" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Resume">
+                <NuxtLink href="/resume" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Resume">
                     <Icon name="teenyicons:pdf-outline" class="group-hover:animate-head-shake" />
                     My Resume
-                </a>
+                </NuxtLink>
             </div>
             <SvgDotSquare class="absolute md:right-0 md:visible invisible z-20 fill-[var(--primary)] opacity-50 w-70px" />
             <SvgArrow class="absolute md:visible invisible left-[-50px] bottom-[80px] transform rotate-[-180deg] fill-[var(--primary)] opacity-50 w-70px" />
