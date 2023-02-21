@@ -64,7 +64,7 @@ watch(
                     <Icon name="fluent-mdl2:blog" class="group-hover:animate-head-shake" />
                     Blog
                 </NuxtLink>
-                <a href="/jenuel oras ganawed.pdf" target="_blank" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Resume">
+                <a href="/resume" target="_blank" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Resume">
                     <Icon name="teenyicons:pdf-outline" class="group-hover:animate-head-shake" />
                     My Resume
                 </a>
