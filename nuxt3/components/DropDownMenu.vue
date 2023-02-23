@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const show = ref(false);
 const dropdownRef = ref(null);
+const route = useRoute();
 const menus = [
     {
         path: "/",
@@ -59,6 +60,7 @@ onClickOutside(dropdownRef, () => (show.value = show.value == true ? false : fal
                         @click="show = false"
                         :href="menu.path"
                         class="block px-4 py-2 text-sm hover:bg-[var(--background-secondary)] flex items-center gap-6px"
+                        :class="{ '!text-[var(--primary)]': route.path == menu.path }"
                     >
                         <Icon class="text-size-20px" :name="menu.icon" />
                         {{ menu.label }}
