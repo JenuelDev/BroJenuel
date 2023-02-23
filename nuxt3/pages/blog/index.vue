@@ -16,7 +16,7 @@ onMounted(() => (isShowContent.value = true));
                 <div class="pt-5">
                     <div class="indent-md"></div>
                 </div>
-                <div class="grid grid-cols-1 gap-3">
+                <div class="grid grid-cols-1 gap-3 sm:pl-0 pl-20px">
                     <NuxtLink
                         v-for="(work, i) in myWork"
                         :key="i"

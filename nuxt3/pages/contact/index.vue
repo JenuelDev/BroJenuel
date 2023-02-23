@@ -16,13 +16,15 @@ const form = reactive<{
 async function submitMail() {
     isLoading.value = true;
     try {
-        if (form.name && form.subject && form.email && form.message)
+        if (form.name && form.subject && form.email && form.message) {
             await emailJs.sendEmail({
                 name: form.name,
                 subject: form.subject,
                 email: form.email,
                 message: form.message,
             });
+            alert("Message Successfully Send! 😁👍🤗");
+        }
 
         form.name = null;
         form.email = null;
