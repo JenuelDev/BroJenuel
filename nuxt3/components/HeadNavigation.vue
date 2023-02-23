@@ -15,7 +15,6 @@ watch(
     >
         <div class="w-full max-w-700px mx-auto flex justify-between">
             <NuxtLink href="/">
-                <Icon class="text-size-25px mr-7px" name="gg:boy" />
                 <span>Bro</span>
                 <span class="text-[var(--primary)] font-800">Jenuel</span>
             </NuxtLink>
