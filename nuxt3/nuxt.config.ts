@@ -21,6 +21,7 @@ export default defineNuxtConfig({
         },
     },
     content: {
+        documentDriven: true,
         highlight: {
             // Theme used in all color schemes.
             theme: {

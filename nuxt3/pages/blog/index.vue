@@ -1,9 +1,22 @@
-<script setup lang="ts">
+<script lang="ts" setup>
+const route = useRoute();
 const isShowContent = ref(false);
 const myWork = await queryContent("/blog").sort({ _id: -1 }).limit(100).find();
-const codeChallenges = useCodeChallenges();
+const { setMeta, googleStream } = useMeta();
 
 onMounted(() => (isShowContent.value = true));
+useHead({
+    ...setMeta({
+        title: "Blog - BroJenuel",
+        description:
+            "Jenuel Ganawed(BroJenuel/Bro Jenuel) is a software/web developer specializing in creating (and sometimes designing) exceptional websites, applications, and everything in between.",
+        path: route.path,
+        keywords: ["brojenuel", "Jenuel", "Jenuel Ganawed", "bro jenuel", "web developer", "blog"],
+        image: "https://brojenuel.com/img/profileImage.ac3f181b.webp",
+        lang: "en",
+    }),
+    ...(process.env.NODE_ENV != 'development' ? googleStream() : {}),
+});
 </script>
 <template>
     <Transition>
@@ -35,7 +48,7 @@ onMounted(() => (isShowContent.value = true));
                             <div class="italic flex gap-2">
                                 <div>{{ work.date }}</div>
                                 <ul class="flex gap-1">
-                                    <li v-for="keyword in work.keywords" class="tag" :class="`tag-${keyword}`" :key="keyword">
+                                    <li v-for="keyword in work.keywords" :key="keyword" :class="`tag-${keyword}`" class="tag">
                                         {{ keyword }}
                                     </li>
                                 </ul>
