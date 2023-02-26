@@ -15,8 +15,10 @@ useHead({
 });
 </script>
 <template>
-    <HomeIntro />
-    <HomeAboutMe />
-    <HomeSkills />
-    <HomeOffer />
+    <NuxtLayout>
+        <HomeIntro />
+        <HomeAboutMe />
+        <HomeSkills />
+        <HomeOffer />
+    </NuxtLayout>
 </template>
