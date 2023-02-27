@@ -66,7 +66,7 @@ watch(
                 </NuxtLink>
                 <NuxtLink href="/resume" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Resume">
                     <Icon name="teenyicons:pdf-outline" class="group-hover:animate-head-shake" />
-                    My Resume
+                    My CV
                 </NuxtLink>
             </div>
             <SvgDotSquare class="absolute md:right-0 md:visible invisible z-20 fill-[var(--primary)] opacity-50 w-70px" />

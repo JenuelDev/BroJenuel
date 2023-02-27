@@ -23,7 +23,7 @@ const mainStore = useMainStore();
         </ul>
     </div>
     <div
-        class="fixed sm:right-10 transition-all duration-300 right-0 bottom-0 sm:w-auto w-full sm:bg-opacity-0 bg-[var(--opacity-background)] z-99 filter backdrop-filter backdrop-blur-md bottom-[-350px]"
+        class="fixed sm:right-10 transition-all duration-300 right-0 bottom-0 sm:w-auto w-full z-99 filter backdrop-filter backdrop-blur-md bottom-[-350px]"
         :class="mainStore.isIntroSocialLinkShowing && route.path == '/' ? 'sm:bottom-[-350px]' : 'sm:bottom-[100px]'"
     >
         <NuxtLink href="/contact">
