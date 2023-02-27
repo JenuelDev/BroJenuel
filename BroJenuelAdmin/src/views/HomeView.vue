@@ -1,3 +1,7 @@
 <template>
-    <main>This is home View</main>
+    <main class="w-full">
+        <div class="flex justify-between">
+            Home Page
+        </div>
+    </main>
 </template>

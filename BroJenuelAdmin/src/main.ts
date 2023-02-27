@@ -7,6 +7,8 @@ import router from "./router";
 import "./assets/main.css";
 import "virtual:windi.css";
 
+import 'boxicons/css/boxicons.min.css'
+
 const app = createApp(App);
 
 app.use(createPinia());

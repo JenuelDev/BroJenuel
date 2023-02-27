@@ -12,9 +12,16 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.8.0",
+    "@tiptap/pm": "^2.0.0-beta.218",
+    "@tiptap/starter-kit": "^2.0.0-beta.218",
+    "@tiptap/vue-3": "^2.0.0-beta.218",
+    "boxicons": "^2.1.4",
     "pinia": "^2.0.32",
+    "sass": "^1.58.3",
     "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue3-tags-input": "^1.0.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
