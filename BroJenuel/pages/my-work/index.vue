@@ -17,19 +17,25 @@ onMounted(() => (isShowContent.value = true));
                     <div class="pt-5">
                         <div class="indent-md">Showing are personal projects that I made during my spare/free time. I don't add projects from my Work/Jobs, only if allowed.</div>
                     </div>
-                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-3">
-                        <NuxtLink
-                            v-for="(work, i) in myWork"
-                            :key="i"
-                            :href="work._path"
-                            class="p-10px rounded-md transform translate-y-1 hover:translate-y-0 transition-transform cursor-pointer group"
-                        >
-                            <div class="p-10px">
-                                <img :src="`/img/work/${work.img}`" class="rounded-md" :alt="work.description" srcset="" width="500" height="500" />
+                    <div class="grid grid-cols-1 gap-3">
+                        <NuxtLink v-for="(work, i) in myWork" :key="i" :href="work._path" class="p-10px rounded-md cursor-pointer group">
+                            <div class="border-5 border-[var(--gray-lightest)] flex justify-center items-center h-150px overflow-hidden rounded-lg relative">
+                                <img
+                                    :src="`/img/work/${work.img}`"
+                                    class="absolute w-full transform scale-100 group-hover:scale-transform-120 transition-all"
+                                    :alt="work.description"
+                                    width="500"
+                                    height="500"
+                                />
                             </div>
-                            <div class="text-center">
-                                <div class="font-700 group-hover:text-[var(--primary)]">{{ work.title }} <Icon name="" /></div>
-                                <div>{{ work.description }}</div>
+                            <div class="p-15px flex gap-10px">
+                                <div class="w-30px h-30px overflow-hidden rounded-md bg-white">
+                                    <img class="w-30px" :src="work.logo" />
+                                </div>
+                                <div class="w-[80%]">
+                                    <div class="font-700 group-hover:text-[var(--primary)] text-size-20px">{{ work.title }}</div>
+                                    <div>{{ work.description }}</div>
+                                </div>
                             </div>
                         </NuxtLink>
                     </div>
