@@ -45,10 +45,14 @@
         position: relative;
     }
 
-    pre {
+    code {
+        position: relative;
         padding: 10px;
         background-color: var(--background-secondary);
         border-radius: 7px;
+        overflow-x: auto;
+        transition: background-color 0.25s;
+        font-size: 16px;
     }
 
     p {
@@ -59,8 +63,20 @@
     *::-webkit-scrollbar {
         height: 10px;
     }
+}
 
-    pre {
-        overflow-x: auto;
+.sepia {
+    .content-render {
+        code {
+            background-color: rgb(20, 14, 14);
+        }
+    }
+}
+
+.light {
+    .content-render {
+        code {
+            background-color: rgb(20, 20, 20);
+        }
     }
 }

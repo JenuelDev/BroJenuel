@@ -1,21 +1,5 @@
 <template>
-    <div
-        class="sticky top-0 w-full bg-white h-[50px] shadow-md flex items-center px-15px justify-between"
-    >
-        <div>BroJenuel Admin Portal</div>
-        <ul class="flex gap-2">
-            <li>
-                <RouterLink to="/">Home</RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/blogs">Blogs</RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/about">About</RouterLink>
-            </li>
-        </ul>
-    </div>
-    <div class="p-10px">
+    <div>
         <RouterView />
     </div>
 </template>
