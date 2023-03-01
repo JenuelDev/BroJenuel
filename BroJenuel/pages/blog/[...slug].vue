@@ -49,9 +49,7 @@ onMounted(() => {
                     <div class="max-w-600px mx-auto px-10px relative pb-5">
                         <h1 class="text-size-25px font-700 pb-10px">{{ data.title }}</h1>
                         <div class="flex flex-wrap gap-1">
-                            <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm">
-                                #{{ tags }}
-                            </div>
+                            <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm">#{{ tags }}</div>
                         </div>
                     </div>
                     <div class="content-render max-w-600px mx-auto px-10px relative" v-html="data.content"></div>
