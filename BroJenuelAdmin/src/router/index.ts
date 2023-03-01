@@ -11,6 +11,7 @@ const router = createRouter({
         },
         {
             path: "/admin",
+            name: "admin",
             component: () => import("@/views/Admin/AdminMain.vue"),
             children: [
                 {
@@ -39,13 +40,6 @@ const router = createRouter({
             ],
         },
     ],
-});
-
-router.beforeEach(async (to) => {
-    if (["blogs", "create-blog"].includes(to.name as any)) {
-        const { data } = await supabase.auth.getUser();
-        if (!data.user) return false;
-    }
 });
 
 export default router;
