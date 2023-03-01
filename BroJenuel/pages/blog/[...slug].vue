@@ -23,13 +23,9 @@ useHead({
     <NuxtLayout>
         <main class="pt-40px min-h-80vh">
             <div class="pt-40px">
-                <div class="max-w-500px mx-auto px-10px relative">
+                <div class="max-w-600px mx-auto px-10px relative">
                     <h1 class="text-size-25px font-700">{{ data.title }}</h1>
-                    <div class="flex flex-wrap gap-2">
-                        <div v-for="tag in data.tags" :key="tag" :class="`tag-${tag}`" class="tag">#{{ tag }}</div>
-                    </div>
                     <div>
-                        <small>Technology Used:</small>
                         <div class="flex flex-wrap gap-2">
                             <div v-for="keywords in data.keywords" :key="keywords" :class="`tag-${keywords}`" class="tag tag-sm">
                                 {{ keywords }}
