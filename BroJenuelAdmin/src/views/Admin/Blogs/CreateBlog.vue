@@ -3,7 +3,10 @@ import { reactive } from "vue";
 import Vue3TagsInput from "vue3-tags-input";
 import EditorComponent from "@/components/EditorComponent.vue";
 import { supabase } from "@/service/supabase";
+import { useRouter } from "vue-router";
+import ButtonComponent from "@/components/ButtonComponent.vue";
 
+const router = useRouter();
 const form = reactive({
     title: null,
     tags: [],
@@ -40,10 +43,12 @@ async function submit() {
     form.cover_img = null;
     form.is_active = false;
     form.summary = null;
+    alert("successfully Inserted!");
 }
 </script>
 <template>
     <div class="w-full max-w-800px mx-auto">
+        <ButtonComponent @click="router.push('/admin/blogs')"> Back </ButtonComponent>
         <div class="flex justify-between items-end pb-20px">
             <div class="font-800 text-size-20px">Create Blog</div>
         </div>

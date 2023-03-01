@@ -1,5 +1,7 @@
+import dayjs from "dayjs";
 import { serverQueryContent } from "#content/server";
 import { SitemapStream, streamToPromise } from "sitemap";
+import { serverSupabaseClient } from "#supabase/server";
 
 const domain = "https://brojenuel.com";
 
@@ -25,6 +27,7 @@ const pages = [
 export default defineEventHandler(async (event) => {
     // Fetch all documents
     const docs = await serverQueryContent(event).find();
+    const client = serverSupabaseClient(event);
     const sitemap = new SitemapStream({
         hostname: domain,
     });
@@ -41,6 +44,16 @@ export default defineEventHandler(async (event) => {
             url: doc._path,
             changefreq: doc.changefreq ? doc.changefreq : "monthly",
             lastmod: doc.lastmod ?? doc.date,
+        });
+    }
+
+    const { data, error }: any = await client.from("blogs").select().order("id", { ascending: false }).eq("is_active", 1).limit(2000);
+
+    for (const blog of data) {
+        sitemap.write({
+            url: `${domain}/blog/${blog.slug}`,
+            changefreq: "monthly",
+            lastmod: dayjs(blog.updated_at).format("YYYY-MM-DD"),
         });
     }
 

@@ -5,7 +5,7 @@ const isShowContent = ref(false);
 const { setMeta, googleStream } = useMeta();
 
 const { data }: { data: any } = await useAsyncData("blogs", async () => {
-    const { data } = await client.from("blogs").select().eq("is_active", 1).limit(20);
+    const { data } = await client.from("blogs").select().eq("is_active", 1).order("id", { ascending: false }).limit(20);
     return data;
 });
 isShowContent.value = true;
@@ -32,6 +32,7 @@ useHead({
                         <div class="font-800 text-size-20px text-[var(--primary)] flex items-center gap-7px">
                             <Icon name="pajamas:project" />
                             Blog
+                            <a href="/sitemap.xml" target="_blank">(sitemap)</a>
                         </div>
                         <div class="pt-5">
                             <div class="indent-md"></div>
@@ -53,13 +54,11 @@ useHead({
                                     <div class="absolute top-40%"></div>
                                     <div class="font-700 group-hover:text-[var(--primary)]">
                                         {{ blog.title }}
+                                        <span class="italic font-500 opacity-50 whitespace-nowrap"> - {{ $dayjs(blog.created_at).format("MMM. DD, YYYY") }}</span>
                                     </div>
                                     <div class="italic flex gap-2">
-                                        <div>{{ blog.created_at }}</div>
                                         <ul class="flex gap-1">
-                                            <li v-for="keyword in blog.keywords" :key="keyword" :class="`tag-${keyword}`" class="tag">
-                                                {{ keyword }}
-                                            </li>
+                                            <li v-for="tags in blog.tags" :key="tags" :class="`tag-${tags}`" class="tag">#{{ tags }}</li>
                                         </ul>
                                     </div>
                                     <div>{{ blog.summary }}</div>
