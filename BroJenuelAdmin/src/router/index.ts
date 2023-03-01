@@ -1,4 +1,3 @@
-import { supabase } from "./../service/supabase";
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/Admin/HomeView.vue";
 
