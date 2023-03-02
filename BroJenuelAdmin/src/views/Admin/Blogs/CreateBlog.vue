@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {reactive, watch} from "vue";
+import {reactive} from "vue";
 import Vue3TagsInput from "vue3-tags-input";
 import EditorComponent from "@/components/Editor/EditorComponent.vue";
 import { supabase } from "@/service/supabase";
@@ -16,10 +16,6 @@ const form = reactive({
     is_active: true,
     summary: null,
 });
-
-watch(() => form.content, (val) => {
-    console.log(val)
-})
 
 async function submit() {
     const dataToInsert = {
