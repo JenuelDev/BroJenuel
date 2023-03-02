@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         fallback: "dark",
         storageKey: "brojenuel-color-mode",
     },
-    css: ["@/assets/style/main.scss"],
+    css: ["@/assets/style/main.scss", "highlight.js/scss/agate.scss"],
     app: {
         head: {
             link: [

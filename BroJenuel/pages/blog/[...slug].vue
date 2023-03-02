@@ -18,15 +18,6 @@ useHead({
         lang: "en",
     }),
     ...(process.env.NODE_ENV != "development" ? googleStream() : {}),
-    ...{
-        link: [
-            {
-                media: "screen",
-                rel: "stylesheet",
-                href: "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/agate.min.css",
-            },
-        ],
-    },
 });
 
 onMounted(() => {
