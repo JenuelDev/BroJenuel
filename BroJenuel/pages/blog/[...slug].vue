@@ -6,19 +6,13 @@ const client = useSupabaseClient();
 const slug = route.params.slug[0];
 const showContent = ref(false);
 const { data }: any = await useAsyncData("blog", async () => {
-    const { data }: any = await client
-        .from("blogs")
-        .select(`*, blog_meta(*)`)
-        .eq("slug", slug)
-        .single();
+    const { data }: any = await client.from("blogs").select(`*, blog_meta(*)`).eq("slug", slug).single();
     return data;
 });
 const oldCountViews = data.value.blog_meta && data.value.blog_meta.view_count ? data.value.blog_meta.view_count : 0;
 async function addViewCount() {
-    await client
-        .from("blog_meta")
-        .upsert({ blogs_id: data?.value.id, view_count: oldCountViews + 1 })
-        .select();
+    const queryUpdate: any = { blogs_id: data?.value.id, view_count: oldCountViews + 1 };
+    await client.from("blog_meta").upsert(queryUpdate).select();
 }
 
 useHead({
@@ -54,12 +48,13 @@ onMounted(() => {
             <Transition>
                 <div v-show="showContent" class="pt-40px">
                     <div class="max-w-600px mx-auto px-10px relative pb-5">
-                        <h1 class="text-size-25px font-700 pb-10px">{{ data.title }}</h1>
-                        <div class="flex flex-wrap gap-1">
-                            <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm">#{{ tags }}</div>
+                        <h1 class="text-size-35px font-700 pb-10px text-center">{{ data.title }}</h1>
+                        <div class="flex flex-wrap gap-1 justify-center">
+                            <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm !text-size-20px">#{{ tags }}</div>
                         </div>
-                        <div>
-                            <div><Icon name="ic:baseline-remove-red-eye" /> {{ commafy(oldCountViews) }}</div>
+                        <div class="opacity-50 text-center">
+                            <span class="mr-10px">{{ $dayjs(data.created_at).format("MMM. DD, YYYY") }}</span>
+                            <span><Icon name="ic:baseline-remove-red-eye" /> {{ commafy(oldCountViews) }}</span>
                         </div>
                     </div>
                     <div class="content-render max-w-600px mx-auto px-10px relative" v-html="data.content"></div>

@@ -2,7 +2,7 @@
 const route = useRoute();
 const { setMeta } = useMeta();
 
-useHead({
+useSeoMeta({
     ...setMeta({
         title: "BroJenuel - Jenuel Oras Ganawed",
         description:
@@ -12,6 +12,16 @@ useHead({
         image: "https://brojenuel.com/img/profileImage.ac3f181b.webp",
         lang: "en",
     }),
+});
+
+defineOgImageStatic({
+    component: "DefaultOgImage",
+    path: route.path,
+    title: "BroJenuel",
+    description:
+        "Jenuel Ganawed(BroJenuel/Bro Jenuel) is a software/web developer specializing in creating (and sometimes designing) exceptional websites, applications, and everything in between",
+    themeColor: String,
+    appName: "www.BroJenuel.com",
 });
 </script>
 <template>

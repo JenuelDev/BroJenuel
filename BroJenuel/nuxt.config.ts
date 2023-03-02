@@ -1,11 +1,17 @@
 export default defineNuxtConfig({
     ssr: true,
-    modules: ["@pinia/nuxt", "nuxt-icon", "@nuxtjs/color-mode", "@nuxt/content", "@vueuse/nuxt", "nuxt-windicss", "@nuxtjs/supabase"],
+    modules: ["@pinia/nuxt", "nuxt-icon", "@nuxtjs/color-mode", "@nuxt/content", "@vueuse/nuxt", "nuxt-windicss", "@nuxtjs/supabase", "nuxt-og-image"],
     colorMode: {
         preference: "dark",
         classSuffix: "",
         fallback: "dark",
         storageKey: "brojenuel-color-mode",
+    },
+    // Recommended
+    runtimeConfig: {
+        public: {
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://brojenuel.com",
+        },
     },
     css: ["@/assets/style/main.scss", "highlight.js/scss/agate.scss"],
     app: {
