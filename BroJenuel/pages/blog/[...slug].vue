@@ -5,7 +5,7 @@ const client = useSupabaseClient();
 
 const showContent = ref(false);
 const { data }: any = await useAsyncData("blog", async () => {
-    const { data, error }: any = await client.from("blogs").select().eq("slug", route.params.slug[0]).single();
+    const { data }: any = await client.from("blogs").select().eq("slug", route.params.slug[0]).single();
     return data;
 });
 
@@ -21,17 +21,9 @@ useHead({
     ...{
         link: [
             {
+                media: "screen",
                 rel: "stylesheet",
                 href: "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/agate.min.css",
-            },
-        ],
-        script: [
-            {
-                src: "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js",
-            },
-            {
-                body: true,
-                children: "hljs.highlightAll();",
             },
         ],
     },

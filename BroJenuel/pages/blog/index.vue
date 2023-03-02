@@ -28,11 +28,6 @@ useHead({
                 href: "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/agate.min.css",
             },
         ],
-        script: [
-            {
-                src: "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js",
-            },
-        ],
     },
 });
 </script>
