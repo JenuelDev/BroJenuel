@@ -5,11 +5,21 @@ const isShowContent = ref(false);
 const { setMeta, googleStream } = useMeta();
 
 const { data }: { data: any } = await useAsyncData("blogs", async () => {
-    const { data } = await client.from("blogs").select().eq("is_active", 1).order("id", { ascending: false }).limit(20);
+    const { data } = await client.from("blogs").select(`*, blog_meta(*)`).eq("is_active", 1).order("id", { ascending: false }).limit(20);
     return data;
 });
 isShowContent.value = true;
 
+function commafy(num: number) {
+    var str = num.toString().split(".");
+    if (str[0].length >= 5) {
+        str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, "$1,");
+    }
+    if (str[1] && str[1].length >= 5) {
+        str[1] = str[1].replace(/(\d{3})/g, "$1 ");
+    }
+    return str.join(".");
+}
 useHead({
     ...setMeta({
         title: "Blog - BroJenuel",
@@ -50,26 +60,33 @@ useHead({
                                 v-for="blog in data"
                                 :key="blog.id"
                                 :href="`blog/${blog.slug}`"
-                                class="p-10px rounded-md transform translate-y-1 hover:translate-y-0 transition-transform cursor-pointer group"
+                                class="p-10px rounded-md transform translate-y-1 hover:translate-y-0 transition-transform cursor-pointer group hover:bg-[var(--background-secondary)]"
                             >
                                 <div class="relative group">
                                     <div
-                                        class="absolute h-10px w-10px bg-gray-600 -left-5 group-hover:bg-[var(--primary)] opacity-50 group-hover:opacity-100 transition-all duration-500 rounded-lg delay top-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+                                        class="absolute h-10px w-10px bg-gray-600 -left-5 group-hover:bg-[var(--primary)] opacity-50 group-hover:opacity-100 transition-all duration-300 rounded-lg delay top-[50%] transform translate-y-[-50%] translate-x-[-50%]"
                                     ></div>
                                     <div
-                                        class="absolute h-1px w-1px group-hover:h-50px bg-[var(--primary)] transition-all duration-500 -left-5 top-[50%] opacity-0 group-hover:opacity-100 delay-100 transform translate-y-[-50%] translate-x-[-50%]"
+                                        class="absolute h-1px w-1px group-hover:h-50px bg-[var(--primary)] transition-all duration-500 -left-5 top-[50%] opacity-0 group-hover:opacity-100 transform translate-y-[-50%] translate-x-[-50%]"
                                     ></div>
                                     <div class="absolute top-40%"></div>
                                     <div class="font-700 group-hover:text-[var(--primary)]">
                                         {{ blog.title }}
-                                        <span class="italic font-500 opacity-50 whitespace-nowrap"> - {{ $dayjs(blog.created_at).format("MMM. DD, YYYY") }}</span>
                                     </div>
-                                    <div class="italic flex gap-2">
+                                    <div class="italic flex gap-2 my-1">
                                         <ul class="flex gap-1">
                                             <li v-for="tags in blog.tags" :key="tags" :class="`tag-${tags}`" class="tag">#{{ tags }}</li>
                                         </ul>
                                     </div>
                                     <div>{{ blog.summary }}</div>
+                                    <div>
+                                        <span class="italic font-500 opacity-50 whitespace-nowrap flex gap-20px">
+                                            {{ $dayjs(blog.created_at).format("MMM. DD, YYYY") }}
+                                            <span class="flex items-center gap-7px">
+                                                <Icon name="ic:baseline-remove-red-eye" /> {{ blog.blog_meta ? commafy(blog.blog_meta.view_count) : 0 }}
+                                            </span>
+                                        </span>
+                                    </div>
                                 </div>
                             </NuxtLink>
                         </div>
