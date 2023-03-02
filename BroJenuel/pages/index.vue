@@ -20,7 +20,6 @@ defineOgImageStatic({
     title: "BroJenuel",
     description:
         "Jenuel Ganawed(BroJenuel/Bro Jenuel) is a software/web developer specializing in creating (and sometimes designing) exceptional websites, applications, and everything in between",
-    themeColor: String,
     appName: "www.BroJenuel.com",
 });
 </script>
