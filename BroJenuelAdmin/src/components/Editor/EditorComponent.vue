@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import CodeBlockLowlight from "@tiptap/extension-code-block-lowlight";
-import { Editor, EditorContent } from "@tiptap/vue-3";
+import {Editor, EditorContent} from "@tiptap/vue-3";
 import StarterKit from "@tiptap/starter-kit";
 import { watch } from "vue";
 import { lowlight } from "lowlight/lib/core";
@@ -21,7 +21,7 @@ const props = defineProps({
         default: "",
     },
 });
-const emits = defineEmits(["update:modelValue"]);
+const emits = defineEmits(["update:modelValue", "preservedHtmlChange"]);
 
 const editor = new Editor({
     content: "",
@@ -32,7 +32,11 @@ const editor = new Editor({
         }),
     ],
     onUpdate: () => {
-        emits("update:modelValue", editor.getHTML());
+        const contentElement = document.getElementById('editor-content');
+        if (contentElement) {
+            emits("update:modelValue", contentElement.firstElementChild?.innerHTML.replace(/[<]br[^>]*[>]/gi,""));
+            return;
+        }
     },
 });
 
@@ -177,7 +181,7 @@ watch(
                 redo
             </button>
         </div>
-        <EditorContent :editor="editor" />
+        <EditorContent id="editor-content" :editor="editor" />
     </div>
 </template>
 <style lang="scss">
@@ -273,6 +277,52 @@ watch(
         .hljs-strong {
             font-weight: 700;
         }
+    }
+
+    ul {
+        padding-left: 30px;
+        list-style-type: disc;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+
+    code {
+        position: relative;
+        padding: 10px;
+        background-color: var(--background-secondary);
+        border-radius: 7px;
+        overflow-x: auto;
+        transition: background-color 0.25s;
+        font-size: 16px;
+    }
+
+    p {
+        //padding-bottom: 20px;
+        //padding-top: 10px;
+
+        code {
+            padding: 2px 5px;
+            border-radius: 7px;
+            background-color: #d3d3d3;
+        }
+    }
+
+    *::-webkit-scrollbar {
+        height: 10px;
     }
 }
 </style>

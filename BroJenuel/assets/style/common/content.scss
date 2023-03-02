@@ -27,13 +27,7 @@
 
     ul {
         padding-left: 10px;
-
-        li {
-            &::before {
-                content: "↪";
-                margin-right: 5px;
-            }
-        }
+        list-style-type: disc;
     }
 
     h1,
@@ -45,13 +39,13 @@
         position: relative;
     }
 
-    code {
+    pre {
         position: relative;
         padding: 10px;
         background-color: var(--background-secondary);
         border-radius: 7px;
         overflow-x: auto;
-        transition: background-color 0.25s;
+        transition: all 0.25s;
         font-size: 16px;
     }
 
@@ -67,7 +61,8 @@
 
 .sepia {
     .content-render {
-        code {
+        pre {
+            color: white;
             background-color: rgb(20, 14, 14);
         }
     }
@@ -75,7 +70,8 @@
 
 .light {
     .content-render {
-        code {
+        pre {
+            color: white;
             background-color: rgb(20, 20, 20);
         }
     }
