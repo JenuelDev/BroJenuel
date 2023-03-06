@@ -37,6 +37,19 @@ async function submitMail() {
     isLoading.value = false;
 }
 onMounted(() => (isShowContent.value = true));
+
+const { setMeta } = useMeta();
+
+useHead({
+    ...setMeta({
+        title: "Contact Jenuel Ganawed",
+        description: "Contact me through this contact page.",
+        path: route.path,
+        keywords: ["brojenuel", "Jenuel", "Jenuel Ganawed", "bro jenuel", "web developer", "software developer"],
+        lang: "en",
+    }),
+});
+
 defineOgImageStatic({
     component: "DefaultOgImage",
     path: route.path,

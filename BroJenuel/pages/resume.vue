@@ -1,16 +1,27 @@
 <script setup lang="ts">
 const route = useRoute();
 
+const { setMeta } = useMeta();
+
 definePageMeta({
     layout: "nofooter",
+});
+
+useHead({
+    ...setMeta({
+        title: "Resume - Brojenuel",
+        description: "Check Jenuel Oras Ganawed resume.",
+        path: route.path,
+        keywords: ["brojenuel", "Jenuel", "resume", "Jenuel Oras Ganawed", "jenuel ganawed"],
+        lang: "en",
+    }),
 });
 
 defineOgImageStatic({
     component: "DefaultOgImage",
     path: route.path,
-    title: "BroJenuel",
-    description:
-        "Jenuel Ganawed(BroJenuel/Bro Jenuel) is a developer with a full-stack background and a keen eye for good design. Currently, I focus on building apps and software using web tools.",
+    title: "Resume - BroJenuel",
+    description: "Check Jenuel Oras Ganawed resume.",
     appName: "www.BroJenuel.com",
 });
 </script>

@@ -6,11 +6,10 @@ const { setMeta } = useMeta();
 
 onMounted(() => (isShowContent.value = true));
 
-useSeoMeta({
+useHead({
     ...setMeta({
-        title: "BroJenuel - Jenuel Oras Ganawed",
-        description:
-            "Jenuel Ganawed(BroJenuel/Bro Jenuel) is a developer with a full-stack background and a keen eye for good design. Currently, I focus on building apps and software using web tools.",
+        title: "Timeline - BroJenuel",
+        description: "Check Jenuel Ganawed's Timeline",
         path: route.path,
         keywords: ["brojenuel", "timeline", "jenuel ganawed"],
         lang: "en",
@@ -21,7 +20,7 @@ defineOgImageStatic({
     component: "DefaultOgImage",
     path: route.path,
     title: "BroJenuel Timeline",
-    description: "Check my journey on how I got here.",
+    description: "Check Jenuel Ganawed's Timeline. Check my journey on how I got here.",
     appName: "www.BroJenuel.com",
 });
 </script>

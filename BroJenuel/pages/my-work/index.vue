@@ -3,8 +3,19 @@ const route = useRoute();
 const isShowContent = ref(false);
 const myWork = await queryContent("/my-work").sort({ _id: -1 }).find();
 const codeChallenges = useCodeChallenges();
+const { setMeta } = useMeta();
 
 onMounted(() => (isShowContent.value = true));
+
+useHead({
+    ...setMeta({
+        title: "My Work - Jenuel Ganawed",
+        description: "Check Jenuel Ganawed's Works/Personal Projects.",
+        path: route.path,
+        keywords: ["brojenuel", "Jenuel", "Jenuel Ganawed", "works", "projects"],
+        lang: "en",
+    }),
+});
 
 defineOgImageStatic({
     component: "DefaultOgImage",

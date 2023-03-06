@@ -2,7 +2,7 @@
 const route = useRoute();
 const { setMeta } = useMeta();
 
-useSeoMeta({
+useHead({
     ...setMeta({
         title: "BroJenuel - Jenuel Oras Ganawed",
         description:
