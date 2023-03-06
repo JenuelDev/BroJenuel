@@ -1,7 +1,29 @@
 <script setup lang="ts">
+const route = useRoute();
 const isShowContent = ref(false);
 const experiences = useExperiences();
+const { setMeta } = useMeta();
+
 onMounted(() => (isShowContent.value = true));
+
+useSeoMeta({
+    ...setMeta({
+        title: "BroJenuel - Jenuel Oras Ganawed",
+        description:
+            "Jenuel Ganawed(BroJenuel/Bro Jenuel) is a developer with a full-stack background and a keen eye for good design. Currently, I focus on building apps and software using web tools.",
+        path: route.path,
+        keywords: ["brojenuel", "timeline", "jenuel ganawed"],
+        lang: "en",
+    }),
+});
+
+defineOgImageStatic({
+    component: "DefaultOgImage",
+    path: route.path,
+    title: "BroJenuel Timeline",
+    description: "Check my journey on how I got here.",
+    appName: "www.BroJenuel.com",
+});
 </script>
 <template>
     <NuxtLayout>

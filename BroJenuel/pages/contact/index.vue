@@ -2,6 +2,7 @@
 const isShowContent = ref(false);
 const emailJs = useEmailJs();
 const isLoading = ref(false);
+const route = useRoute();
 const form = reactive<{
     subject: string | null;
     name: string | null;
@@ -36,6 +37,13 @@ async function submitMail() {
     isLoading.value = false;
 }
 onMounted(() => (isShowContent.value = true));
+defineOgImageStatic({
+    component: "DefaultOgImage",
+    path: route.path,
+    title: "Contact - BroJenuel",
+    description: "Contact us, and I will definitely going to reply back.",
+    appName: "www.BroJenuel.com",
+});
 </script>
 <template>
     <NuxtLayout>

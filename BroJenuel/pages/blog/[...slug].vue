@@ -2,13 +2,18 @@
 const route = useRoute();
 const { setMeta, googleStream } = useMeta();
 const client = useSupabaseClient();
-
 const slug = route.params.slug[0];
 const showContent = ref(false);
-const { data }: any = await useAsyncData("blog", async () => {
+
+async function getBlogsFromSupabase(page = 1, search: string | null = null) {
     const { data }: any = await client.from("blogs").select(`*, blog_meta(*)`).eq("slug", slug).single();
     return data;
+}
+
+const { data }: any = await useAsyncData("blog", async () => {
+    return await getBlogsFromSupabase();
 });
+
 const oldCountViews = data.value.blog_meta && data.value.blog_meta.view_count ? data.value.blog_meta.view_count : 0;
 async function addViewCount() {
     const queryUpdate: any = { blogs_id: data?.value.id, view_count: oldCountViews + 1 };
@@ -17,13 +22,21 @@ async function addViewCount() {
 
 useHead({
     ...setMeta({
-        title: data.value.title + " - BroJenuel",
+        title: data.value.title,
         description: data.value.summary,
         path: `/blog/${data.value.slug}`,
         keywords: data.value.keywords,
         lang: "en",
     }),
     ...(process.env.NODE_ENV != "development" ? googleStream() : {}),
+});
+
+defineOgImageStatic({
+    component: "DefaultOgImage",
+    path: route.path,
+    title: data.value.title,
+    description: data.value.summary,
+    appName: "www.BroJenuel.com",
 });
 
 function commafy(num: number) {

@@ -23,8 +23,7 @@ function commafy(num: number) {
 useHead({
     ...setMeta({
         title: "Blog - BroJenuel",
-        description:
-            "Jenuel Ganawed(BroJenuel/Bro Jenuel) is a software/web developer specializing in creating (and sometimes designing) exceptional websites, applications, and everything in between.",
+        description: "Learn about tips and tricks about programming. Read or watch tutorials that will help you on jour journey as a developer.",
         path: route.path,
         keywords: ["brojenuel", "Jenuel", "Jenuel Ganawed", "bro jenuel", "web developer", "blog"],
         image: "https://brojenuel.com/img/profileImage.ac3f181b.webp",
@@ -39,6 +38,13 @@ useHead({
             },
         ],
     },
+});
+
+defineOgImageStatic({
+    component: "DefaultOgImage",
+    path: route.path,
+    title: "BroJenuel - Blog",
+    description: "Learn programming tips, tricks, and best practices to make programming ",
 });
 </script>
 <template>

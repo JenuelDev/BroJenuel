@@ -1,9 +1,18 @@
 <script setup lang="ts">
+const route = useRoute();
 const isShowContent = ref(false);
 const myWork = await queryContent("/my-work").sort({ _id: -1 }).find();
 const codeChallenges = useCodeChallenges();
 
 onMounted(() => (isShowContent.value = true));
+
+defineOgImageStatic({
+    component: "DefaultOgImage",
+    path: route.path,
+    title: "My Works",
+    description: "Check out my works I created. Created some ",
+    appName: "www.BroJenuel.com",
+});
 </script>
 <template>
     <NuxtLayout>

@@ -1,6 +1,17 @@
 <script setup lang="ts">
+const route = useRoute();
+
 definePageMeta({
     layout: "nofooter",
+});
+
+defineOgImageStatic({
+    component: "DefaultOgImage",
+    path: route.path,
+    title: "BroJenuel",
+    description:
+        "Jenuel Ganawed(BroJenuel/Bro Jenuel) is a developer with a full-stack background and a keen eye for good design. Currently, I focus on building apps and software using web tools.",
+    appName: "www.BroJenuel.com",
 });
 </script>
 <template>

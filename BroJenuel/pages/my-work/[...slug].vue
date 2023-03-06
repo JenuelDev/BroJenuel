@@ -1,8 +1,12 @@
+<script setup lang="ts">
+const route = useRoute();
+</script>
 <template>
     <NuxtLayout>
         <main class="pt-40px min-h-80vh max-w-500px mx-auto px-10px relative">
             <div class="pt-40px">
                 <ContentDoc v-slot="{ doc }">
+                    <OgImageStatic component="DefaultOgImage" :path="route.path" :title="doc.title" :description="doc.description" appName="www.BroJenuel.com" />
                     <h1 class="text-size-25px font-700">{{ doc.title }}</h1>
                     <div class="flex flex-wrap gap-2">
                         <div v-for="tag in doc.tags" :key="tag" class="tag" :class="`tag-${tag}`">#{{ tag }}</div>
