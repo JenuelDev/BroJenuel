@@ -3,11 +3,60 @@ const client = useSupabaseClient();
 const route = useRoute();
 const isShowContent = ref(false);
 const { setMeta, googleStream } = useMeta();
-const search = ref(null);
-const { data }: { data: any } = await useAsyncData("blogs", async () => {
-    const { data } = await client.from("blogs").select(`*, blog_meta(*)`).eq("is_active", 1).order("id", { ascending: false }).limit(20);
-    return data;
+const blogInfiniteScrollRef = ref(null);
+const targetIsVisible = useElementVisibility(blogInfiniteScrollRef);
+const filter = reactive<{
+    search: null | string;
+    limit: number;
+    page: number;
+}>({
+    search: null,
+    limit: 50,
+    page: 1,
 });
+const blogsList: any = ref([]);
+const noMoreData = ref(false);
+
+watch(
+    () => targetIsVisible.value,
+    async (val) => {
+        if (noMoreData.value) return;
+        if (val) {
+            filter.page += 1;
+            getBlogs();
+        }
+    }
+);
+
+async function getBlogs(isReset = false) {
+    if (isReset) {
+        blogsList.value = [];
+        filter.page = 1;
+        noMoreData.value = false;
+    }
+
+    let rangeFrom = filter.page * filter.limit - filter.limit;
+    rangeFrom = rangeFrom > 0 ? rangeFrom + 1 : rangeFrom;
+    let rangeTo = filter.page * filter.limit;
+
+    let query = client.from("blogs").select(`*, blog_meta(*)`).eq("is_active", 1).order("id", { ascending: false });
+
+    if (filter.search && filter.search != "") {
+        query.textSearch("content", `'${filter.search}'`);
+    }
+
+    const { data }: any = await query.range(rangeFrom, rangeTo);
+
+    if (data.length == 0) noMoreData.value = true;
+
+    blogsList.value = [...blogsList.value, ...(data as any)];
+    return data;
+}
+
+await useAsyncData("blogs", async () => {
+    await getBlogs();
+});
+
 isShowContent.value = true;
 
 function commafy(num: number) {
@@ -46,6 +95,8 @@ defineOgImageStatic({
     title: "BroJenuel - Blog",
     description: "Learn programming tips, tricks, and best practices to make programming ",
 });
+
+const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
 </script>
 <template>
     <NuxtLayout>
@@ -57,19 +108,46 @@ defineOgImageStatic({
             <div v-show="isShowContent" class="min-h-100vh max-w-850px mx-auto lg:px-10px sm:px-100px px-10px pt-10px pb-5 grid lg:grid-cols-4 grid-cols-1 gap-30px">
                 <div>
                     <div class="sticky mt-5 top-70px">
-                        <input
-                            class="w-full shadow appearance-none border border-[var(--background)] rounded w-full py-2 px-3 text-white leading-tight focus:border-gray-400 focus:outline-none focus:shadow-outline bg-[var(--background-secondary)]"
-                            id="username"
-                            type="text"
-                            placeholder="Search..."
-                            v-model="search"
-                        />
+                        <form @submit.prevent="getBlogs(true)" class="flex gap-7px">
+                            <input
+                                class="w-full shadow appearance-none border border-[var(--background)] rounded w-full py-2 px-3 text-white leading-tight focus:border-gray-400 focus:outline-none focus:shadow-outline bg-[var(--background-secondary)]"
+                                id="username"
+                                type="text"
+                                placeholder="Search..."
+                                v-model="filter.search"
+                            />
+                            <button
+                                type="submit"
+                                class="py-2 px-3 flex items-center justify-center bg-[var(--background-secondary)] rounded-sm cursor-pointer hover:bg-[var(--primary)] hover:text-[var(--background)]"
+                            >
+                                <Icon name="ri:search-fill" />
+                            </button>
+                        </form>
                         <div class="flex-col mt-20px hidden gap-1 lg:flex">
-                            <button type="button" class="py-2 px-5 text-sm bg-[var(--background-secondary)] w-full">VueJS</button>
-                            <button type="button" class="py-2 px-5 text-sm bg-[var(--background-secondary)] w-full">ReactJs</button>
-                            <button type="button" class="py-2 px-5 text-sm bg-[var(--background-secondary)] w-full">SEO</button>
-                            <button type="button" class="py-2 px-5 text-sm bg-[var(--background-secondary)] w-full">News</button>
-                            <button type="button" class="py-2 px-5 text-sm bg-[var(--background-secondary)] w-full">JOB</button>
+                            <button
+                                v-for="buttonFilter in buttonFilters"
+                                :key="buttonFilter"
+                                type="button"
+                                class="py-2 px-5 text-sm bg-[var(--background-secondary)] w-full"
+                                :class="{
+                                    '!bg-[var(--primary)] !text-[var(--background)]': filter.search == buttonFilter,
+                                }"
+                                @click="
+                                    filter.search = buttonFilter;
+                                    getBlogs(true);
+                                "
+                            >
+                                {{ buttonFilter }}
+                            </button>
+                        </div>
+                        <div
+                            class="text-center py-5px hover:text-[var(--primary)] hover:underline cursor-pointer"
+                            @click="
+                                filter.search = null;
+                                getBlogs(true);
+                            "
+                        >
+                            Clear Filters
                         </div>
                         <div class="text-center">
                             <a class="text-size-10px hover:bg-[var(--primary)] hover:text-[var(--background)] px-3" href="/sitemap.xml" target="_blank">SITEMAP</a>
@@ -77,9 +155,9 @@ defineOgImageStatic({
                     </div>
                 </div>
                 <div class="sm:col-span-3">
-                    <div class="grid grid-cols-1 gap-3 sm:pl-0 pl-20px" v-if="data.length">
+                    <div ref="blogInfiniteScroll" class="grid grid-cols-1 gap-3 sm:pl-0 pl-20px" v-if="blogsList.length">
                         <NuxtLink
-                            v-for="blog in data"
+                            v-for="blog in blogsList"
                             :key="blog.id"
                             :href="`blog/${blog.slug}`"
                             class="p-10px rounded-md transform translate-y-1 hover:translate-y-0 transition-transform cursor-pointer group hover:bg-[var(--background-secondary)]"
@@ -111,12 +189,31 @@ defineOgImageStatic({
                                 </div>
                             </div>
                         </NuxtLink>
+                        <div v-if="!noMoreData" ref="blogInfiniteScrollRef" class="text-center text-[var(--primary)] pt-20px">
+                            <div style="font-size: 50px">
+                                <Icon name="svg-spinners:bars-scale-middle" />
+                            </div>
+                            <h1>loading</h1>
+                        </div>
+                        <div v-else ref="blogInfiniteScrollRef" class="text-center text-[var(--primary)] pt-20px">
+                            <div style="font-size: 50px">
+                                <Icon name="wpf:empty-flag" />
+                            </div>
+                            <h1>Oops! No More Data</h1>
+                        </div>
                     </div>
-                    <div v-else class="flex flex-col items-center justify-center gap-20px">
-                        <div class="text-size-100px">😥</div>
-                        <div class="text-center">
-                            <div class="text-size-20px font-700">Empty Blogs</div>
-                            <div>I'm still writing some blogs ✍️📝.</div>
+                    <div v-else>
+                        <div v-if="!noMoreData" ref="blogInfiniteScrollRef" class="text-center text-[var(--primary)] pt-20px">
+                            <div style="font-size: 50px">
+                                <Icon name="svg-spinners:bars-scale-middle" />
+                            </div>
+                            <h1>loading</h1>
+                        </div>
+                        <div v-else ref="blogInfiniteScrollRef" class="text-center text-[var(--primary)] pt-20px">
+                            <div style="font-size: 50px">
+                                <Icon name="wpf:empty-flag" />
+                            </div>
+                            <h1>Oops! No More Data</h1>
                         </div>
                     </div>
                 </div>
