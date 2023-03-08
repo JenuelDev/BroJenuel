@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
     ssr: true,
-    modules: ["@pinia/nuxt", "nuxt-icon", "@nuxtjs/color-mode", "@nuxt/content", "@vueuse/nuxt", "nuxt-windicss", "@nuxtjs/supabase", "nuxt-og-image"],
+    modules: ["@pinia/nuxt", "nuxt-icon", "@nuxtjs/color-mode", "@nuxt/content", "@vueuse/nuxt", "nuxt-windicss", "@nuxtjs/supabase", "nuxt-og-image", "@nuxtjs/google-adsense"],
     colorMode: {
         preference: "dark",
         classSuffix: "",
@@ -38,5 +38,8 @@ export default defineNuxtConfig({
             },
             preload: ["c", "cpp", "java"],
         },
+    },
+    "google-adsense": {
+        id: "ca-pub-2268807726840190",
     },
 });
