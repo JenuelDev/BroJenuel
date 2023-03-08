@@ -70,7 +70,6 @@ onMounted(() => {
                             <span><Icon name="ic:baseline-remove-red-eye" /> {{ commafy(oldCountViews) }}</span>
                         </div>
                     </div>
-                    <adsbygoogle ad-slot="2889713567" ad-layout="in-article" ad-format="fluid" />
                     <div class="content-render max-w-600px mx-auto px-10px relative" v-html="data.content"></div>
                 </div>
             </Transition>
