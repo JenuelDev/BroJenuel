@@ -1,9 +1,23 @@
 <script lang="ts" setup>
 import CodeBlockLowlight from "@tiptap/extension-code-block-lowlight";
-import {Editor, EditorContent} from "@tiptap/vue-3";
-import StarterKit from "@tiptap/starter-kit";
+import { Editor, EditorContent } from "@tiptap/vue-3";
 import { watch } from "vue";
 import { lowlight } from "lowlight/lib/core";
+import Text from "@tiptap/extension-text";
+import Bold from "@tiptap/extension-bold";
+import Italic from "@tiptap/extension-italic";
+import Strike from "@tiptap/extension-strike";
+import Code from "@tiptap/extension-code";
+import Paragraph from "@tiptap/extension-paragraph";
+import Heading from "@tiptap/extension-heading";
+import BulletList from "@tiptap/extension-bullet-list";
+import ListItem from "@tiptap/extension-list-item";
+import OrderedList from "@tiptap/extension-ordered-list";
+import Blockquote from "@tiptap/extension-blockquote";
+import HardBreak from "@tiptap/extension-hard-break";
+import HorizontalRule from "@tiptap/extension-horizontal-rule";
+import History from "@tiptap/extension-history";
+import Document from "@tiptap/extension-document";
 
 import css from "highlight.js/lib/languages/css";
 import js from "highlight.js/lib/languages/javascript";
@@ -21,22 +35,37 @@ const props = defineProps({
         default: "",
     },
 });
-const emits = defineEmits(["update:modelValue", "preservedHtmlChange"]);
+const emits = defineEmits(["update:modelValue", "preservedHtmlChange", "onChangeGetPureHtml"]);
 
 const editor = new Editor({
     content: "",
     extensions: [
-        StarterKit,
+        Text,
+        Bold,
+        Italic,
+        Strike,
+        Code,
+        Paragraph,
+        Heading,
+        BulletList,
+        ListItem,
+        OrderedList,
+        Blockquote,
+        HardBreak,
+        HorizontalRule,
+        History,
+        Document,
         CodeBlockLowlight.configure({
             lowlight,
         }),
     ],
     onUpdate: () => {
-        const contentElement = document.getElementById('editor-content');
+        const contentElement = document.getElementById("editor-content");
         if (contentElement) {
-            emits("update:modelValue", contentElement.firstElementChild?.innerHTML.replace(/[<]br[^>]*[>]/gi,""));
-            return;
+            emits("onChangeGetPureHtml", contentElement.firstElementChild?.innerHTML.replace(/[<]br[^>]*[>]/gi, ""));
         }
+
+        emits("update:modelValue", editor.getHTML());
     },
 });
 

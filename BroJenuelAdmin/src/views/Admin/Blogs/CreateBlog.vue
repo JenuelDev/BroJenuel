@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {reactive} from "vue";
+import { reactive } from "vue";
 import Vue3TagsInput from "vue3-tags-input";
 import EditorComponent from "@/components/Editor/EditorComponent.vue";
 import { supabase } from "@/service/supabase";
@@ -44,6 +44,7 @@ async function submit() {
     form.is_active = false;
     form.summary = null;
     alert("successfully Inserted!");
+    window.location.reload();
 }
 </script>
 <template>
@@ -85,7 +86,7 @@ async function submit() {
                 <input type="text" v-model="form.cover_img" class="w-full max-w-500px" />
             </div>
             <div class="pt-4">Content:</div>
-            <EditorComponent v-model="form.content" />
+            <EditorComponent @onChangeGetPureHtml="(pureHtml) => (form.content = pureHtml)" />
             <div class="mt-10px">
                 <label>
                     <input type="checkbox" v-model="form.is_active" />
