@@ -100,12 +100,12 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
 </script>
 <template>
     <NuxtLayout>
-        <div class="font-800 text-size-20px text-[var(--primary)] flex items-center gap-7px max-w-850px mx-auto mt-90px">
+        <div class="font-800 text-size-20px text-[var(--primary)] flex items-center gap-7px max-w-850px mx-auto mt-90px lg:px-0 sm:px-100px px-10px">
             <Icon name="pajamas:project" />
             Blog
         </div>
         <Transition>
-            <div v-show="isShowContent" class="min-h-100vh max-w-850px mx-auto lg:px-10px sm:px-100px px-10px pt-10px pb-5 grid lg:grid-cols-4 grid-cols-1 gap-30px">
+            <div v-show="isShowContent" class="min-h-100vh max-w-850px mx-auto lg:px-10px sm:px-100px px-10px pt-10px pb-5 grid lg:grid-cols-4 grid-cols-1 gap-40px">
                 <div>
                     <div class="sticky mt-5 top-70px">
                         <form @submit.prevent="getBlogs(true)" class="flex gap-7px">
@@ -170,7 +170,7 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
                                     class="absolute h-1px w-1px group-hover:h-50px bg-[var(--primary)] transition-all duration-500 -left-5 top-[50%] opacity-0 group-hover:opacity-100 transform translate-y-[-50%] translate-x-[-50%]"
                                 ></div>
                                 <div class="absolute top-40%"></div>
-                                <div class="font-700 group-hover:text-[var(--primary)]">
+                                <div class="font-700 group-hover:text-[var(--primary)] text-size-22px">
                                     {{ blog.title }}
                                 </div>
                                 <div class="italic flex gap-2 my-1">
@@ -178,7 +178,7 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
                                         <li v-for="tags in blog.tags" :key="tags" :class="`tag-${tags}`" class="tag">#{{ tags }}</li>
                                     </ul>
                                 </div>
-                                <div>{{ blog.summary }}</div>
+                                <div class="opacity-80">{{ blog.summary }}</div>
                                 <div>
                                     <span class="italic font-500 opacity-50 whitespace-nowrap flex gap-20px">
                                         {{ $dayjs(blog.created_at).format("MMM. DD, YYYY") }}
