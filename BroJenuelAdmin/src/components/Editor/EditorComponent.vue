@@ -18,6 +18,8 @@ import HardBreak from "@tiptap/extension-hard-break";
 import HorizontalRule from "@tiptap/extension-horizontal-rule";
 import History from "@tiptap/extension-history";
 import Document from "@tiptap/extension-document";
+import Youtube from "@tiptap/extension-youtube";
+import Image from "@tiptap/extension-image";
 
 import css from "highlight.js/lib/languages/css";
 import js from "highlight.js/lib/languages/javascript";
@@ -58,6 +60,13 @@ const editor = new Editor({
         CodeBlockLowlight.configure({
             lowlight,
         }),
+        Youtube.configure({
+            controls: true,
+            disableKBcontrols: true,
+        }),
+        Image.configure({
+            allowBase64: true,
+        }),
     ],
     onUpdate: () => {
         const contentElement = document.getElementById("editor-content");
@@ -77,11 +86,63 @@ watch(
         editor.commands.setContent(val, false);
     }
 );
+
+function validURL(str: string) {
+    var pattern = new RegExp(
+        "^(https?:\\/\\/)?" + // protocol
+            "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
+            "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
+            "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
+            "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
+            "(\\#[-a-z\\d_]*)?$",
+        "i"
+    ); // fragment locator
+    return !!pattern.test(str);
+}
+
+function addVideo() {
+    const url = prompt("Enter YouTube URL");
+
+    if (!url || url == "") {
+        alert("Url Should Be a String or URL");
+        return;
+    }
+
+    if (!validURL(url)) {
+        alert("Link is not a youtube URL");
+        return;
+    }
+
+    editor.commands.setYoutubeVideo({
+        src: url,
+        width: "100%" as any,
+        height: Math.max(180, parseInt("480", 10)) || 480,
+    });
+}
+
+function addImage() {
+    const url = window.prompt("URL");
+
+    if (!url || url == "") {
+        alert("Url Should Be a String or URL");
+        return;
+    }
+
+    if (!validURL(url)) {
+        alert("Link is not a youtube URL");
+        return;
+    }
+
+    if (url) {
+        editor.chain().focus().setImage({ src: url }).run();
+    }
+}
 </script>
 <template>
     <div>
         <div v-if="editor" class="editor-tools">
             <button
+                type="button"
                 :class="{ 'is-active': editor.isActive('bold') }"
                 :disabled="!editor.can().chain().focus().toggleBold().run()"
                 title="Bold"
@@ -90,6 +151,7 @@ watch(
                 <i class="bx bx-bold"></i>
             </button>
             <button
+                type="button"
                 :class="{ 'is-active': editor.isActive('italic') }"
                 :disabled="!editor.can().chain().focus().toggleItalic().run()"
                 title="italic"
@@ -98,6 +160,7 @@ watch(
                 <i class="bx bx-italic"></i>
             </button>
             <button
+                type="button"
                 :class="{ 'is-active': editor.isActive('strike') }"
                 :disabled="!editor.can().chain().focus().toggleStrike().run()"
                 title="Strike"
@@ -106,6 +169,7 @@ watch(
                 <i class="bx bx-strikethrough"></i>
             </button>
             <button
+                type="button"
                 :class="{ 'is-active': editor.isActive('code') }"
                 :disabled="!editor.can().chain().focus().toggleCode().run()"
                 title="code"
@@ -113,9 +177,14 @@ watch(
             >
                 <i class="bx bx-code"></i>
             </button>
-            <button title="clear marks" @click="editor.chain().focus().unsetAllMarks().run()">clear marks</button>
-            <button title="clear nodes" @click="editor.chain().focus().clearNodes().run()">clear nodes</button>
+            <button type="button" title="clear marks" @click="editor.chain().focus().unsetAllMarks().run()">
+                clear marks
+            </button>
+            <button type="button" title="clear nodes" @click="editor.chain().focus().clearNodes().run()">
+                clear nodes
+            </button>
             <button
+                type="button"
                 :class="{ 'is-active': editor.isActive('paragraph') }"
                 title="paragraph"
                 @click="editor.chain().focus().setParagraph().run()"
@@ -123,6 +192,7 @@ watch(
                 <i class="bx bx-paragraph"></i>
             </button>
             <button
+                type="button"
                 :class="{
                     'is-active': editor.isActive('heading', { level: 1 }),
                 }"
@@ -132,6 +202,7 @@ watch(
                 h1
             </button>
             <button
+                type="button"
                 :class="{
                     'is-active': editor.isActive('heading', { level: 2 }),
                 }"
@@ -140,6 +211,7 @@ watch(
                 h2
             </button>
             <button
+                type="button"
                 :class="{
                     'is-active': editor.isActive('heading', { level: 3 }),
                 }"
@@ -148,6 +220,7 @@ watch(
                 h3
             </button>
             <button
+                type="button"
                 :class="{
                     'is-active': editor.isActive('heading', { level: 4 }),
                 }"
@@ -156,6 +229,7 @@ watch(
                 h4
             </button>
             <button
+                type="button"
                 :class="{
                     'is-active': editor.isActive('heading', { level: 5 }),
                 }"
@@ -164,6 +238,7 @@ watch(
                 h5
             </button>
             <button
+                type="button"
                 :class="{
                     'is-active': editor.isActive('heading', { level: 6 }),
                 }"
@@ -172,6 +247,7 @@ watch(
                 h6
             </button>
             <button
+                type="button"
                 :class="{ 'is-active': editor.isActive('bulletList') }"
                 class="bullet list"
                 @click="editor.chain().focus().toggleBulletList().run()"
@@ -179,6 +255,7 @@ watch(
                 <i class="bx bx-list-ul"></i>
             </button>
             <button
+                type="button"
                 :class="{ 'is-active': editor.isActive('orderedList') }"
                 class="ordered-list"
                 @click="editor.chain().focus().toggleOrderedList().run()"
@@ -186,6 +263,7 @@ watch(
                 <i class="bx bx-list-ol"></i>
             </button>
             <button
+                type="button"
                 :class="{ 'is-active': editor.isActive('codeBlock') }"
                 title="Code block"
                 @click="editor.chain().focus().toggleCodeBlock().run()"
@@ -193,22 +271,33 @@ watch(
                 <i class="bx bx-code-alt"></i>
             </button>
             <button
+                type="button"
                 :class="{ 'is-active': editor.isActive('blockquote') }"
                 title="blockquote"
                 @click="editor.chain().focus().toggleBlockquote().run()"
             >
                 <i class="bx bxs-quote-right"></i>
             </button>
-            <button title="horizontal rule" @click="editor.chain().focus().setHorizontalRule().run()">
+            <button type="button" title="horizontal rule" @click="editor.chain().focus().setHorizontalRule().run()">
                 horizontal rule
             </button>
-            <button @click="editor.chain().focus().setHardBreak().run()">hard break</button>
-            <button :disabled="!editor.can().chain().focus().undo().run()" @click="editor.chain().focus().undo().run()">
+            <button type="button" @click="editor.chain().focus().setHardBreak().run()">hard break</button>
+            <button
+                type="button"
+                :disabled="!editor.can().chain().focus().undo().run()"
+                @click="editor.chain().focus().undo().run()"
+            >
                 undo
             </button>
-            <button :disabled="!editor.can().chain().focus().redo().run()" @click="editor.chain().focus().redo().run()">
+            <button
+                type="button"
+                :disabled="!editor.can().chain().focus().redo().run()"
+                @click="editor.chain().focus().redo().run()"
+            >
                 redo
             </button>
+            <button type="button" @click="addVideo">Add YouTube video</button>
+            <button @click="addImage">Add Image</button>
         </div>
         <EditorContent id="editor-content" :editor="editor" />
     </div>

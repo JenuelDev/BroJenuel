@@ -427,6 +427,11 @@
   resolved "https://registry.yarnpkg.com/@tiptap/extension-horizontal-rule/-/extension-horizontal-rule-2.0.0-beta.220.tgz#4b8eaf081b38359235312308ebd59950705c7b10"
   integrity sha512-XMIs4R+4BoH5LpIxey513mZuus0XLHqjVayqtf03enmjBTLWzkixvvWLPLw4a47FJL5Q8l4REFHxjNifRzOKkg==
 
+"@tiptap/extension-image@^2.0.0-beta.220":
+  version "2.0.0-beta.220"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-image/-/extension-image-2.0.0-beta.220.tgz#c197b0dbd2f5d7a08f91e63cb8ca98c1972159a4"
+  integrity sha512-xyzlY/cupj/7AVqybQDaPaJ3SwKqe12xMWQlWxhhksuNpbQ6RGHrJz0DBSe61kIkaTZmIUBw055IFEMOPFF53g==
+
 "@tiptap/extension-italic@^2.0.0-beta.218":
   version "2.0.0-beta.218"
   resolved "https://registry.yarnpkg.com/@tiptap/extension-italic/-/extension-italic-2.0.0-beta.218.tgz#9dac0e94b481df04eca409dbe6cf7e7165ab9b7e"
@@ -486,6 +491,11 @@
   version "2.0.0-beta.220"
   resolved "https://registry.yarnpkg.com/@tiptap/extension-text/-/extension-text-2.0.0-beta.220.tgz#3f51d4aac11c16d79cf8ca22502898b67f5bc2f5"
   integrity sha512-3tnffc2YMjNyv7Lbad6fx9wYDE/Buz8vhx76M2AOSrjYbzmTJf7mLkgdlPM0VTy7FGZD5CGgHJAgYNt5HIqPkQ==
+
+"@tiptap/extension-youtube@^2.0.0-beta.220":
+  version "2.0.0-beta.220"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-youtube/-/extension-youtube-2.0.0-beta.220.tgz#d73cdf41249cb4618097212b1503c0f8e86ed5c9"
+  integrity sha512-UBAXBiv1RESQToawIIek/L+rcIdSuhAKkD3LmR0WyoxQAoramqeAabbgm9Ucewp5KSk9T/dPRmX/vRIaEfFsPQ==
 
 "@tiptap/pm@^2.0.0-beta.218":
   version "2.0.0-beta.218"
@@ -2241,6 +2251,11 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
+
+notiflix@^3.2.6:
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/notiflix/-/notiflix-3.2.6.tgz#d713f67734735f9a8611a70eac73250202b8557f"
+  integrity sha512-mUoaJ/s9E4r8o1O8XRqcuXEylpgOkfXtI5SEkBBlBK+LK7nq1c6qQaQcF7QzS/S018Ww7uUqSZotOs5cHENvVw==
 
 npm-run-all@^4.1.5:
   version "4.1.5"

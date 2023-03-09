@@ -68,6 +68,7 @@ async function submit() {
                 Keywords (For SEO):
                 <Vue3TagsInput
                     :tags="form.keywords"
+                    :add-tag-on-keys="[13, 188]"
                     @on-tags-changed="(tags: never[]) => (form.keywords = tags)"
                     placeholder="Enter Tags, comma separated..."
                 />
@@ -76,6 +77,7 @@ async function submit() {
                 Tags (To Be Displayed):
                 <Vue3TagsInput
                     :tags="form.tags"
+                    :add-tag-on-keys="[13, 188]"
                     @on-tags-changed="(tags: never[]) => (form.tags = tags)"
                     placeholder="Enter Tags, comma separated..."
                 />

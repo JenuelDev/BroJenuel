@@ -1,14 +1,18 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
 import ButtonComponent from "@/components/ButtonComponent.vue";
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import { supabase } from "@/service/supabase";
+import { Loading } from "notiflix";
 
+const loading = ref(false);
 const router = useRouter();
 const blogs: any = ref([]);
 
 async function getBlogs() {
+    loading.value = true;
     const { data, error } = await supabase.from("blogs").select().order("id", { ascending: false });
+    loading.value = false;
 
     if (error) {
         alert(error.message);
@@ -21,10 +25,17 @@ async function getBlogs() {
 async function deleteBlog(id: string | number) {
     if (!confirm("Are you sure you want to delete This item?")) return;
 
-    const { error } = await supabase.from("blogs").delete().eq("id", id);
+    loading.value = true;
+    const deleteBlogMeta = await supabase.from("blog_meta").delete().eq("blogs_id", id);
+    if (deleteBlogMeta.error) {
+        alert(deleteBlogMeta.error.message);
+        return;
+    }
 
-    if (error) {
-        alert(error.message);
+    const deleteBlog = await supabase.from("blogs").delete().eq("id", id);
+    loading.value = false;
+    if (deleteBlog.error) {
+        alert(deleteBlog.error.message);
         return;
     }
 
@@ -35,12 +46,14 @@ async function deleteBlog(id: string | number) {
 async function setActive(id: string | number, value: number) {
     if (!confirm(`Set it as ${value ? "Active" : "In-Active"}?`)) return;
 
+    loading.value = true;
     const { error } = await supabase
         .from("blogs")
         .update({
             is_active: value,
         })
         .eq("id", id);
+    loading.value = false;
 
     if (error) {
         alert(error.message);
@@ -48,8 +61,16 @@ async function setActive(id: string | number, value: number) {
     }
 
     getBlogs();
-    alert("Successfully Deleted!");
+    alert(`Successfully set as ${value ? "Active" : "In-Active"}!`);
 }
+
+watch(
+    () => loading.value,
+    (val) => {
+        if (val) Loading.pulse();
+        else Loading.remove();
+    }
+);
 
 onMounted(async () => {
     await getBlogs();
