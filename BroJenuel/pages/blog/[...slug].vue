@@ -62,8 +62,8 @@ onMounted(() => {
                 <div v-show="showContent" class="pt-40px">
                     <div class="max-w-600px mx-auto px-10px relative pb-5">
                         <h1 class="text-size-35px font-700 pb-10px text-center">{{ data.title }}</h1>
-                        <div class="flex flex-wrap gap-1 justify-center">
-                            <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm !text-size-20px">#{{ tags }}</div>
+                        <div class="flex flex-wrap gap-3 justify-center mb-5 mt-5">
+                            <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm !text-size-18px">#{{ tags }}</div>
                         </div>
                         <div class="opacity-50 text-center">
                             <span class="mr-10px">{{ $dayjs(data.created_at).format("MMM. DD, YYYY") }}</span>

@@ -2,6 +2,8 @@
     padding: 1px 10px;
     background-color: var(--background-secondary);
     border-radius: 7px;
+    display: flex;
+    align-items: center;
 
     &.tag-sm {
         font-size: 13px;
