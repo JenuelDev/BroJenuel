@@ -13,10 +13,13 @@ watch(
     <div
         class="fixed top-0 left-0 flex justify-between px-20px items-center transition-all dark:bg-[var(--opacity-background)] z-999 duration-300 w-full h-50px dark:shadow-md shadow-lg backdrop-filter backdrop-blur-sm bg-[var(--background)]"
     >
-        <div class="w-full max-w-700px mx-auto flex justify-between">
-            <NuxtLink href="/">
-                <span>Bro</span>
-                <span class="text-[var(--primary)] font-800">Jenuel</span>
+        <div class="w-full max-w-700px mx-auto flex justify-between items-center">
+            <NuxtLink href="/" class="flex items-center">
+                <IconLaptop class="mr-7px" />
+                <div>
+                    <span>Bro</span>
+                    <span class="text-[var(--primary)] font-800">Jenuel</span>
+                </div>
             </NuxtLink>
 
             <div class="flex gap-3 pr-20px">
