@@ -14,7 +14,7 @@ const { data }: any = await useAsyncData("blog", async () => {
     return await getBlogsFromSupabase();
 });
 
-const oldCountViews = data.value.blog_meta && data.value.blog_meta.view_count ? data.value.blog_meta.view_count : 0;
+const oldCountViews: number = data.value.blog_meta && data.value.blog_meta.view_count ? data.value.blog_meta.view_count : 0;
 async function addViewCount() {
     const queryUpdate: any = { blogs_id: data?.value.id, view_count: oldCountViews + 1 };
     await client.from("blog_meta").upsert(queryUpdate).select();
@@ -71,6 +71,11 @@ onMounted(() => {
                         </div>
                     </div>
                     <div class="content-render max-w-600px mx-auto px-10px relative" v-html="data.content"></div>
+                    <ClientOnly>
+                        <div class="max-w-600px mx-auto px-10px relative pb-5 mt-50px">
+                            <Disqus :identifier="`BroJenuel-${data.slug}`" url="https://brojenuel.disqus.com" :title="data.title" />
+                        </div>
+                    </ClientOnly>
                 </div>
             </Transition>
         </main>

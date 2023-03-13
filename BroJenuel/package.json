@@ -29,6 +29,7 @@
     "emailjs-com": "^3.2.0",
     "highlight.js": "^11.7.0",
     "pinia": "^2.0.29",
-    "storage-container-js": "^0.1.5"
+    "storage-container-js": "^0.1.5",
+    "vue-disqus": "^5.1.0"
   }
 }
