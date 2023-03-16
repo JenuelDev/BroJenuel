@@ -127,7 +127,7 @@ const skills = [
                                 <Icon class="text-size-25px" :name="skill.icon" />
                                 <div class="font-700">{{ skill.tech }}</div>
                             </div>
-                            <div class="text-size-14px tracking-wide leading-relaxed" v-html="skill.description"></div>
+                            <div class="text-size-14px tracking-wide leading-relaxed">{{ skill.description }}</div>
                         </div>
                         <div class="flex gap-2 pt-10px">
                             <div v-for="tool in skill.tools" :key="tool.text">

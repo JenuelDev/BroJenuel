@@ -174,7 +174,7 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
                                     {{ blog.title }}
                                 </div>
                                 <div class="italic flex gap-2 my-1">
-                                    <ul class="flex gap-1">
+                                    <ul class="flex gap-1 flex-wrap">
                                         <li v-for="tags in blog.tags" :key="tags" :class="`tag-${tags}`" class="tag">#{{ tags }}</li>
                                     </ul>
                                 </div>
