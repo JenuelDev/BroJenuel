@@ -96,7 +96,7 @@ defineOgImageStatic({
     description: "Learn programming tips, tricks, and best practices to make programming ",
 });
 
-const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
+const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job", "Health"];
 </script>
 <template>
     <NuxtLayout>
@@ -106,8 +106,8 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
         </div>
         <Transition>
             <div v-show="isShowContent" class="min-h-100vh max-w-850px mx-auto lg:px-10px sm:px-100px px-10px pt-10px pb-5 grid lg:grid-cols-4 grid-cols-1 gap-40px">
-                <div>
-                    <div class="sticky mt-5 top-70px">
+                <div class="col-span-3 lg:col-span-1">
+                    <div class="sticky pt-5 top-50px mx-auto bg-[var(--background)] z-99 w-full">
                         <form @submit.prevent="getBlogs(true)" class="flex gap-7px">
                             <input
                                 class="w-full shadow appearance-none border border-[var(--background)] rounded w-full py-2 px-3 text-white leading-tight focus:border-gray-400 focus:outline-none focus:shadow-outline bg-[var(--background-secondary)]"
@@ -123,12 +123,12 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
                                 <Icon name="ri:search-fill" />
                             </button>
                         </form>
-                        <div class="flex-col mt-20px hidden gap-1 lg:flex">
+                        <div class="flex lg:flex-col justify-center flex-row mt-20px gap-1 flex-wrap">
                             <button
                                 v-for="buttonFilter in buttonFilters"
                                 :key="buttonFilter"
                                 type="button"
-                                class="py-2 px-5 text-sm bg-[var(--background-secondary)] w-full"
+                                class="py-1 px-5 text-sm bg-[var(--background-secondary)] lg:w-full inline-block opacity-75 hover:opacity-100"
                                 :class="{
                                     '!bg-[var(--primary)] !text-[var(--background)]': filter.search == buttonFilter,
                                 }"
@@ -141,7 +141,7 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
                             </button>
                         </div>
                         <div
-                            class="text-center py-5px hover:text-[var(--primary)] hover:underline cursor-pointer"
+                            class="text-center pt-20px pb-10px hover:text-[var(--primary)] hover:underline cursor-pointer"
                             @click="
                                 filter.search = null;
                                 getBlogs(true);
@@ -154,6 +154,7 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job"];
                         </div>
                     </div>
                 </div>
+
                 <div class="sm:col-span-3">
                     <div ref="blogInfiniteScroll" class="grid grid-cols-1 gap-3 sm:pl-0 pl-20px" v-if="blogsList.length">
                         <NuxtLink
