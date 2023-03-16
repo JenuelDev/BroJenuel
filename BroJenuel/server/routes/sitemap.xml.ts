@@ -47,7 +47,7 @@ export default defineEventHandler(async (event) => {
         });
     }
 
-    const { data, error }: any = await client.from("blogs").select().order("id", { ascending: false }).eq("is_active", 1).limit(2000);
+    const { data, error }: any = await client.from("blogs").select().order("id", { ascending: false }).eq("is_active", 1).limit(5000);
 
     for (const blog of data) {
         sitemap.write({
