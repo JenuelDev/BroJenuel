@@ -119,7 +119,7 @@ const skills = [
                     <div class="indent-md">I am continuously learning to keep up with the latest technologies and be able to pick the best tech for the job.</div>
                 </div>
             </div>
-            <div class="max-w-530px mx-auto px-10px pt-30px">
+            <div class="max-w-600px lg:max-w-650px mx-auto px-10px pt-30px">
                 <div class="grid sm:grid-cols-2 grid-cols-1 gap-3">
                     <div v-for="skill in skills" :key="skill.tech" class="flex flex-col justify-between pb-5 transform scale-98 hover:scale-100 transition-all">
                         <div>

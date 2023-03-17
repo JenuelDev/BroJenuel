@@ -54,28 +54,85 @@ onMounted(() => {
     showContent.value = true;
     addViewCount();
 });
+
+function share(social: string) {
+    let url = "https://brojenuel.com" + route.fullPath;
+    if (social == "facebook") {
+        const navUrl = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+        window.open(navUrl, "_blank");
+    }
+
+    if (social == "twitter") {
+        const navUrl = "https://twitter.com/intent/tweet?text=" + url;
+        window.open(navUrl, "_blank");
+    }
+
+    if (social == "linkedin") {
+        const navUrl = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
+        window.open(navUrl, "_blank");
+    }
+
+    if (social == "copy") {
+        navigator.clipboard.writeText(url).then(() => {
+            alert("Link Copied.");
+        });
+    }
+}
 </script>
 <template>
     <NuxtLayout>
         <main class="pt-40px min-h-80vh">
             <Transition>
-                <div v-show="showContent" class="pt-40px">
-                    <div class="max-w-600px mx-auto px-10px relative pb-5">
-                        <h1 class="text-size-35px font-700 pb-10px text-center">{{ data.title }}</h1>
-                        <div class="flex flex-wrap gap-3 justify-center mb-5 mt-5">
-                            <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm !text-size-18px">#{{ tags }}</div>
+                <div v-show="showContent" class="pt-40px max-w-600px lg:max-w-700px mx-auto pb-5 px-10px">
+                    <div>
+                        <div class="mb-25px">
+                            <h1 class="text-2xl lg:text-5xl md:text-4xl md:text-3xl font-700 pb-10px font-kumbhsans">{{ data.title }}</h1>
+                            <p class="text-xl lg:text-3xl md:text-2xl sm:text-xl md font-sans font-100 mb-2"><span class="text-[var(--primary)]">/</span> {{ data.summary }}</p>
+                            <div class="flex flex-wrap gap-3 mb-3">
+                                <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm !text-size-18px">#{{ tags }}</div>
+                            </div>
+                            <div class="text-lg opacity-70 mb-2">
+                                <span class="mr-10px">{{ $dayjs(data.created_at).format("MMM. DD, YYYY. h:mm A") }}</span>
+                                <span><Icon name="ic:baseline-remove-red-eye" /> {{ commafy(oldCountViews) }}</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button
+                                    class="h-30px w-30px bg-[var(--background-secondary)] rounded-full flex items-center justify-center hover:text-[var(--primary)]"
+                                    @click="share('facebook')"
+                                    title="Share To Facebook"
+                                >
+                                    <Icon name="ri:facebook-fill"></Icon>
+                                </button>
+                                <button
+                                    class="h-30px w-30px bg-[var(--background-secondary)] rounded-full flex items-center justify-center hover:text-[var(--primary)]"
+                                    @click="share('twitter')"
+                                    title="Share to Twitter"
+                                >
+                                    <Icon name="mdi:twitter"></Icon>
+                                </button>
+                                <button
+                                    class="h-30px w-30px bg-[var(--background-secondary)] rounded-full flex items-center justify-center hover:text-[var(--primary)]"
+                                    @click="share('linkedin')"
+                                    title="Share to LinkedIN"
+                                >
+                                    <Icon name="ri:linkedin-fill"></Icon>
+                                </button>
+                                <button
+                                    class="h-30px w-30px bg-[var(--background-secondary)] rounded-full flex items-center justify-center hover:text-[var(--primary)]"
+                                    @click="share('copy')"
+                                    title="Copy Link"
+                                >
+                                    <Icon name="ph:link-simple-bold"></Icon>
+                                </button>
+                            </div>
                         </div>
-                        <div class="opacity-50 text-center">
-                            <span class="mr-10px">{{ $dayjs(data.created_at).format("MMM. DD, YYYY") }}</span>
-                            <span><Icon name="ic:baseline-remove-red-eye" /> {{ commafy(oldCountViews) }}</span>
-                        </div>
+                        <div class="content-render max-w-600px lg:max-w-700px mx-auto relative font-poly text-l md:text-xl" v-html="data.content"></div>
+                        <ClientOnly>
+                            <div class="max-w-600px mx-auto px-10px relative pb-5 mt-50px">
+                                <Disqus :identifier="`BroJenuel-${data.slug}`" url="https://brojenuel.disqus.com" :title="data.title" />
+                            </div>
+                        </ClientOnly>
                     </div>
-                    <div class="content-render max-w-600px mx-auto px-10px relative" v-html="data.content"></div>
-                    <ClientOnly>
-                        <div class="max-w-600px mx-auto px-10px relative pb-5 mt-50px">
-                            <Disqus :identifier="`BroJenuel-${data.slug}`" url="https://brojenuel.disqus.com" :title="data.title" />
-                        </div>
-                    </ClientOnly>
                 </div>
             </Transition>
         </main>

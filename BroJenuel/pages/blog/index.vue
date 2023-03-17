@@ -171,15 +171,15 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job", "Health"];
                                     class="absolute h-1px w-1px group-hover:h-50px bg-[var(--primary)] transition-all duration-500 -left-5 top-[50%] opacity-0 group-hover:opacity-100 transform translate-y-[-50%] translate-x-[-50%]"
                                 ></div>
                                 <div class="absolute top-40%"></div>
-                                <div class="font-700 group-hover:text-[var(--primary)] text-size-22px">
-                                    {{ blog.title }}
+                                <div>
+                                    <span class="group-hover:text-[var(--primary)] text-size-20px font-kumbhsans font-800"> {{ blog.title }}. </span>
+                                    <span class="opacity-80 font-poly">{{ blog.summary }}</span>
                                 </div>
                                 <div class="italic flex gap-2 my-1">
                                     <ul class="flex gap-1 flex-wrap">
                                         <li v-for="tags in blog.tags" :key="tags" :class="`tag-${tags}`" class="tag">#{{ tags }}</li>
                                     </ul>
                                 </div>
-                                <div class="opacity-80">{{ blog.summary }}</div>
                                 <div>
                                     <span class="italic font-500 opacity-50 whitespace-nowrap flex gap-20px">
                                         {{ $dayjs(blog.created_at).format("MMM. DD, YYYY") }}

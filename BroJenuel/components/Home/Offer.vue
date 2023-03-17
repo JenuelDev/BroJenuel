@@ -13,7 +13,7 @@ const offers = useMyOffers();
                     </div>
                 </div>
             </div>
-            <div class="max-w-550px mx-auto px-10px pt-20px">
+            <div class="max-w-600px lg:max-w-700px mx-auto px-10px pt-20px">
                 <div class="grid grid-cols-1 gap-3">
                     <div v-for="offer in offers" :key="offer.title" class="p-5 bg-[var(--background-secondary)] rounded-md group">
                         <div class="flex gap-2 text-size-20px group-hover:text-[var(--primary)] font-700">

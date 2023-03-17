@@ -40,26 +40,21 @@ onMounted(() => {
     <NuxtLayout>
         <HomeIntro />
         <HomeAboutMe />
-        <div class="w-full max-w-550px mx-auto mt-50px px-20px">
-            <h2 class="mb-3">Recent Blogs</h2>
+        <div class="w-full max-w-600px lg:max-w-700px mx-auto mt-50px px-20px">
+            <h2 class="mb-3 text-[var(--primary)]">Recent Blogs</h2>
             <div v-show="!loadingBlogs" class="grid sm:grid-cols-2 grid-cols-1 gap-3">
-                <a
-                    v-for="blog in blogs"
-                    :key="blog.id"
-                    :href="`/blog/${blog.slug}`"
-                    target="_blank"
-                    class="group p-2 bg-[var(--background-secondary)] rounded-md flex flex-col justify-between gap-20px cursor-pointer transform translate-y-0 hover:translate-y-[-3px] transition-all duration-300 opacity-80 hover:opacity-100"
-                >
+                <NuxtLink v-for="(blog, i) in blogs" :key="blog.id" :href="`/blog/${blog.slug}`" class="group p-2 rounded-md gap-20px cursor-pointer flex gap-1">
                     <div>
-                        <h3 class="font-700 group-hover:text-[var(--primary)]">{{ blog.title }}</h3>
-                        <div class="text-size-14px">{{ blog.summary.slice(0, 100) }}...</div>
+                        <div class="bg-[var(--background-secondary)] h-25px w-25px rounded-full flex items-center justify-center text-[var(--primary)]">{{ i + 1 }}</div>
                     </div>
-                    <div>
-                        <ul class="flex gap-1 !text-size-10px flex flex-wrap">
-                            <li v-for="tags in blog.tags" :key="tags" :class="`tag-${tags}`" class="tag">#{{ tags }}</li>
-                        </ul>
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <h3 class="group-hover:underline decoration-[var(--primary)] text-size-25px font-800 mb-2 font-kumbhsans">{{ blog.title }}</h3>
+                            <div class="text-size-14px opacity-90">{{ blog.summary.slice(0, 100) }}...</div>
+                            <span class="font-700 text-[var(--primary)]">{{ $dayjs(blog.updated_at).format("DD MMM, YYYY") }}</span>
+                        </div>
                     </div>
-                </a>
+                </NuxtLink>
             </div>
             <div v-show="loadingBlogs" class="grid sm:grid-cols-2 grid-cols-1 gap-3">
                 <div role="status" class="max-w-sm animate-pulse">
