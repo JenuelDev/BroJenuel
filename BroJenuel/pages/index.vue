@@ -41,7 +41,7 @@ onMounted(() => {
         <HomeIntro />
         <HomeAboutMe />
         <div class="w-full max-w-600px lg:max-w-700px mx-auto mt-50px px-20px">
-            <h2 class="mb-3 text-[var(--primary)]">Recent Blogs</h2>
+            <h2 class="mb-3 text-[var(--primary)]">Recent Articles</h2>
             <div v-show="!loadingBlogs" class="grid sm:grid-cols-2 grid-cols-1 gap-3">
                 <NuxtLink v-for="(blog, i) in blogs" :key="blog.id" :href="`/blog/${blog.slug}`" class="group p-2 rounded-md gap-20px cursor-pointer flex gap-1">
                     <div>

@@ -1,20 +1,17 @@
 <script lang="ts" setup>
 const route = useRoute();
-const { setMeta, googleStream } = useMeta();
+const { setMeta } = useMeta();
 const client = useSupabaseClient();
 const slug = route.params.slug[0];
 const showContent = ref(false);
 
-async function getBlogsFromSupabase(page = 1, search: string | null = null) {
+const { data }: any = await useAsyncData("blog", async () => {
     const { data }: any = await client.from("blogs").select(`*, blog_meta(*)`).eq("slug", slug).single();
     return data;
-}
-
-const { data }: any = await useAsyncData("blog", async () => {
-    return await getBlogsFromSupabase();
 });
 
 const oldCountViews: number = data.value.blog_meta && data.value.blog_meta.view_count ? data.value.blog_meta.view_count : 0;
+
 async function addViewCount() {
     const queryUpdate: any = { blogs_id: data?.value.id, view_count: oldCountViews + 1 };
     await client.from("blog_meta").upsert(queryUpdate).select();
@@ -28,7 +25,6 @@ useHead({
         keywords: data.value.keywords,
         lang: "en",
     }),
-    ...(process.env.NODE_ENV != "development" ? googleStream() : {}),
 });
 
 defineOgImageStatic({
