@@ -1,5 +1,3 @@
-<a href="https://app.daily.dev/BroJenuel" style="float:right;"><img align="right" src="https://github.com/BroJenuel/BroJenuel/blob/master/devcard.svg" width="380" alt="BroJenusl's Dev Card"/></a>
-
 ## ✋ Hi! My Name is [Jenuel Ganawed 👈](https://jenuelganawed.ml/#/) And I A Web/Software Developer
 
 
