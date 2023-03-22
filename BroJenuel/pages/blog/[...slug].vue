@@ -24,16 +24,18 @@ useHead({
         path: `/blog/${data.value.slug}`,
         keywords: data.value.keywords,
         lang: "en",
+        ...(/\.(jpg|gif|png)$/.test(data.cover_img) ? { image: data.cover_img } : {}),
     }),
 });
 
-defineOgImageStatic({
-    component: "DefaultOgImage",
-    path: route.path,
-    title: data.value.title,
-    description: data.value.summary,
-    appName: "www.BroJenuel.com",
-});
+if (!data.cover_img)
+    defineOgImageStatic({
+        component: "DefaultOgImage",
+        path: route.path,
+        title: data.value.title,
+        description: data.value.summary,
+        appName: "www.BroJenuel.com",
+    });
 
 function commafy(num: number) {
     var str = num.toString().split(".");
@@ -83,11 +85,16 @@ function share(social: string) {
     <NuxtLayout>
         <main class="pt-40px min-h-80vh">
             <Transition>
-                <div v-show="showContent" class="pt-40px max-w-600px lg:max-w-700px mx-auto pb-5 px-10px">
+                <div v-show="showContent" class="pt-40px max-w-600px lg:max-w-800px mx-auto pb-5 px-10px">
                     <div>
                         <div class="mb-25px">
                             <h1 class="text-2xl lg:text-5xl md:text-4xl md:text-3xl font-700 pb-10px font-kumbhsans">{{ data.title }}</h1>
-                            <p class="text-xl lg:text-3xl md:text-2xl sm:text-xl md font-sans font-100 mb-2"><span class="text-[var(--primary)]">/</span> {{ data.summary }}</p>
+                            <div>
+                                <template v-if="/\.(jpg|gif|png)$/.test(data.cover_img)">
+                                    <img :src="data.cover_img" alt="" srcset="" class="float-left sm:w-450px w-full pr-20px pt-10px" />
+                                </template>
+                                <p class="text-xl lg:text-3xl md:text-2xl sm:text-xl md font-sans font-100 mb-5"><span class="text-[var(--primary)]">/</span> {{ data.summary }}</p>
+                            </div>
                             <div class="flex flex-wrap gap-3 mb-3">
                                 <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm !text-size-18px">#{{ tags }}</div>
                             </div>
