@@ -312,7 +312,7 @@ function addImage() {
                 <Icon icon="material-symbols:youtube-activity" class="text-size-20px" />
                 Add YouTube video
             </button>
-            <button @click="addImage" title="add image">
+            <button @click="addImage" title="add image" type="button">
                 <Icon icon="material-symbols:add-photo-alternate-outline" />
                 Add Image
             </button>
