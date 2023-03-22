@@ -20,7 +20,8 @@ import History from "@tiptap/extension-history";
 import Document from "@tiptap/extension-document";
 import Youtube from "@tiptap/extension-youtube";
 import Image from "@tiptap/extension-image";
-
+import Link from "@tiptap/extension-link";
+import { Icon } from "@iconify/vue";
 import css from "highlight.js/lib/languages/css";
 import js from "highlight.js/lib/languages/javascript";
 import ts from "highlight.js/lib/languages/typescript";
@@ -66,6 +67,9 @@ const editor = new Editor({
         }),
         Image.configure({
             allowBase64: true,
+        }),
+        Link.configure({
+            openOnClick: false,
         }),
     ],
     onUpdate: () => {
@@ -177,12 +181,7 @@ function addImage() {
             >
                 <i class="bx bx-code"></i>
             </button>
-            <button type="button" title="clear marks" @click="editor.chain().focus().unsetAllMarks().run()">
-                clear marks
-            </button>
-            <button type="button" title="clear nodes" @click="editor.chain().focus().clearNodes().run()">
-                clear nodes
-            </button>
+
             <button
                 type="button"
                 :class="{ 'is-active': editor.isActive('paragraph') }"
@@ -207,6 +206,7 @@ function addImage() {
                     'is-active': editor.isActive('heading', { level: 2 }),
                 }"
                 @click="editor.chain().focus().toggleHeading({ level: 2 }).run()"
+                title="h2"
             >
                 h2
             </button>
@@ -216,6 +216,7 @@ function addImage() {
                     'is-active': editor.isActive('heading', { level: 3 }),
                 }"
                 @click="editor.chain().focus().toggleHeading({ level: 3 }).run()"
+                title="h3"
             >
                 h3
             </button>
@@ -225,6 +226,7 @@ function addImage() {
                     'is-active': editor.isActive('heading', { level: 4 }),
                 }"
                 @click="editor.chain().focus().toggleHeading({ level: 4 }).run()"
+                title="h4"
             >
                 h4
             </button>
@@ -234,6 +236,7 @@ function addImage() {
                     'is-active': editor.isActive('heading', { level: 5 }),
                 }"
                 @click="editor.chain().focus().toggleHeading({ level: 5 }).run()"
+                title="h5"
             >
                 h5
             </button>
@@ -243,6 +246,7 @@ function addImage() {
                     'is-active': editor.isActive('heading', { level: 6 }),
                 }"
                 @click="editor.chain().focus().toggleHeading({ level: 6 }).run()"
+                title="h6"
             >
                 h6
             </button>
@@ -251,6 +255,7 @@ function addImage() {
                 :class="{ 'is-active': editor.isActive('bulletList') }"
                 class="bullet list"
                 @click="editor.chain().focus().toggleBulletList().run()"
+                title="unordered list"
             >
                 <i class="bx bx-list-ul"></i>
             </button>
@@ -259,6 +264,7 @@ function addImage() {
                 :class="{ 'is-active': editor.isActive('orderedList') }"
                 class="ordered-list"
                 @click="editor.chain().focus().toggleOrderedList().run()"
+                title="ordered list"
             >
                 <i class="bx bx-list-ol"></i>
             </button>
@@ -281,23 +287,41 @@ function addImage() {
             <button type="button" title="horizontal rule" @click="editor.chain().focus().setHorizontalRule().run()">
                 horizontal rule
             </button>
-            <button type="button" @click="editor.chain().focus().setHardBreak().run()">hard break</button>
+            <button type="button" @click="editor.chain().focus().setHardBreak().run()" title="hard break">
+                hard break
+            </button>
             <button
                 type="button"
                 :disabled="!editor.can().chain().focus().undo().run()"
                 @click="editor.chain().focus().undo().run()"
+                title="undo"
             >
+                <Icon icon="material-symbols:undo" />
                 undo
             </button>
             <button
                 type="button"
                 :disabled="!editor.can().chain().focus().redo().run()"
                 @click="editor.chain().focus().redo().run()"
+                title="redo"
             >
+                <Icon icon="material-symbols:redo" />
                 redo
             </button>
-            <button type="button" @click="addVideo">Add YouTube video</button>
-            <button @click="addImage">Add Image</button>
+            <button type="button" @click="addVideo" title="add youtube video">
+                <Icon icon="material-symbols:youtube-activity" class="text-size-20px" />
+                Add YouTube video
+            </button>
+            <button @click="addImage" title="add image">
+                <Icon icon="material-symbols:add-photo-alternate-outline" />
+                Add Image
+            </button>
+            <button type="button" title="clear marks" @click="editor.chain().focus().unsetAllMarks().run()">
+                clear marks
+            </button>
+            <button type="button" title="clear nodes" @click="editor.chain().focus().clearNodes().run()">
+                clear nodes
+            </button>
         </div>
         <EditorContent id="editor-content" :editor="editor" />
     </div>
@@ -314,6 +338,10 @@ function addImage() {
         border-radius: 7px;
         padding-left: 5px;
         padding-right: 5px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 7px;
 
         &:hover {
             background: #363636;
@@ -323,12 +351,14 @@ function addImage() {
 }
 
 .ProseMirror {
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     margin-top: 10px;
     outline: none;
     border: 1px solid black;
     border-radius: 7px;
-    min-height: 300px;
+    min-height: 390px;
+    max-height: 400px;
+    overflow-y: auto;
 
     pre {
         background: #0d0d0d;
@@ -436,6 +466,16 @@ function addImage() {
             padding: 2px 5px;
             border-radius: 7px;
             background-color: #d3d3d3;
+        }
+
+        a {
+            cursor: pointer;
+            color: #057d92;
+
+            &:hover {
+                color: #054a68;
+                text-decoration: underline;
+            }
         }
     }
 

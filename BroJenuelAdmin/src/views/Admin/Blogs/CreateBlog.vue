@@ -5,6 +5,7 @@ import EditorComponent from "@/components/Editor/EditorComponent.vue";
 import { supabase } from "@/service/supabase";
 import { useRouter } from "vue-router";
 import ButtonComponent from "@/components/ButtonComponent.vue";
+import { Report } from "notiflix";
 
 const router = useRouter();
 const form = reactive({
@@ -14,10 +15,37 @@ const form = reactive({
     content: "",
     cover_img: null,
     is_active: true,
-    summary: null,
+    summary: "",
 });
 
 async function submit() {
+    if (form.summary.replace(" ", "") == "") {
+        Report.failure(
+            "Summary Field Empty!",
+            "The Summary is a required field. Please make sure to set its value.",
+            "Ok"
+        );
+        return;
+    }
+
+    if (!form.tags.length || !form.keywords.length) {
+        Report.failure(
+            "Tags or Keywords are Required",
+            "Please Check keywords or tags. Both should have a value.",
+            "Ok"
+        );
+        return;
+    }
+
+    if (form.content.replace(" ", "") == "") {
+        Report.failure(
+            "Content Is Required",
+            "The Content is the most important property. Please make sure to add a content.",
+            "Ok"
+        );
+        return;
+    }
+
     const dataToInsert = {
         title: form.title,
         tags: form.tags,
@@ -42,16 +70,16 @@ async function submit() {
     form.content = "";
     form.cover_img = null;
     form.is_active = false;
-    form.summary = null;
+    form.summary = "";
     alert("successfully Inserted!");
     window.location.reload();
 }
 </script>
 <template>
     <div class="w-full max-w-800px mx-auto">
-        <ButtonComponent @click="router.push('/admin/blogs')"> Back </ButtonComponent>
+        <ButtonComponent class="fixed top-70px left-20px" @click="router.push('/admin/blogs')"> Back </ButtonComponent>
         <div class="flex justify-between items-end pb-20px">
-            <div class="font-800 text-size-20px">Create Blog</div>
+            <div class="font-800 text-size-30px">Create Blog</div>
         </div>
         <form @submit.prevent="submit">
             <div class="pb-10px">
@@ -60,7 +88,7 @@ async function submit() {
                     type="text"
                     v-model="form.title"
                     placeholder="ex. how to code"
-                    class="w-full max-w-500px"
+                    class="w-full max-w-500px rounded-md"
                     required
                 />
             </div>
@@ -84,11 +112,31 @@ async function submit() {
             </div>
             <div>
                 Cover Image URL:<br />
-                <small>If no provided, it will auto generate cover</small><br />
-                <input type="text" v-model="form.cover_img" class="w-full max-w-500px" />
+                <small>
+                    If no provided, it will auto generate cover. Can be a <b>youtube link</b> or <b>image link</b>.
+                </small>
+                <br />
+                <input
+                    type="text"
+                    v-model="form.cover_img"
+                    placeholder="youtube link or image link"
+                    class="w-full max-w-500px rounded-md"
+                />
             </div>
             <div class="pt-4">Content:</div>
-            <EditorComponent @onChangeGetPureHtml="(pureHtml) => (form.content = pureHtml)" />
+            <div class="mb-3">
+                <EditorComponent @onChangeGetPureHtml="(pureHtml) => (form.content = pureHtml)" />
+            </div>
+            <div>
+                Summary:<br />
+                <textarea
+                    type="text"
+                    v-model="form.summary"
+                    class="w-full min-h-100px rounded-lg"
+                    placeholder="Summary"
+                    required
+                ></textarea>
+            </div>
             <div class="mt-10px">
                 <label>
                     <input type="checkbox" v-model="form.is_active" />
@@ -96,16 +144,12 @@ async function submit() {
                 </label>
             </div>
             <div>
-                Summary:<br />
-                <input type="text" v-model="form.summary" class="w-full max-w-500px" />
-            </div>
-            <div>
-                <button
+                <ButtonComponent
                     type="submit"
                     class="border border-black p-5px rounded-md hover:bg-black hover:text-white mt-10px"
                 >
                     Publish Blog
-                </button>
+                </ButtonComponent>
             </div>
         </form>
     </div>
