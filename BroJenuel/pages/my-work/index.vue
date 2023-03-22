@@ -7,6 +7,24 @@ const { setMeta } = useMeta();
 
 onMounted(() => (isShowContent.value = true));
 
+const WORKS = [
+    {
+        title: "Believers Sword",
+        description: "A app for studying the bible for desktop. Currently supports windows only.",
+        techs: ["electron", "electron.builder", "Vue3", "windiCss"],
+        links: [
+            { link: "https://github.com/Bible-Projects/believers-sword-app", icon: "ant-design:github-filled", tooltip: "Open in Github" },
+            { link: "https://believers-sword.brojenuel.com/", icon: "mingcute:external-link-line", tooltip: "Open Link" },
+        ],
+        imageLink: "https://believers-sword.brojenuel.com/",
+        img: "believers-sword.webp",
+        tags: ["application"],
+        date: "2023-02-17",
+        logo: "https://believers-sword.brojenuel.com/_nuxt/believers-sword.7fcefc1c.svg",
+        url: "/blog/Believers-Sword",
+    },
+];
+
 useHead({
     ...setMeta({
         title: "My Work - Jenuel Ganawed",
@@ -38,6 +56,26 @@ defineOgImageStatic({
                         <div class="indent-md">Showing are personal projects that I made during my spare/free time. I don't add projects from my Work/Jobs, only if allowed.</div>
                     </div>
                     <div class="grid grid-cols-1 gap-3">
+                        <NuxtLink v-for="(work, i) in WORKS" :key="i" :to="work.url" class="p-10px rounded-md cursor-pointer group">
+                            <div class="border-5 border-[var(--gray-lightest)] flex justify-center items-center h-150px overflow-hidden rounded-lg relative">
+                                <img
+                                    :src="`/img/work/${work.img}`"
+                                    class="absolute w-full transform scale-100 group-hover:scale-transform-120 transition-all"
+                                    :alt="work.description"
+                                    width="500"
+                                    height="500"
+                                />
+                            </div>
+                            <div class="p-15px flex gap-10px">
+                                <div class="w-30px h-30px overflow-hidden rounded-md bg-white">
+                                    <img class="w-30px" :src="work.logo" />
+                                </div>
+                                <div class="w-[80%]">
+                                    <div class="font-700 group-hover:text-[var(--primary)] text-size-20px">{{ work.title }}</div>
+                                    <div>{{ work.description }}</div>
+                                </div>
+                            </div>
+                        </NuxtLink>
                         <NuxtLink v-for="(work, i) in myWork" :key="i" :href="work._path" class="p-10px rounded-md cursor-pointer group">
                             <div class="border-5 border-[var(--gray-lightest)] flex justify-center items-center h-150px overflow-hidden rounded-lg relative">
                                 <img
