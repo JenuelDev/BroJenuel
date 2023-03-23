@@ -92,7 +92,7 @@ defineOgImageStatic({
                         <NuxtLink
                             v-for="(work, i) in WORKS"
                             :key="i"
-                            :to="work.url"
+                            :href="work.url"
                             class="p-10px rounded-md cursor-pointer group"
                             :target="work.url_new_tab ? '_blank' : '_self'"
                         >
