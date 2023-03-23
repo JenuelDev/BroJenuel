@@ -72,21 +72,13 @@ function commafy(num: number) {
 useHead({
     ...setMeta({
         title: "Blog - BroJenuel",
-        description: "Learn about tips and tricks about programming. Read or watch tutorials that will help you on jour journey as a developer.",
+        description:
+            "Learn about tips and tricks about programming. Read or watch tutorials that will help you on jour journey as a developer.",
         path: route.path,
         keywords: ["brojenuel", "Jenuel", "Jenuel Ganawed", "bro jenuel", "web developer", "blog"],
-        image: "https://brojenuel.com/img/profileImage.ac3f181b.webp",
         lang: "en",
     }),
     ...(process.env.NODE_ENV != "development" ? googleStream() : {}),
-    ...{
-        link: [
-            {
-                rel: "stylesheet",
-                href: "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/agate.min.css",
-            },
-        ],
-    },
 });
 
 defineOgImageStatic({
@@ -100,11 +92,15 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job", "Health"];
 </script>
 <template>
     <NuxtLayout>
-        <div class="font-800 text-size-20px text-[var(--primary)] flex items-center gap-7px max-w-850px mx-auto mt-90px lg:px-0 sm:px-100px px-10px">
+        <div
+            class="font-800 text-size-20px text-[var(--primary)] flex items-center gap-7px max-w-850px mx-auto mt-90px lg:px-0 sm:px-100px px-10px"
+        >
             <Icon name="pajamas:project" />
             Blog
         </div>
-        <div class="min-h-100vh max-w-850px mx-auto lg:px-10px sm:px-100px px-10px pt-10px pb-5 grid lg:grid-cols-4 grid-cols-1 gap-40px">
+        <div
+            class="min-h-100vh max-w-850px mx-auto lg:px-10px sm:px-100px px-10px pt-10px pb-5 grid lg:grid-cols-4 grid-cols-1 gap-40px"
+        >
             <div class="col-span-3 lg:col-span-1">
                 <div class="sticky pt-5 top-50px mx-auto bg-[var(--background)] z-99 w-full">
                     <form @submit.prevent="getBlogs(true)" class="flex gap-7px">
@@ -151,7 +147,13 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job", "Health"];
                         Clear Filters
                     </div>
                     <div class="text-center">
-                        <a class="text-size-10px hover:bg-[var(--primary)] hover:text-[var(--background)] px-3" href="/sitemap.xml" target="_blank">SITEMAP</a>
+                        <a
+                            class="text-size-10px hover:bg-[var(--primary)] hover:text-[var(--background)] px-3"
+                            href="/sitemap.xml"
+                            target="_blank"
+                        >
+                            SITEMAP
+                        </a>
                     </div>
                 </div>
             </div>
@@ -173,25 +175,34 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job", "Health"];
                             ></div>
                             <div class="absolute top-40%"></div>
                             <div>
-                                <span class="group-hover:text-[var(--primary)] text-size-20px font-kumbhsans font-800"> {{ blog.title }}. </span>
+                                <span class="group-hover:text-[var(--primary)] text-size-20px font-kumbhsans font-800">
+                                    {{ blog.title }}.
+                                </span>
                                 <span class="opacity-80 font-poly">{{ blog.summary }}</span>
                             </div>
                             <div class="italic flex gap-2 my-1">
                                 <ul class="flex gap-1 flex-wrap">
-                                    <li v-for="tags in blog.tags" :key="tags" :class="`tag-${tags}`" class="tag">#{{ tags }}</li>
+                                    <li v-for="tags in blog.tags" :key="tags" :class="`tag-${tags}`" class="tag">
+                                        #{{ tags }}
+                                    </li>
                                 </ul>
                             </div>
                             <div>
                                 <span class="italic font-500 opacity-50 whitespace-nowrap flex gap-20px">
                                     {{ $dayjs(blog.created_at).format("MMM. DD, YYYY") }}
                                     <span class="flex items-center gap-7px">
-                                        <Icon name="ic:baseline-remove-red-eye" /> {{ blog.blog_meta ? commafy(blog.blog_meta.view_count) : 0 }}
+                                        <Icon name="ic:baseline-remove-red-eye" />
+                                        {{ blog.blog_meta ? commafy(blog.blog_meta.view_count) : 0 }}
                                     </span>
                                 </span>
                             </div>
                         </div>
                     </NuxtLink>
-                    <div v-if="!noMoreData" ref="blogInfiniteScrollRef" class="text-center text-[var(--primary)] pt-20px">
+                    <div
+                        v-if="!noMoreData"
+                        ref="blogInfiniteScrollRef"
+                        class="text-center text-[var(--primary)] pt-20px"
+                    >
                         <div style="font-size: 50px">
                             <Icon name="svg-spinners:bars-scale-middle" />
                         </div>
@@ -205,7 +216,11 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job", "Health"];
                     </div>
                 </div>
                 <div v-else>
-                    <div v-if="!noMoreData" ref="blogInfiniteScrollRef" class="text-center text-[var(--primary)] pt-20px">
+                    <div
+                        v-if="!noMoreData"
+                        ref="blogInfiniteScrollRef"
+                        class="text-center text-[var(--primary)] pt-20px"
+                    >
                         <div style="font-size: 50px">
                             <Icon name="svg-spinners:bars-scale-middle" />
                         </div>

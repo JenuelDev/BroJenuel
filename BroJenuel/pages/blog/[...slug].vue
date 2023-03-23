@@ -10,7 +10,8 @@ const { data }: any = await useAsyncData("blog", async () => {
     return data;
 });
 
-const oldCountViews: number = data.value.blog_meta && data.value.blog_meta.view_count ? data.value.blog_meta.view_count : 0;
+const oldCountViews: number =
+    data.value.blog_meta && data.value.blog_meta.view_count ? data.value.blog_meta.view_count : 0;
 
 async function addViewCount() {
     const queryUpdate: any = { blogs_id: data?.value.id, view_count: oldCountViews + 1 };
@@ -24,18 +25,16 @@ useHead({
         path: `/blog/${data.value.slug}`,
         keywords: data.value.keywords,
         lang: "en",
-        ...(/\.(jpg|gif|png)$/.test(data.cover_img) ? { image: data.cover_img } : {}),
     }),
 });
 
-if (!data.cover_img)
-    defineOgImageStatic({
-        component: "DefaultOgImage",
-        path: route.path,
-        title: data.value.title,
-        description: data.value.summary,
-        appName: "www.BroJenuel.com",
-    });
+defineOgImageStatic({
+    component: "DefaultOgImage",
+    path: route.path,
+    title: data.value.title,
+    description: data.value.summary,
+    appName: "www.BroJenuel.com",
+});
 
 function commafy(num: number) {
     var str = num.toString().split(".");
@@ -88,18 +87,36 @@ function share(social: string) {
                 <div v-show="showContent" class="pt-40px max-w-600px lg:max-w-800px mx-auto pb-5 px-10px">
                     <div>
                         <div class="mb-25px">
-                            <h1 class="text-2xl lg:text-5xl md:text-4xl md:text-3xl font-700 pb-10px font-kumbhsans">{{ data.title }}</h1>
+                            <h1 class="text-2xl lg:text-5xl md:text-4xl md:text-3xl font-700 pb-10px font-kumbhsans">
+                                {{ data.title }}
+                            </h1>
                             <div>
                                 <template v-if="/\.(jpg|gif|png)$/.test(data.cover_img)">
-                                    <img :src="data.cover_img" alt="" srcset="" class="float-left sm:w-450px w-full pr-20px pt-10px" />
+                                    <img
+                                        :src="data.cover_img"
+                                        alt=""
+                                        srcset=""
+                                        class="float-left sm:w-450px w-full pr-20px pt-10px"
+                                    />
                                 </template>
-                                <p class="text-xl lg:text-3xl md:text-2xl sm:text-xl md font-sans font-100 mb-5"><span class="text-[var(--primary)]">/</span> {{ data.summary }}</p>
+                                <p class="text-xl lg:text-3xl md:text-2xl sm:text-xl md font-sans font-100 mb-5">
+                                    <span class="text-[var(--primary)]">/</span> {{ data.summary }}
+                                </p>
                             </div>
                             <div class="flex flex-wrap gap-3 mb-3">
-                                <div v-for="tags in data.tags" :key="tags" :class="`tag-${tags}`" class="tag tag-sm !text-size-18px">#{{ tags }}</div>
+                                <div
+                                    v-for="tags in data.tags"
+                                    :key="tags"
+                                    :class="`tag-${tags}`"
+                                    class="tag tag-sm !text-size-18px"
+                                >
+                                    #{{ tags }}
+                                </div>
                             </div>
                             <div class="text-lg opacity-70 mb-2">
-                                <span class="mr-10px">{{ $dayjs(data.created_at).format("MMM. DD, YYYY. h:mm A") }}</span>
+                                <span class="mr-10px">{{
+                                    $dayjs(data.created_at).format("MMM. DD, YYYY. h:mm A")
+                                }}</span>
                                 <span><Icon name="ic:baseline-remove-red-eye" /> {{ commafy(oldCountViews) }}</span>
                             </div>
                             <div class="flex gap-2">
@@ -133,10 +150,17 @@ function share(social: string) {
                                 </button>
                             </div>
                         </div>
-                        <div class="content-render max-w-600px lg:max-w-700px mx-auto relative font-poly text-l md:text-xl" v-html="data.content"></div>
+                        <div
+                            class="content-render max-w-600px lg:max-w-700px mx-auto relative font-poly text-l md:text-xl"
+                            v-html="data.content"
+                        ></div>
                         <ClientOnly>
                             <div class="max-w-600px mx-auto px-10px relative pb-5 mt-50px">
-                                <Disqus :identifier="`BroJenuel-${data.slug}`" url="https://brojenuel.disqus.com" :title="data.title" />
+                                <Disqus
+                                    :identifier="`BroJenuel-${data.slug}`"
+                                    url="https://brojenuel.disqus.com"
+                                    :title="data.title"
+                                />
                             </div>
                         </ClientOnly>
                     </div>
