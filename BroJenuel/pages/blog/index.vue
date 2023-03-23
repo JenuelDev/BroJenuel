@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 const client = useSupabaseClient();
 const route = useRoute();
-const isShowContent = ref(false);
 const { setMeta, googleStream } = useMeta();
 const blogInfiniteScrollRef = ref(null);
 const targetIsVisible = useElementVisibility(blogInfiniteScrollRef);
@@ -19,7 +18,7 @@ const noMoreData = ref(false);
 
 watch(
     () => targetIsVisible.value,
-    async (val) => {
+    (val) => {
         if (noMoreData.value) return;
         if (val) {
             filter.page += 1;
@@ -35,6 +34,7 @@ async function getBlogs(isReset = false) {
         noMoreData.value = false;
     }
 
+    noMoreData.value = false;
     let rangeFrom = filter.page * filter.limit - filter.limit;
     rangeFrom = rangeFrom > 0 ? rangeFrom + 1 : rangeFrom;
     let rangeTo = filter.page * filter.limit;
@@ -47,7 +47,7 @@ async function getBlogs(isReset = false) {
 
     const { data }: any = await query.range(rangeFrom, rangeTo);
 
-    if (data.length == 0) noMoreData.value = true;
+    if (data.length < filter.limit) noMoreData.value = true;
 
     blogsList.value = [...blogsList.value, ...(data as any)];
     return data;
@@ -56,8 +56,6 @@ async function getBlogs(isReset = false) {
 await useAsyncData("blogs", async () => {
     await getBlogs();
 });
-
-isShowContent.value = true;
 
 function commafy(num: number) {
     var str = num.toString().split(".");
@@ -198,24 +196,8 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job", "Health"];
                             </div>
                         </div>
                     </NuxtLink>
-                    <div
-                        v-if="!noMoreData"
-                        ref="blogInfiniteScrollRef"
-                        class="text-center text-[var(--primary)] pt-20px"
-                    >
-                        <div style="font-size: 50px">
-                            <Icon name="svg-spinners:bars-scale-middle" />
-                        </div>
-                        <h1>loading</h1>
-                    </div>
-                    <div v-else ref="blogInfiniteScrollRef" class="text-center text-[var(--primary)] pt-20px">
-                        <div style="font-size: 50px">
-                            <Icon name="wpf:empty-flag" />
-                        </div>
-                        <h1>Oops! No More Data</h1>
-                    </div>
                 </div>
-                <div v-else>
+                <div>
                     <div
                         v-if="!noMoreData"
                         ref="blogInfiniteScrollRef"
