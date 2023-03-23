@@ -50,7 +50,7 @@ const WORKS = [
         tags: ["website", "documentation"],
         date: "2023-02-17",
         logo: "https://laravel-mongo-docs.ml/assets/img/logo.png",
-        url: "https:://laravel-mongodb.vercel.app",
+        url: "https://laravel-mongodb.vercel.app",
         url_new_tab: true,
     },
 ];
