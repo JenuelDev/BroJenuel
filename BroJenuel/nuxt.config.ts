@@ -8,11 +8,7 @@ export default defineNuxtConfig({
         "nuxt-windicss",
         "@nuxtjs/supabase",
         "nuxt-og-image",
-        "@nuxtjs/google-adsense",
     ],
-    "google-adsense": {
-        id: "pub-2268807726840190",
-    },
     colorMode: {
         preference: "dark",
         classSuffix: "",
