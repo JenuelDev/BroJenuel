@@ -8,14 +8,20 @@ export default defineNuxtConfig({
         "nuxt-windicss",
         "@nuxtjs/supabase",
         "nuxt-og-image",
+        "@nuxtjs/google-adsense",
     ],
+    "google-adsense": {
+        id: "pub-2268807726840190",
+    },
     colorMode: {
         preference: "dark",
         classSuffix: "",
         fallback: "dark",
         storageKey: "brojenuel-color-mode",
     },
-    // Recommended
+    routeRules: {
+        "/*": { cors: true },
+    },
     runtimeConfig: {
         public: {
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://brojenuel.com",
