@@ -27,7 +27,7 @@ defineOgImageStatic({
 const blogs = ref<Array<any>>([]);
 async function getBlogs() {
     loadingBlogs.value = true;
-    let query: any = await client.from("blogs").select(`*, blog_meta(*)`).eq("is_active", 1).order("id", { ascending: false }).limit(4);
+    let query: any = await client.from("blogs").select(`*, blog_meta(*)`).eq("is_active", 1).order("id", { ascending: false }).limit(6);
     blogs.value = query.data;
     loadingBlogs.value = false;
 }
