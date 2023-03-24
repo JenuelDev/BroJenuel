@@ -78,7 +78,8 @@ p {
         position: relative;
         color: var(--color);
         font-style: italic;
-        font-weight: 700;
+        // font-weight: 700;
+        color: var(--primary);
 
         &:before {
             content: "";

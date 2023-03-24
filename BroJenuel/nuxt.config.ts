@@ -1,6 +1,14 @@
 export default defineNuxtConfig({
     ssr: true,
-    modules: ["@pinia/nuxt", "nuxt-icon", "@nuxtjs/color-mode", "@nuxt/content", "@vueuse/nuxt", "nuxt-windicss", "@nuxtjs/supabase", "nuxt-og-image"],
+    modules: [
+        "@pinia/nuxt",
+        "nuxt-icon",
+        "@nuxtjs/color-mode",
+        "@vueuse/nuxt",
+        "nuxt-windicss",
+        "@nuxtjs/supabase",
+        "nuxt-og-image",
+    ],
     colorMode: {
         preference: "dark",
         classSuffix: "",
@@ -23,20 +31,6 @@ export default defineNuxtConfig({
                     href: "/img/icons/favicon-32x32.png",
                 },
             ],
-        },
-    },
-    content: {
-        highlight: {
-            // Theme used in all color schemes.
-            theme: {
-                // Default theme (same as single string)
-                default: "github-light",
-                // Theme used if `html.dark`
-                dark: "github-dark",
-                // Theme used if `html.sepia`
-                sepia: "solarized-light",
-            },
-            preload: ["c", "cpp", "java"],
         },
     },
 });

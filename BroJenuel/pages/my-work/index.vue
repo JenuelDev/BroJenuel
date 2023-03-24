@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
 const isShowContent = ref(false);
-const myWork = await queryContent("/my-work").sort({ _id: -1 }).find();
 const codeChallenges = useCodeChallenges();
 const { setMeta } = useMeta();
 
@@ -10,23 +9,10 @@ onMounted(() => (isShowContent.value = true));
 const WORKS = [
     {
         title: "Believers Sword",
-        description: "A app for studying the bible for desktop. Currently supports windows only.",
-        techs: ["electron", "electron.builder", "Vue3", "windiCss"],
-        links: [
-            {
-                link: "https://github.com/Bible-Projects/believers-sword-app",
-                icon: "ant-design:github-filled",
-                tooltip: "Open in Github",
-            },
-            {
-                link: "https://believers-sword.brojenuel.com/",
-                icon: "mingcute:external-link-line",
-                tooltip: "Open Link",
-            },
-        ],
-        imageLink: "https://believers-sword.brojenuel.com/",
-        img: "believers-sword.webp",
-        tags: ["application"],
+        description:
+            "This is a simple bible reading application that gives basic functionality. I am waiting for anyone who wants to own this project, and I am willing to work with you.",
+        techs: ["electron", "electron.builder", "Vue3", "windiCss", "naive-ui"],
+        img: "https://i.imgur.com/HOGyZ7ql.png",
         date: "2023-02-17",
         logo: "https://believers-sword.brojenuel.com/_nuxt/believers-sword.7fcefc1c.svg",
         url: "/blog/Believers-Sword",
@@ -35,22 +21,60 @@ const WORKS = [
     {
         overline: "Documentation Project",
         title: "Laravel MongoDB Docs",
-        description: "Documentation how you can integrate Laravel with MongoDB.",
-        techs: ["vuepress", "vue"],
-        links: [
-            {
-                link: "https://github.com/BroJenuel-Youtube/laravel-mongodb",
-                icon: "ant-design:github-filled",
-                tooltip: "Open in Github",
-            },
-            { link: "https://laravel-mongo-docs.ml", icon: "mingcute:external-link-line", tooltip: "Open Link" },
-        ],
-        imageLink: "https://laravel-mongo-docs.ml",
-        img: "laravel-mongo-db.webp",
-        tags: ["website", "documentation"],
+        description:
+            "A Documentation website for Laravel MongoDB, a package that you can use to easily connect your laravel project to mongodb.",
+        techs: ["vitepress", "vue"],
+        img: "https://i.imgur.com/joyBgJBl.png",
         date: "2023-02-17",
         logo: "https://laravel-mongo-docs.ml/assets/img/logo.png",
         url: "https://laravel-mongodb.vercel.app",
+        url_new_tab: true,
+    },
+    {
+        overline: "Portfolio Website",
+        title: "Portfolio Website",
+        description:
+            "Created a simple but cool looking portfolio website for my wife. I used pure VueJS to create the website and hosted it on netlify.",
+        techs: ["vue", "javascript"],
+        img: "https://i.imgur.com/RwAoRLyl.png",
+        date: "2023-02-17",
+        logo: "https://kateawisan.netlify.app/img/profile-img.d44572f5.jpg",
+        url: "https://kateawisan.netlify.app/",
+        url_new_tab: true,
+    },
+    {
+        overline: "Search Engine Project",
+        title: "Get GIF's",
+        description: "Search the wide internet to get GIFs that you can download",
+        techs: ["vue", "API", "javascript"],
+        img: "gif-search.webp",
+        date: "2023-02-17",
+        logo: "https://www.getgifs.ml/img/gif.ea9d2c5a.png",
+        url: "https://www.getgifs.ml/",
+        url_new_tab: true,
+    },
+    {
+        overline: "Personal Website ",
+        title: "Portfolio Final Version",
+        description:
+            "I created a new portfolio website, and it is being served as an SSR for good SEO. I added blogs for publishing my articles.",
+        techs: ["vue", "Nuxt", "javascript", "SSR", "SupaBase", "Disqus"],
+        img: "https://i.imgur.com/dynz10Bl.png",
+        date: "2023-02-17",
+        logo: "https://i.imgur.com/3iN1kQym.jpg",
+        url: "https://BroJenuel.com",
+        url_new_tab: false,
+    },
+    {
+        overline: "Personal Website",
+        title: "Portfolio Version 1.**",
+        description:
+            "Created My Very First Portfolio Website. It looks cool but the performance is too much. I also used google blogSpot API to set my blogs. But my I removed my blogSpot so its not working anymore. But I was able to learn something from it.",
+        techs: ["vue", "javascript"],
+        img: "https://i.imgur.com/tVN4aOVl.png",
+        date: "2017-12-01",
+        logo: "https://i.imgur.com/3iN1kQym.jpg",
+        url: "https://jenuelganawed-v1.netlify.app/#/challenge",
         url_new_tab: true,
     },
 ];
@@ -77,75 +101,50 @@ defineOgImageStatic({
     <NuxtLayout>
         <Transition>
             <div v-show="isShowContent" class="pt-90px">
-                <div class="max-w-550px mx-auto px-10px">
+                <div class="max-w-600px mx-auto px-10px">
                     <div class="font-800 text-size-20px text-[var(--primary)] flex items-center gap-7px">
                         <Icon name="pajamas:project" />
                         My Work
                     </div>
-                    <div class="pt-5">
+                    <div class="pt-5 mb-5">
                         <div class="indent-md">
                             Showing are personal projects that I made during my spare/free time. I don't add projects
                             from my Work/Jobs, only if allowed.
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 gap-3">
+                    <div class="grid grid-cols-1 gap-15">
                         <NuxtLink
                             v-for="(work, i) in WORKS"
                             :key="i"
                             :href="work.url"
-                            class="p-10px rounded-md cursor-pointer group"
+                            class="rounded-md cursor-pointer group"
                             :target="work.url_new_tab ? '_blank' : '_self'"
                         >
                             <div
-                                class="border-5 border-[var(--gray-lightest)] flex justify-center items-center h-150px overflow-hidden rounded-lg relative"
+                                class="border-1 border-[var(--gray-lightest)] flex justify-center items-center overflow-hidden rounded-lg relative"
                             >
                                 <img
-                                    :src="`/img/work/${work.img}`"
-                                    class="absolute w-full transform scale-100 group-hover:scale-transform-120 transition-all"
+                                    :src="work.img.includes('http') ? work.img : `/img/work/${work.img}`"
+                                    class="w-full transform scale-100 group-hover:scale-transform-105 transition-all duration-1000"
                                     :alt="work.description"
                                     width="500"
-                                    height="500"
                                 />
                             </div>
-                            <div class="p-15px flex gap-10px">
+                            <div class="pt-15px flex gap-10px items-center">
                                 <div class="w-30px h-30px overflow-hidden rounded-md bg-white">
                                     <img class="w-30px" :src="work.logo" />
                                 </div>
-                                <div class="w-[80%]">
-                                    <div class="font-700 group-hover:text-[var(--primary)] text-size-20px">
-                                        {{ work.title }}
-                                    </div>
-                                    <div>{{ work.description }}</div>
+                                <div class="font-700 group-hover:text-[var(--primary)] text-size-25px">
+                                    {{ work.title }}
                                 </div>
                             </div>
-                        </NuxtLink>
-                        <NuxtLink
-                            v-for="(work, i) in myWork"
-                            :key="i"
-                            :href="work._path"
-                            class="p-10px rounded-md cursor-pointer group"
-                        >
-                            <div
-                                class="border-5 border-[var(--gray-lightest)] flex justify-center items-center h-150px overflow-hidden rounded-lg relative"
-                            >
-                                <img
-                                    :src="`/img/work/${work.img}`"
-                                    class="absolute w-full transform scale-100 group-hover:scale-transform-120 transition-all"
-                                    :alt="work.description"
-                                    width="500"
-                                    height="500"
-                                />
-                            </div>
-                            <div class="p-15px flex gap-10px">
-                                <div class="w-30px h-30px overflow-hidden rounded-md bg-white">
-                                    <img class="w-30px" :src="work.logo" />
-                                </div>
-                                <div class="w-[80%]">
-                                    <div class="font-700 group-hover:text-[var(--primary)] text-size-20px">
-                                        {{ work.title }}
-                                    </div>
-                                    <div>{{ work.description }}</div>
-                                </div>
+                            <div>
+                                <ul class="flex gap-1 flex-wrap py-10px">
+                                    <li v-for="tags in work.techs" :key="tags" :class="`tag-${tags}`" class="tag">
+                                        #{{ tags }}
+                                    </li>
+                                </ul>
+                                <div>{{ work.description }}</div>
                             </div>
                         </NuxtLink>
                     </div>
