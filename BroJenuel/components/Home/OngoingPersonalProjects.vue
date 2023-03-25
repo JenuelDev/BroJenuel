@@ -20,7 +20,7 @@ function aboutPersonalProject() {
             >
                 <div class="pt-15px flex gap-10px items-center">
                     <div class="w-30px h-30px overflow-hidden rounded-md bg-white">
-                        <img class="w-30px" :src="work.logo" :alt="work.title" />
+                        <img class="w-30px" :src="work.logo" :alt="work.title" width="50" height="50" />
                     </div>
                     <div class="font-700 group-hover:text-[var(--primary)] text-size-25px group-hover:underline">
                         {{ work.title }}
