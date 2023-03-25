@@ -61,7 +61,7 @@ defineOgImageStatic({
                             </div>
                             <div class="pt-15px flex gap-10px items-center">
                                 <div class="w-30px h-30px overflow-hidden rounded-md bg-white">
-                                    <img class="w-30px" :src="work.logo" />
+                                    <img class="w-30px" :src="work.logo" :alt="work.title" />
                                 </div>
                                 <div class="font-700 group-hover:text-[var(--primary)] text-size-25px">
                                     {{ work.title }}
