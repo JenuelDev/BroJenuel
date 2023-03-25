@@ -34,22 +34,33 @@ defineOgImageStatic({
                         Timeline/Experience
                     </div>
                     <div class="pt-5">
-                        <div class="indent-md">This are companies/organization that I have worked for. I have learned and enjoyed working on this companies.</div>
+                        <div class="indent-md">
+                            This are companies/organization that I have worked for. I have learned and enjoyed working
+                            on this companies.
+                        </div>
                     </div>
+                </div>
+                <div class="w-full max-w-600px lg:max-w-650px mx-auto px-10px">
                     <div class="timeline-div p-10px">
                         <div class="w-full m-auto">
                             <template v-for="(experience, i) in experiences" :key="experience.url">
                                 <div v-if="experience.isCard" class="timeline-box">
                                     <div
                                         class="absolute top-[50%] transform translate-y-[-50%] bg-[var(--primary)] rounded-md text-[var(--background)] p-1 flex flex-col items-center text-size-12px"
-                                        :class="i % 2 == 0 ? 'sm:right-[-20px] right-[-15px]' : 'sm:left-[-25px] left-[-15px]'"
+                                        :class="
+                                            i % 2 == 0
+                                                ? 'sm:right-[-20px] right-[-15px]'
+                                                : 'sm:left-[-25px] left-[-15px]'
+                                        "
                                     >
-                                        {{ experience.year }}
+                                        <span v-html="experience.year"></span>
                                         <span v-if="experience.to">to</span>
                                         {{ experience.to ?? "" }}
                                     </div>
-                                    <div class="m-1 bg-[var(--background-secondary)] rounded-lg p-3 flex flex-col gap-2 items-center">
-                                        <div class="font-800 text-size-20px text-center">{{ experience.title }}</div>
+                                    <div
+                                        class="m-1 bg-[var(--background-secondary)] rounded-lg p-3 flex flex-col gap-2 items-center"
+                                    >
+                                        <div class="font-500 text-size-20px text-center">{{ experience.title }}</div>
                                         <div v-if="experience.certificate">
                                             <NuxtLink class="btn" :to="experience.certificate.link" target="_blank">
                                                 <Icon name="teenyicons:certificate-solid" />
@@ -62,15 +73,28 @@ defineOgImageStatic({
                                 <div v-else class="timeline-box">
                                     <div
                                         class="absolute top-[50%] transform translate-y-[-50%] bg-[var(--primary)] rounded-md text-[var(--background)] p-1 flex flex-col items-center text-size-12px"
-                                        :class="i % 2 == 0 ? 'sm:right-[-20px] right-[-15px]' : 'sm:left-[-25px] left-[-15px]'"
+                                        :class="
+                                            i % 2 == 0
+                                                ? 'sm:right-[-20px] right-[-15px]'
+                                                : 'sm:left-[-25px] left-[-15px]'
+                                        "
                                     >
                                         {{ experience.year }}
                                         <span>to</span>
                                         {{ experience.to }}
                                     </div>
-                                    <div v-if="experience.position || experience.company" class="font-800 text-size-20px pb-2">
-                                        <span v-if="experience.position" class="text-[var(--primary)]">{{ experience.position }}</span>
-                                        <a v-if="experience.company" :href="experience.url" target="_blank" class="hover:text-[var(--primary)]"> @ {{ experience.company }}</a>
+                                    <div v-if="experience.position || experience.company" class="text-size-18px pb-2">
+                                        <span v-if="experience.position" class="text-[var(--primary)] italic">{{
+                                            experience.position
+                                        }}</span>
+                                        <a
+                                            v-if="experience.company"
+                                            :href="experience.url"
+                                            target="_blank"
+                                            class="hover:text-[var(--primary)]"
+                                        >
+                                            @ {{ experience.company }}</a
+                                        >
                                     </div>
                                     <div v-if="experience.certificate" class="inline-block">
                                         <NuxtLink class="btn" :to="experience.certificate.link" target="_blank">
@@ -82,17 +106,31 @@ defineOgImageStatic({
                                         {{ experience.workStart }} -
                                         <span v-html="experience.workUntil"></span>
                                     </div>
-                                    <div v-if="experience.des" class="text-size-15px leading-5 mt-2" v-html="experience.des"></div>
-                                    <div v-if="experience.timeline && experience.timeline.length" class="pl-30px pt-20px">
+                                    <div
+                                        v-if="experience.des"
+                                        class="text-sm leading-5 mt-2"
+                                        v-html="experience.des"
+                                    ></div>
+                                    <div
+                                        v-if="experience.timeline && experience.timeline.length"
+                                        class="pl-30px pt-20px"
+                                    >
                                         <div v-for="(timeline, t_i) in experience.timeline" :key="t_i" class="relative">
-                                            <div class="bg-[var(--primary)] text-[var(--background)] inline-block text-size-12px p-1 rounded-md">
+                                            <div
+                                                class="bg-[var(--primary)] text-[var(--background)] inline-block text-size-12px p-1 rounded-md"
+                                            >
                                                 {{ timeline.date }}
                                             </div>
                                             <div class="text-size-15px pb-10px">
                                                 {{ timeline.details }}
                                             </div>
-                                            <div class="absolute h-10px w-10px bg-[var(--primary)] rounded-full top-7px left-[-15px]"></div>
-                                            <div v-show="experience.timeline.length != t_i + 1" class="absolute h-full w-2px left-[-11px] bg-[var(--primary)] top-8px"></div>
+                                            <div
+                                                class="absolute h-10px w-10px bg-[var(--primary)] rounded-full top-7px left-[-15px]"
+                                            ></div>
+                                            <div
+                                                v-show="experience.timeline.length != t_i + 1"
+                                                class="absolute h-full w-2px left-[-11px] bg-[var(--primary)] top-8px"
+                                            ></div>
                                         </div>
                                     </div>
                                 </div>

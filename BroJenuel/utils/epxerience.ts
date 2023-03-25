@@ -47,7 +47,7 @@ export const useExperiences = () => [
     {
         isCard: true,
         title: "SQL Course",
-        year: "March. 2021",
+        year: "Mar. <br /> 2021",
         certificate: {
             link: "https://www.sololearn.com/Certificate/CT-LKXLDBLV/png",
             label: "SQL Course Certificate",
@@ -57,7 +57,7 @@ export const useExperiences = () => [
     {
         isCard: true,
         title: "JavaScript: Theoretical and Practical Understanding",
-        year: "March. 2021",
+        year: "Mar. <br /> 2021",
         certificate: {
             link: "https://www.sololearn.com/Certificate/CT-LKXLDBLV/png",
             label: "JavaScript Certificate",
@@ -67,7 +67,7 @@ export const useExperiences = () => [
     {
         isCard: true,
         title: "SMART Technopreneurship 101",
-        year: "Sept. 2020",
+        year: "Sept. <br /> 2020",
         certificate: {
             link: "https://github.com/BroJenuel/BroJenuel/raw/master/certificates/SMARTtechno101_Certificate%20of%20Completion.pdf",
             label: "CERTIFICATE of COMPLETION",
@@ -77,7 +77,7 @@ export const useExperiences = () => [
     {
         isCard: true,
         title: "SMART Android Mobile Apps Development for Beginners",
-        year: "Sept. 2020",
+        year: "Sept. <br /> 2020",
         certificate: {
             link: "https://github.com/BroJenuel/BroJenuel/raw/master/certificates/SMART%20Android%20Mobile%20Apps%20Development%20for%20Beginners_Certificate%20of%20Completion.pdf",
             label: "CERTIFICATE of COMPLETION",
@@ -130,7 +130,7 @@ export const useExperiences = () => [
     {
         isCard: true,
         title: "ENTREPRENEUR SUMMIT BAGUIO 2018",
-        year: "Sept. 2018",
+        year: "Sept. <br /> 2018",
         certificate: {
             link: "https://drive.google.com/file/d/1-YmSIGUmX0QQyBUjCJHBVIjSsr3rwmJj/view",
             label: "Certificate of Attendance",
@@ -140,7 +140,7 @@ export const useExperiences = () => [
     {
         isCard: true,
         title: "PHP Course Certificate",
-        year: "March 2018",
+        year: "March <br /> 2018",
         certificate: {
             link: "https://www.sololearn.com/Certificate/CT-3RLQL1CI/pdf",
             label: "PHP Course Certificate",
@@ -150,7 +150,7 @@ export const useExperiences = () => [
     {
         isCard: true,
         title: "JavaScript Course Certificate",
-        year: "March 2018",
+        year: "March <br /> 2018",
         certificate: {
             link: "https://www.sololearn.com/Certificate/1024-214029/pdf",
             label: "JavaScript Course Certificate",
@@ -160,7 +160,7 @@ export const useExperiences = () => [
     {
         isCard: true,
         title: "CSS Course Certificate",
-        year: "January 2018",
+        year: "January <br /> 2018",
         certificate: {
             link: "https://www.sololearn.com/Certificate/CT-56OTDVDU/pdf",
             label: "CSS Course Certificate",
@@ -170,7 +170,7 @@ export const useExperiences = () => [
     {
         isCard: true,
         title: "HTML Course Certificate",
-        year: "November 2017",
+        year: "November <br /> 2017",
         certificate: {
             link: "https://www.sololearn.com/Certificate/CT-TCJJRFMV/pdf",
             label: "HTML Certificate",

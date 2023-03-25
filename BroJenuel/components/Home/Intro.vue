@@ -54,7 +54,7 @@ watch(
             <div class="flex justify-center gap-3 sm:flex-row flex-col sm:w-auto w-full">
                 <NuxtLink href="/TimeLine" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Time Line">
                     <Icon name="mdi:chart-timeline" class="group-hover:animate-head-shake" />
-                    My Time line
+                    Experience
                 </NuxtLink>
                 <NuxtLink href="/my-work" class="btn btn-lg btn-filled sm:w-auto w-full group" title="My Work">
                     <Icon name="pajamas:project" class="group-hover:animate-head-shake" />

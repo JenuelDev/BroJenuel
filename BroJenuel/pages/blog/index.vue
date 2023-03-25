@@ -97,9 +97,9 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job", "Health"];
             Blog
         </div>
         <div
-            class="min-h-100vh max-w-850px mx-auto lg:px-10px sm:px-100px px-10px pt-10px pb-5 grid lg:grid-cols-4 grid-cols-1 gap-40px"
+            class="min-h-100vh max-w-850px mx-auto lg:px-10px sm:px-100px px-10px pt-10px pb-5 grid lg:grid-cols-12 grid-cols-1 gap-40px"
         >
-            <div class="col-span-3 lg:col-span-1">
+            <div class="col-span-12 lg:col-span-3">
                 <div class="sticky pt-5 top-50px mx-auto bg-[var(--background)] z-99 w-full">
                     <form @submit.prevent="getBlogs(true)" class="flex gap-7px">
                         <input
@@ -156,7 +156,7 @@ const buttonFilters = ["VueJS", "ReactJs", "SEO", "News", "Job", "Health"];
                 </div>
             </div>
 
-            <div class="sm:col-span-3">
+            <div class="sm:col-span-9 col-span-12">
                 <div ref="blogInfiniteScroll" class="grid grid-cols-1 gap-3 sm:pl-0 pl-20px" v-if="blogsList.length">
                     <NuxtLink
                         v-for="blog in blogsList"
