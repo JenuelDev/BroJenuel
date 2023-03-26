@@ -1,42 +1,8 @@
-# Nuxt 3 Minimal Starter
+# BroJenuel
+Hi! if you see this. I just want to express my gratitude for you visiting my github and checking some stuff. If you like to work on something or want to send me a message don't hesitate to send me a message.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Telegram: +63950-3255-547
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+If you like my work and like to support me financially:
+- [buymeacoffee.com](https://www.buymeacoffee.com/brojenuel)
+- [ko-fi.com](https://ko-fi.com/brojenuel)
