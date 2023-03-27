@@ -151,9 +151,7 @@ function share(social: string) {
                             </div>
                         </div>
                         <div class="max-w-600px lg:max-w-700px">
-                            <ClientOnly>
-                                <GoogleAdsHorizontal />
-                            </ClientOnly>
+                            <GoogleAdsHorizontal />
                         </div>
                         <div
                             class="content-render max-w-600px lg:max-w-700px mx-auto relative font-poly text-l md:text-xl"
