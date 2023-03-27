@@ -80,11 +80,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Avoid this common mistakes when building a websites](https://dev.to/brojenuel/avoid-this-common-mistakes-when-building-a-websites-1plk)
 - [I re-created my portfolio using Nuxt3](https://dev.to/brojenuel/i-re-created-my-portfolio-using-nuxt3-1nki)
 - [Laravel + Vue 3 &lpar;Vite, TypeScript&rpar; SPA Setup](https://dev.to/brojenuel/laravel-vue-3-vite-typescript-spa-setup-32l9)
 - [Vue 3 + Vite + TypeScript + ELECTRON &lpar;My Full Setup&rpar;](https://dev.to/brojenuel/vue-3-vite-typescript-electron-my-full-setup-kgm)
 - [JavaScript Regex Tip: change &quot;HelloWorldAgain&quot; to &quot;Hello World Again&quot; &lpar;Camelcase to Separate Words&rpar; with Explanation](https://dev.to/brojenuel/javascript-regex-tip-change-helloworldagain-to-hello-world-again-camelcase-to-separate-words-with-explanation-3pjg)
-- [Vue 3 Component Library 2022](https://dev.to/brojenuel/vue-3-component-library-2022-3pkk)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
