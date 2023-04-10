@@ -80,11 +80,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Optimize Image For The Web](https://brojenuel.com/blog/Optimize-Image-For-The-Web)
 - [The Best JavaScript Date Time Library](https://brojenuel.com/blog/The-Best-JavaScript-Date-Time-Library)
 - [Improve Yourself as a developer](https://brojenuel.com/blog/Improve-Yourself-as-a-developer)
 - [Best Programming Language to Learn For Web Development 2024](https://brojenuel.com/blog/Best-Programming-Language-to-Learn-For-Web-Development-2024)
 - [Avoid this common mistakes when building a websites](https://brojenuel.com/blog/Avoid-this-common-mistakes-when-building-a-websites)
-- [Top 10 Easy Freelancing Websites Online](https://brojenuel.com/blog/Top-10-Easy-Freelancing-Websites-Online-)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
