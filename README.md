@@ -80,11 +80,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [VueJs watch multiple properties](https://brojenuel.com/blog/VueJs-watch-multiple-properties)
 - [5 JavaScript Web APIs you may not know](https://brojenuel.com/blog/5-JavaScript-Web-APIs-you-may-not-know)
 - [VS Code Extension For JavaScript](https://brojenuel.com/blog/VS-Code-Extension-For-JavaScript)
 - [The Best JavaScript Date Time Library](https://brojenuel.com/blog/The-Best-JavaScript-Date-Time-Library)
 - [Improve Yourself as a developer](https://brojenuel.com/blog/Improve-Yourself-as-a-developer)
-- [Best Programming Language to Learn For Web Development 2024](https://brojenuel.com/blog/Best-Programming-Language-to-Learn-For-Web-Development-2024)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
