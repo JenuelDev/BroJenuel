@@ -80,11 +80,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Convert a p12 file to X.509 TLS/SSL certificate string](https://brojenuel.com/blog/-Convert-a-p12-file-to-X-509-TLS-SSL-certificate-string)
 - [Generate thumbnail using uploaded videos in PHP](https://brojenuel.com/blog/Generate-thumbnail-using-uploaded-videos-in-PHP)
 - [Generate Youtube like ID in Different Programming Languages](https://brojenuel.com/blog/Generate-Youtube-like-ID-in-Different-Programming-Languages)
 - [VueJs watch multiple properties](https://brojenuel.com/blog/VueJs-watch-multiple-properties)
 - [5 JavaScript Web APIs you may not know](https://brojenuel.com/blog/5-JavaScript-Web-APIs-you-may-not-know)
-- [VS Code Extension For JavaScript](https://brojenuel.com/blog/VS-Code-Extension-For-JavaScript)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
