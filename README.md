@@ -80,7 +80,7 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
-- [8 Fun API&#39;s For Your Next Projeect](https://brojenuel.com/blog/8-Fun-API-s-For-Your-Next-Projeect)
+- [8 Fun API that you can use for Your Next Project](https://brojenuel.com/blog/8-Fun-API-that-you-can-use-for-Your-Next-Project)
 - [The Importance of Responsive Web Design and How to Achieve It](https://brojenuel.com/blog/The-Importance-of-Responsive-Web-Design-and-How-to-Achieve-It)
 - [Hi! I am Jenuel Oras Ganawed &lpar;BroJenuel&rpar;](https://brojenuel.com/blog/Hi-I-am-Jenuel-Oras-Ganawed-BroJenuel-)
 - [Convert a p12 file to X.509 TLS/SSL certificate string](https://brojenuel.com/blog/-Convert-a-p12-file-to-X-509-TLS-SSL-certificate-string)
