@@ -1,4 +1,4 @@
-## ✋ Hi! My Name is [Jenuel Ganawed 👈](https://jenuelganawed.ml/#/) And I A Web/Software Developer
+## ✋ Hi! My Name is [Jenuel Ganawed 👈](https://jenuelganawed.ml/#/) And I am a Web/Software Developer
 
 
 [![Github](https://github.com/aleen42/badges/raw/master/src/github.svg)](https://github.com/BroJenuel) 
