@@ -78,11 +78,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [The Best Free Software for Creating Diagrams](https://brojenuel.com/blog/The-Best-Free-Software-for-Creating-Diagrams)
 - [The Best Icon Library for Web Development](https://brojenuel.com/blog/The-Best-Icon-Library-for-Web-Development)
 - [Google Chrome is Running in Background](https://brojenuel.com/blog/Google-Chrome-is-Running-in-Background)
 - [VueJS Dynamic Component and Why it is Useful](https://brojenuel.com/blog/VueJS-Dynamic-Component-and-Why-it-is-Useful)
 - [My Best Pick Vue3 Component Library](https://brojenuel.com/blog/My-Best-Pick-Vue3-Component-Library)
-- [8 Fun API that you can use for Your Next Project](https://brojenuel.com/blog/8-Fun-API-that-you-can-use-for-Your-Next-Project)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
