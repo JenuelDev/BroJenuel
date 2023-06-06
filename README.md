@@ -78,11 +78,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Is HTML a Programming Language?](https://brojenuel.com/blog/Is-HTML-a-Programming-Language-)
 - [Create Chrome Extension Using Vue The Easiest Way](https://brojenuel.com/blog/Create-Chrome-Extension-Using-Vue-The-Easiest-Way)
 - [ElectronJs How to minimize/close window to system tray or in the background](https://brojenuel.com/blog/ElectronJs-How-to-minimize-close-window-to-system-tray-or-in-the-background)
 - [The Best Free Software for Creating Diagrams](https://brojenuel.com/blog/The-Best-Free-Software-for-Creating-Diagrams)
 - [The Best Icon Library for Web Development](https://brojenuel.com/blog/The-Best-Icon-Library-for-Web-Development)
-- [Google Chrome is Running in Background](https://brojenuel.com/blog/Google-Chrome-is-Running-in-Background)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
