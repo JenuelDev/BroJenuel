@@ -78,11 +78,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [JavaScript Array Methods Cheat Sheet](https://brojenuel.com/blog/JavaScript-Array-Methods-Cheat-Sheet)
 - [Top 3 Best Laptops for Programming - Budget Friendly 2023](https://brojenuel.com/blog/Top-3-Best-Laptops-for-Programming-Budget-Friendly-2023)
 - [New Useful Setting from VS Code](https://brojenuel.com/blog/New-Useful-Setting-from-VS-Code)
 - [Is HTML a Programming Language?](https://brojenuel.com/blog/Is-HTML-a-Programming-Language-)
 - [Create Chrome Extension Using Vue The Easiest Way](https://brojenuel.com/blog/Create-Chrome-Extension-Using-Vue-The-Easiest-Way)
-- [ElectronJs How to minimize/close window to system tray or in the background](https://brojenuel.com/blog/ElectronJs-How-to-minimize-close-window-to-system-tray-or-in-the-background)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
