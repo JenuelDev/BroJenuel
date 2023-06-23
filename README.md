@@ -78,11 +78,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Dont Use innerHTML](https://brojenuel.com/blog/Dont-Use-innerHTML)
 - [Github Repos To Learn Web3](https://brojenuel.com/blog/Github-Repos-To-Learn-Web3)
 - [Best Android Emulator For PC 2023](https://brojenuel.com/blog/Best-Android-Emulator-For-PC-2023)
 - [Health Tip for Web Developers](https://brojenuel.com/blog/Health-Tip-for-Web-Developers)
 - [Useful 100 AI Tools That You can Use](https://brojenuel.com/blog/Useful-100-AI-Tools-That-You-can-Use)
-- [JavaScript Array Methods Cheat Sheet](https://brojenuel.com/blog/JavaScript-Array-Methods-Cheat-Sheet)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
