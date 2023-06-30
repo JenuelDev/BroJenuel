@@ -78,11 +78,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [How check if a URL or Link is SAFE](https://brojenuel.com/blog/How-check-if-a-URL-or-Link-is-SAFE)
 - [Facebook Like Clone With Source Code](https://brojenuel.com/blog/Facebook-Like-Clone-With-Source-Code)
 - [Youtube Channels For Learning UI/UX](https://brojenuel.com/blog/Youtube-Channels-For-Learning-UI-UX)
 - [Dont Use innerHTML](https://brojenuel.com/blog/Dont-Use-innerHTML)
 - [Github Repos To Learn Web3](https://brojenuel.com/blog/Github-Repos-To-Learn-Web3)
-- [Best Android Emulator For PC 2023](https://brojenuel.com/blog/Best-Android-Emulator-For-PC-2023)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
