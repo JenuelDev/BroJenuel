@@ -78,7 +78,7 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
-- [New Personal Simple Project: Create A Family Tree With This Tool](https://brojenuel.com/blog/New-Personal-Simple-Project-Create-A-Family-Tree-With-This-Tool)
+- [I Created a Family Tree Editor, Check it Out!](https://brojenuel.com/blog/I-Created-a-Family-Tree-Editor-Check-it-Out-)
 - [Free Database Designer Tool](https://brojenuel.com/blog/Free-Database-Designer-Tool)
 - [How check if a URL or Link is SAFE](https://brojenuel.com/blog/How-check-if-a-URL-or-Link-is-SAFE)
 - [Facebook Like Clone With Source Code](https://brojenuel.com/blog/Facebook-Like-Clone-With-Source-Code)
