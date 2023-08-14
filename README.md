@@ -78,11 +78,11 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 
 ### 🚨 Latest Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [New Personal Simple Project: Create A Family Tree With This Tool](https://brojenuel.com/blog/New-Personal-Simple-Project-Create-A-Family-Tree-With-This-Tool)
 - [Free Database Designer Tool](https://brojenuel.com/blog/Free-Database-Designer-Tool)
 - [How check if a URL or Link is SAFE](https://brojenuel.com/blog/How-check-if-a-URL-or-Link-is-SAFE)
 - [Facebook Like Clone With Source Code](https://brojenuel.com/blog/Facebook-Like-Clone-With-Source-Code)
 - [Youtube Channels For Learning UI/UX](https://brojenuel.com/blog/Youtube-Channels-For-Learning-UI-UX)
-- [Dont Use innerHTML](https://brojenuel.com/blog/Dont-Use-innerHTML)
 <!-- BLOG-POST-LIST:END -->
 
 ### ☕ If you like my work, you can support me 😁
