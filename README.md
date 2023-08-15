@@ -85,9 +85,10 @@ Over the past 5 years, I’ve gained experience across some aspects of the appli
 - [Youtube Channels For Learning UI/UX](https://brojenuel.com/blog/Youtube-Channels-For-Learning-UI-UX)
 <!-- BLOG-POST-LIST:END -->
 
+### Personal Works
+- [Believers Sword](https://believers-sword.brojenuel.com/)
+- [FamTree](https://fam-tree.brojenuel.com/)
+- [Others](https://brojenuel.com/my-work)
+
 ### ☕ If you like my work, you can support me 😁
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)
-
--------------------------------------------
-## Believers Sword
-This is a personal Project I created, I have been creating this application during my free time. This app is a desktop application for reading the bible in windows (macOs support coming soon). [Get The Application Here](https://believers-sword.brojenuel.com). Believers Sword is open source [Repo](https://github.com/Bible-Projects/believers-sword-next).
