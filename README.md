@@ -59,12 +59,11 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 ### 🚨 Latest Blog posts
 
 <!-- BLOG-POST-LIST:START -->
-
--   [I Created a Family Tree Editor, Check it Out!](https://brojenuel.com/blog/I-Created-a-Family-Tree-Editor-Check-it-Out-)
--   [Free Database Designer Tool](https://brojenuel.com/blog/Free-Database-Designer-Tool)
--   [How check if a URL or Link is SAFE](https://brojenuel.com/blog/How-check-if-a-URL-or-Link-is-SAFE)
--   [Facebook Like Clone With Source Code](https://brojenuel.com/blog/Facebook-Like-Clone-With-Source-Code)
--   [Youtube Channels For Learning UI/UX](https://brojenuel.com/blog/Youtube-Channels-For-Learning-UI-UX)
+- [I Created a Family Tree Editor, Check it Out!](https://brojenuel.com/blog/I-Created-a-Family-Tree-Editor-Check-it-Out-)
+- [Free Database Designer Tool](https://brojenuel.com/blog/Free-Database-Designer-Tool)
+- [How check if a URL or Link is SAFE](https://brojenuel.com/blog/How-check-if-a-URL-or-Link-is-SAFE)
+- [Facebook Like Clone With Source Code](https://brojenuel.com/blog/Facebook-Like-Clone-With-Source-Code)
+- [Youtube Channels For Learning UI/UX](https://brojenuel.com/blog/Youtube-Channels-For-Learning-UI-UX)
 <!-- BLOG-POST-LIST:END -->
 
 ### Personal Works
