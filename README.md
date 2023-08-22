@@ -59,11 +59,11 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 ### 🚨 Latest Blog posts
 
 <!-- BLOG-POST-LIST:START -->
+- [PHP: Ways to Loop an Array](https://brojenuel.com/blog/PHP-Ways-to-Loop-an-Array)
 - [JavaScript: Ways to iterate an array](https://brojenuel.com/blog/JavaScript-Ways-to-iterate-an-array)
 - [Best Android Emulator For Mac And Windows](https://brojenuel.com/blog/Best-Android-Emulator-For-Mac-And-Windows)
 - [How to improve website performance?](https://brojenuel.com/blog/How-to-improve-website-performance-)
 - [I Created a Family Tree Editor, Check it Out!](https://brojenuel.com/blog/I-Created-a-Family-Tree-Editor-Check-it-Out-)
-- [Free Database Designer Tool](https://brojenuel.com/blog/Free-Database-Designer-Tool)
 <!-- BLOG-POST-LIST:END -->
 
 ### Personal Works
