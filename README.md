@@ -59,11 +59,11 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 ### 🚨 Latest Blog posts
 
 <!-- BLOG-POST-LIST:START -->
+- [Top Tips for Teenage Entrepreneurs: Your Path to Success](https://brojenuel.com/blog/Top-Tips-for-Teenage-Entrepreneurs-Your-Path-to-Success)
 - [Electron Forge + Vite + VueJS Easier Way](https://brojenuel.com/blog/Electron-Forge-Vite-VueJS-Easier-Way)
 - [The Best PDF reader Software](https://brojenuel.com/blog/The-Best-PDF-reader-Software)
 - [PHP: Ways to Loop an Array](https://brojenuel.com/blog/PHP-Ways-to-Loop-an-Array)
 - [JavaScript: Ways to iterate an array](https://brojenuel.com/blog/JavaScript-Ways-to-iterate-an-array)
-- [Best Android Emulator For Mac And Windows](https://brojenuel.com/blog/Best-Android-Emulator-For-Mac-And-Windows)
 <!-- BLOG-POST-LIST:END -->
 
 ### Personal Works
