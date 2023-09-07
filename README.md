@@ -72,6 +72,6 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 -   [FamTree](https://fam-tree.brojenuel.com/)
 -   [Others](https://brojenuel.com/my-work)
 
-### ☕ If you like my work, you can support me 😁
+### Buy Me A Coffee 😁
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)
+[![buy me a coffee](/images/bmc-button.svg)](https://www.buymeacoffee.com/BroJenuel)
