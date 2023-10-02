@@ -59,11 +59,11 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 ### 🚨 Latest Blog posts
 
 <!-- BLOG-POST-LIST:START -->
+- [Creating a Home Office That Works: Tips for Home-Based Entrepreneurs](https://brojenuel.com/blog/Creating-a-Home-Office-That-Works-Tips-for-Home-Based-Entrepreneurs)
 - [Working with Composer: Effective Dependency Management in PHP Projects](https://brojenuel.com/blog/Working-with-Composer-Effective-Dependency-Management-in-PHP-Projects)
 - [Creating RESTful APIs with PHP](https://brojenuel.com/blog/Creating-RESTful-APIs-with-PHP)
 - [Best Practices for PHP Web Development](https://brojenuel.com/blog/Best-Practices-for-PHP-Web-Development)
 - [Exploring PHP 8 Features and Practical Implementation](https://brojenuel.com/blog/Exploring-PHP-8-Features-and-Practical-Implementation)
-- [Fixed: Messenger Desktop Stocked on Getting Started Screen](https://brojenuel.com/blog/Fixed-Messenger-Desktop-Stocked-on-Getting-Started-Screen)
 <!-- BLOG-POST-LIST:END -->
 
 ### Personal Works
