@@ -59,11 +59,11 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 ### 🚨 Latest Blog posts
 
 <!-- BLOG-POST-LIST:START -->
+- [VueJS Stacks: Start Building Your Web App Now With This Useful Stacks](https://brojenuel.com/blog/VueJS-Stacks-Start-Building-Your-Web-App-Now-With-This-Useful-Stacks)
 - [The Power Of Positive Thinking](https://brojenuel.com/blog/The-Power-Of-Positive-Thinking)
 - [Free C# Certificate By Microsoft](https://brojenuel.com/blog/Free-C-Certificate-By-Microsoft)
 - [PHP and Database Interactions: Best Practices for Connectivity and Security](https://brojenuel.com/blog/PHP-and-Database-Interactions-Best-Practices-for-Connectivity-and-Security)
 - [Winners Are Not Those Who Never Fail, But Those Who Never Quit](https://brojenuel.com/blog/Winners-Are-Not-Those-Who-Never-Fail-But-Those-Who-Never-Quit)
-- [Creating a Home Office That Works: Tips for Home-Based Entrepreneurs](https://brojenuel.com/blog/Creating-a-Home-Office-That-Works-Tips-for-Home-Based-Entrepreneurs)
 <!-- BLOG-POST-LIST:END -->
 
 ### Personal Works
