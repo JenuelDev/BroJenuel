@@ -74,4 +74,4 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 
 ### Buy Me A Coffee 😁
 
-[![buy me a coffee](/images/bmc-button.svg)](https://www.buymeacoffee.com/BroJenuel)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T5379QZ)
