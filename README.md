@@ -59,11 +59,11 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 ### 🚨 Latest Blog posts
 
 <!-- BLOG-POST-LIST:START -->
+- [How To Move WSL Distribution to a Different Drive](https://brojenuel.com/blog/How-To-Move-WSL-Distribution-to-a-Different-Drive)
 - [POWERSHELL: How to Reset When Changing System Environment Variables](https://brojenuel.com/blog/POWERSHELL-How-to-Reset-When-Changing-System-Environment-Variables)
 - [How To Write Better and Quality Code](https://brojenuel.com/blog/How-To-Write-Better-and-Quality-Code)
 - [VueJS Stacks: Start Building Your Web App Now With This Useful Stacks](https://brojenuel.com/blog/VueJS-Stacks-Start-Building-Your-Web-App-Now-With-This-Useful-Stacks)
 - [The Power Of Positive Thinking](https://brojenuel.com/blog/The-Power-Of-Positive-Thinking)
-- [Free C# Certificate By Microsoft](https://brojenuel.com/blog/Free-C-Certificate-By-Microsoft)
 <!-- BLOG-POST-LIST:END -->
 
 ### Personal Works
