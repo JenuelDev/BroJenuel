@@ -59,11 +59,11 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 ### 🚨 Latest Blog posts
 
 <!-- BLOG-POST-LIST:START -->
+- [Fast API: Create Middleware](https://brojenuel.com/blog/Fast-API-Create-Middleware)
 - [If you&#39;re a Developer You have to Start Using AI](https://brojenuel.com/blog/If-you-re-a-Developer-You-have-to-Start-Using-AI)
 - [📑 Free Online Courses](https://brojenuel.com/blog/-Free-Online-Courses)
 - [How To Move WSL Distribution to a Different Drive](https://brojenuel.com/blog/How-To-Move-WSL-Distribution-to-a-Different-Drive)
 - [POWERSHELL: How to Reset When Changing System Environment Variables](https://brojenuel.com/blog/POWERSHELL-How-to-Reset-When-Changing-System-Environment-Variables)
-- [How To Write Better and Quality Code](https://brojenuel.com/blog/How-To-Write-Better-and-Quality-Code)
 <!-- BLOG-POST-LIST:END -->
 
 ### Personal Works
