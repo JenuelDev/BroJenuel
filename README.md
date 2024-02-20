@@ -59,11 +59,11 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 ### 🚨 Latest Blog posts
 
 <!-- BLOG-POST-LIST:START -->
+- [Look Who is Back: jQuery 4.0.0 is Coming to Town](https://brojenuel.com/blog/Look-Who-is-Back-jQuery-4-0-0-is-Coming-to-Town)
+- [This Operating System is Windows 11 but it&#39;s actually Linux](https://brojenuel.com/blog/This-Operating-System-is-Windows-11-but-it-s-actually-Linux)
 - [Unveiling the Best Budget Laptops for Software Development: A Developer&#39;s Guide](https://brojenuel.com/blog/Unveiling-the-Best-Budget-Laptops-for-Software-Development-A-Developer-s-Guide)
 - [Ways to Earn Money Online 2024?](https://brojenuel.com/blog/Ways-to-Earn-Money-Online-2024-)
 - [How to create Readme.md file?](https://brojenuel.com/blog/How-to-create-Readme-md-file-)
-- [Fast API: Create Middleware](https://brojenuel.com/blog/Fast-API-Create-Middleware)
-- [If you&#39;re a Developer You have to Start Using AI](https://brojenuel.com/blog/If-you-re-a-Developer-You-have-to-Start-Using-AI)
 <!-- BLOG-POST-LIST:END -->
 
 ### Personal Works
