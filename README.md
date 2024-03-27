@@ -59,11 +59,11 @@ You can call me Bro Jenuel. I have a full-stack background and an eye for good d
 ### 🚨 Latest Blog posts
 
 <!-- BLOG-POST-LIST:START -->
+- [Why &quot;CANVA&quot; is essential for most businesses?](https://brojenuel.com/blog/Why-CANVA-is-essential-for-most-businesses-)
 - [Ways To Manipulate Objects In JavaScript](https://brojenuel.com/blog/Ways-To-Manipulate-Objects-In-JavaScript)
 - [Best ReactJs Component Libraries 2024](https://brojenuel.com/blog/Best-ReactJs-Component-Libraries-2024)
 - [What to do if your tired and stressed doing a lot of programming?](https://brojenuel.com/blog/What-to-do-if-your-tired-and-stressed-doing-a-lot-of-programming-)
 - [JavaScript Libraries That You Should Know](https://brojenuel.com/blog/JavaScript-Libraries-That-You-Should-Know)
-- [Top Paying Programming Technologies 2024](https://brojenuel.com/blog/Top-Paying-Programming-Technologies-2024)
 <!-- BLOG-POST-LIST:END -->
 
 ### Personal Works
