@@ -78,4 +78,4 @@ When I’m not at the computer, I’m usually playing a guitar even though I'm n
 
 ### Buy Me A Coffee 😁
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://bit.ly/brojenuel-KOFI)
+<a href="https://www.buymeacoffee.com/BroJenuel"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=BroJenuel&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
