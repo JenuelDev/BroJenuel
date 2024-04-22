@@ -4,13 +4,17 @@
 
 ###  👔 About Me
 
-I began my professional programming journey in 2018, gaining valuable experience in various stages of application development, such as frontend, backend, and dev-ops. This enables me to handle entire projects, taking responsibility from design all the way to implementation and deployment.
+In 2016, I made a strategic shift from my studies in criminology to pursue a career in Information Technology, where I discovered the intricate and captivating field of software development.
 
-You can call me Bro Jenuel. I have a full-stack background and an eye for good design. I create web apps, websites, apps, and anything else in between. I love to make complex things simple and a joy to use. Currently, I focus on building web apps with VueJs(v2) (v3) and Laravel.
+Fast-forward to today, with over 5 years of professional experience as a software developer, I have consistently engaged in the dynamic and ever-evolving landscape of software development, collaborating with fellow coding enthusiasts and contributing to some truly remarkable products.
 
--   🗺 Hi! I live in Philippines!
+I take pride in my attention to details, meticulously examining even the smallest elements that could potentially snowball into significant issues. Whether it's ensuring code efficiency or perfecting a recipe, I believe that thoroughness in the details is essential for overall success for building scalable, engaging, & accessible digital experience.
+
+When I’m not at the computer, I’m usually playing a guitar even though I'm not a pro in it, trying to read books, walking outside, having a home work out, eating a meal or playing a PUBG Mobile with friends.
+
+-   🗺 Im from Benguet, Luzon, Philippines!
 -   I know how to 🏊‍♀️🏊‍♂️ `swim`, 🎸 play `guitar` (a little bit), i also play 💻 `games`.
--   🙏 👆 I believe in a Creator.
+-   🙏 👆 I believe in a Creator, as I also am a creator of apps.
 
 ### 🛠 Languages And Tools
 
